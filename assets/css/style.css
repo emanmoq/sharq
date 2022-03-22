@@ -252,6 +252,13 @@ border-radius: 21px;;
     margin:5px;
     display: inline-block;
 }
+.fixedItemsImg img{
+    transition: all .5s;
+}
+.fixedItemsImg:hover img{
+    transition: all .5s;;
+    transform: scale(1.1);
+}
 .benefit{
     margin-top:-105px;
     z-index: 22;
@@ -392,4 +399,30 @@ color:#761C33
 .enrollBtn:hover{
     border-color: #761C33;
     color:#761C33
+}
+.counterSection{
+    padding:72px 0;
+    background-image: url(../images/counterBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.counterIcon{
+display: inline-flex;
+    margin-right: 15px;;
+    width:37px;
+}
+.counter{
+
+display: inline-flex;}
+.counter span{
+    font-size:2em;
+    font-weight: 600;
+    color:white;
+}
+.counter p{
+font-size:0.875em;
+font-weight: 600;
+margin:0;
+margin-top:8px;
+color:white;
 }
