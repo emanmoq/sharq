@@ -465,7 +465,7 @@ right:40px;
 }
 .owl-carousel .owl-nav button.disabled{
     background-color: #F2F2F2 !important;
-    color:black !important
+    color:rgba(0, 0, 0, .3) !important
 }
 .owl-carousel .owl-nav button:hover{
     background-color:  transparent !important;
@@ -687,4 +687,127 @@ transition: all .5s;
 }
 .Instructors{
     padding-bottom: 74px;;
+}
+.partners{
+    padding-bottom:74px
+}
+.partnerBox{
+    width:156px;
+    height:156px;
+    border-radius: 50%;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .04);
+    padding:26px 5px;
+    border:1px solid #E9E9E9;
+    display: flex;
+}
+.partnerImg{
+    width: 100px;
+    margin:auto;
+    display: flex;
+    align-self: center;
+    min-width: 70px;
+    width:100px;
+    max-width: 136px;
+}
+.bigImg{
+    width:130px;
+}
+.smallImg{
+    width:79px;
+}
+.partnerBox .partnerImg img{
+    transition: all .5s;;
+}
+.partnerBox:hover .partnerImg img{
+    transform: scale(1.1);
+    transition: all .5s;;
+}
+.partnerSlider .owl-stage{
+    padding:20px 0;
+}
+ .owl-stage-outer{
+    width:100%;
+    overflow: visible;
+}
+
+ .partnerSlider .owl-item {
+   opacity: 0;
+   transition: all .5s;;
+}
+.partnerSlider .owl-item.active {
+  opacity: 1;
+}
+.subscribe{
+    background-color: #761C33;
+    padding: 33px;
+}
+.subscribeBox{
+    display: flex;
+}
+.subscribeTitle{
+display: inline-block;
+}
+.subscribeTitle h5{
+    font-size:1em;
+    font-weight: bold;;
+    color:white;
+    margin-bottom: 13px;;
+}
+.subscribe p{
+    font-size:0.8125em;
+    font-weight: 500;
+    color:white;
+    opacity: .53;
+}
+.subscribeForm{
+    margin:0;
+    display: inline-flex;
+    align-self: center;
+    margin-left:50px;
+}
+.subscribeForm .form-group{
+    margin-bottom: 0;;
+}
+.sendSubscribe{
+    display: inline-flex;
+    align-self: center;
+    width:103px;
+    height:45px;
+    background-color: white;
+    border-radius: 25px;;
+    font-size:0.6875em;
+    font-weight: 600;
+    justify-content: center;
+    color:#761C33
+}
+.sendSubscribe span{
+    display: flex;
+    align-self: center;
+}
+.subscribeFormControl{
+    display: inline-flex;
+    align-self: center;
+    width:322px;
+    height:45px;
+    background-color: transparent;
+    border:1px solid #707070;
+    border-radius: 25px;;
+    color:white !important;
+    font-size:0.6875em;
+    margin-right:13px;
+    font-weight: 500;
+    ;
+
+}
+.subscribeFormControl::placeholder{
+color:white;
+font-size:0.6875em;
+font-weight: 500;
+}
+.subscribeFormControl:focus{
+    background-color: transparent;
+    border-color: #707070;;
+}
+.sendSubscribe:hover{
+    background-color: rgba(255,255,255,.5);
 }

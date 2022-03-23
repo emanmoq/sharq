@@ -55,6 +55,22 @@ $(".InstructorsSlider").owlCarousel({
     }
   }
 });
+$(".partnerSlider").owlCarousel({
+  nav: true,
+  loop: false,
+  dots: true,
+  navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+  items: 6,
+  margin:25,
+  respnsive:{
+    0:{
+      items:3
+    },
+    6:{
+      items:4
+    }
+  }
+});
 });
 
 
