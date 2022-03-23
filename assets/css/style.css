@@ -166,9 +166,19 @@ color:#6E6E6E;;
 font-size: 0.6875em;
 }
 .dropdown-toggle::after{
-    border:0;
+    border: 0;
+    content: "\ea58";
+    font-family: lineicons;
+    font-size: .7em;
+    /* font-weight: bold; */
+    margin-top: 0px;
     position: absolute;
-    content:"\f078";   font-family:"Font Awesome 5 Brands"
+    top: 2px;
+    right: -2px;
+}
+.langBtn::after{
+    right:15px;
+    top:15px
 }
 .dropdown-menu {
     border-radius: 20px;
