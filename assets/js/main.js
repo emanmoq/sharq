@@ -71,6 +71,20 @@ $(".partnerSlider").owlCarousel({
     }
   }
 });
+$(window).scroll(function () {
+  scrollTop = $(window).scrollTop();
+  if(scrollTop > 1000){
+    $(".up").css("opacity","1")
+  }
+  else {
+    $(".up").css("opacity","0")
+
+  }
+  $(".up").on("click",function(){$("html, body").animate({scrollTop:0},"slow");return false;});
+
+});
+
+
 });
 
 

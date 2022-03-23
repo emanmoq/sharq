@@ -150,7 +150,7 @@ font-size: 0.6875em;
 .dropdown-toggle::after{
     border:0;
     position: absolute;
-    content:"\f078";    font-family:"Font Awesome 5 Brands"
+    content:"\f078";   font-family:"Font Awesome 5 Brands"
 }
 .dropdown-menu {
     border-radius: 20px;
@@ -810,4 +810,166 @@ font-weight: 500;
 }
 .sendSubscribe:hover{
     background-color: rgba(255,255,255,.5);
+}
+footer{
+    padding:40px 0 30px;
+    background-color: #F4F7F8;
+}
+footer .container{
+    position: relative;
+}
+.up{
+    display: block;
+    position: fixed;
+    bottom: 150px
+    ;
+    right: 155px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    border:1px solid #761C33;
+    color:#761C33;
+    transition: all .5s;;
+}
+.up:hover{
+    text-decoration: none;
+    background-color: #761C33;
+    color:white
+}
+.up i{
+    display: block;
+    font-size: 22px;
+    line-height: 40px;
+}
+.sharqInfo h4{
+    font-size:1em;
+    font-weight: bold;;
+    margin-bottom:16px;
+}
+.sharqInfo p{
+    font-size:0.6875em;
+    font-weight: 500;
+    margin-bottom: 35px;;
+}
+.appBtn{
+    width:100px;
+    margin-right:6px;
+    margin-bottom: 25px;;
+   float:left
+}
+.footerPartnerImg{
+    width:51px;
+    margin-top:9px;
+}
+.footerPartners a{
+    margin-right:20px;
+    float:left;
+}
+.footerPartners span{
+    font-size:.675em;
+    font-weight: bold;
+}
+.footerListTitle{
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 0.8125em;
+}
+.footerList li{
+    list-style-type: none;
+    margin-bottom: 22px;;
+    position: relative;
+
+}
+.footerList li:before{
+content:"\f061";
+font-family: "Font Awesome 5 Free";
+color:#761C33;
+font-weight: 600;
+font-size:12px;
+}
+.footerList li a{
+    color:#707172;
+    font-size:0.6875em;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.contactFooterList li{
+    color:#707172;
+    font-size:0.6875em;
+    font-weight: 500;
+    list-style-type: none;
+    margin-bottom: 10px;;
+}
+.contactFooterList {
+    margin-bottom: 24px;;
+}
+.contactFooterList li:last-child{
+    margin-top:19px;
+    color:#761C33
+}
+.socialIcons li{
+    list-style-type: no9Fne;
+    display: inline-block;
+    margin-right:20px;
+    color:#9F9F9F;
+    font-size:1.125em;
+}
+.socialIcons li a{
+    color:#9F9F9F;
+}
+.socialIcons li:hover a{
+    color:#761C33
+}
+.footerMenu{
+    padding:9px 0
+}
+.footerLogo{
+    display: inline-block;
+    margin-right:8px;
+    width:89px;
+}
+.footerMenuList{
+    display: inline-block;
+}
+.footerMenuList li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;;
+    color:#707172;
+    font-size :0.68em;
+    font-weight: 500;
+}
+.footerMenuList li:last-child{
+    margin-right: 0;
+}
+.footerMenuList li a{
+    color:#707172
+}
+.footerMenuList li:hover a{
+    color:#761C33
+}
+.copy{
+    background-color: #000000;
+    padding:9px 0
+}
+.right-side{
+    padding-left: 30px;
+    border-left:1px solid white;
+    margin-left:30px;
+}
+.copyLogo{
+width:92px;
+display: inline-flex;
+margin-lefT:30px;
+}
+.copy p{
+font-size:.68em;
+color:white;
+align-self: center;
+}
+.left-side ,.right-side{
+    display: inline-flex;
 }
