@@ -87,6 +87,9 @@ color:#761C33;
     color:#000000;
     border:0;
 }
+.langBtn i{
+    margin-left:5px;
+}
 .langBtn:hover select{
     color:white
 }
@@ -156,6 +159,7 @@ font-size: 0.6875em;
     border-radius: 20px;
     border:1px solid #E9E9E9;
 padding-top: 11px;
+top:35px;
 }
 .dropdown-menu .dropdown-item{
     padding:16px 14px;
@@ -833,6 +837,7 @@ footer .container{
     border:1px solid #761C33;
     color:#761C33;
     transition: all .5s;;
+    opacity: 0;
 }
 .up:hover{
     text-decoration: none;
@@ -917,6 +922,9 @@ font-size:12px;
     color:#9F9F9F;
     font-size:1.125em;
 }
+.socialIcons li:last-child{
+    margin-right: 0;
+}
 .socialIcons li a{
     color:#9F9F9F;
 }
@@ -972,4 +980,76 @@ align-self: center;
 }
 .left-side ,.right-side{
     display: inline-flex;
+}
+.langDropDown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+     z-index: 1000;
+     display: none;
+    min-width: 100px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+}
+.langCont{
+    position: relative;
+}
+@media(max-width:767px){
+body{
+    font-size:14px
+}
+ .fixedItems {
+    position: absolute;
+    right: 0;
+    bottom: 23%;}
+ .owl-stage{
+    padding:20px 0;
+}
+ .owl-stage-outer{
+    overflow: hidden;
+}
+.counterSection{
+    text-align: center;
+}
+.counterBox {
+    margin-bottom: 20px;;
+}
+.joinImages{
+    display: none;
+}
+.up{
+    right:50px
+}
+.subscribeFormControl,.subscribeTitle,.subscribeForm,.subscribeBox{
+display: block;
+width: 100%;
+}
+.socialIcons li{
+    margin-right:10px
+}
+.footerPartners {
+    margin-bottom:20px
+}
+.footerList li a{
+    margin-left:2px
+}
+.right-side{
+    padding:0;
+    margin:0;
+    border-left:0;
+    margin-top:20px;
+}
+header .container-fluid{
+    padding:0 10px;
+}
+.owl-carousel .owl-nav{
+    top:-20px;
+}
 }

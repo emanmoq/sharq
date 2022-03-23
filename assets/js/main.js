@@ -11,14 +11,17 @@ jQuery(function ($) {
     loop: false,
     dots: true,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-    items: 3,
+   
     margin:25,
-    respnsive:{
+    responsive:{
       0:{
         items:1
       },
-      6:{
+      800:{
         items:2
+      },
+      1000:{
+        items: 3,
       }
     }
   });
@@ -28,14 +31,17 @@ $(".certificateSlider").owlCarousel({
   loop: false,
   dots: true,
   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-  items: 4,
+
   margin:25,
-  respnsive:{
+  responsive:{
     0:{
       items:1
     },
-    6:{
+    800:{
       items:2
+    },
+    1000:{
+      items: 4,
     }
   }
 });
@@ -44,14 +50,16 @@ $(".InstructorsSlider").owlCarousel({
   loop: false,
   dots: true,
   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-  items: 4,
   margin:70,
-  respnsive:{
+  responsive:{
     0:{
       items:1
     },
-    6:{
+    800:{
       items:2
+    },
+    1000:{
+      items: 4,
     }
   }
 });
@@ -60,14 +68,17 @@ $(".partnerSlider").owlCarousel({
   loop: false,
   dots: true,
   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-  items: 6,
+
   margin:25,
-  respnsive:{
+  responsive:{
     0:{
-      items:3
+      items:2
     },
-    6:{
+    800:{
       items:4
+    },
+    1000:{
+      items: 6,
     }
   }
 });
@@ -84,6 +95,29 @@ $(window).scroll(function () {
 
 });
 
+$(".langBtn").click(function(){
+$(".langDropDown").css("display","block")
+});
+
+if ( $(window).width() < 768 ) {
+  $(".nav-pills").addClass('owl-carousel');
+
+$(".nav-slider").owlCarousel({
+    nav: false,
+    loop: false,
+    dots: false,
+    autoplay:true,
+    items:2,
+    margin:10
+  
+  });
+  $(".owl-carousel .owl-item  .nav-link").click(function(){
+    $(this).addClass("active");
+    $(".owl-carousel .owl-item  .nav-link").removeClass("active");
+  })
+} else {
+  $(".nav-pills").removeClass('owl-carousel');
+}
 
 });
 

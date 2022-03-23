@@ -110,13 +110,14 @@
 
               </ul>
               <a class=" btn joinBtn" href="#"><span>Join for Free</span></a>
-              <a class=" btn joinBtn langBtn dropdown-toggle" href="#" id="langDropDown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fas fa-globe-americas"></i>
-                EN
+              <div class="langCont">
+                <a class=" btn joinBtn langBtn dropdown-toggle" href="#" id="langDropDown" role="button"
+                data-toggle="langDropDown" aria-haspopup="true" aria-expanded="true"> <span>EN</span> 
+
               </a>
-              <div class="dropdown-menu" aria-labelledby="langDropDown" x-placement="bottom-start"
-                style="position: absolute; transform: translate3d(0px, 22px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <div class="langDropDown" aria-labelledby="langDropDown" x-placement="bottom-start">
                 <a class="dropdown-item" href="#">عربي</a>
+              </div>
               </div>
             </div>
           </nav>
@@ -835,7 +836,7 @@
             <h5>Most Viewed Courses</h5>
             <p>Pick a course from these popular courses to help you develop your skills.</p>
           </div>
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <ul class="nav nav-pills mb-3 owl-carousel nav-slider" id="pills-tab " role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="politics-tab" data-toggle="pill" href="#politicse" role="tab"
                 aria-controls="pills-home" aria-selected="true">Introduction to Al Sharq politics</a>
@@ -1018,33 +1019,7 @@
             </div>
             <div class="tab-pane fade" id="Sciences" role="tabpanel" aria-labelledby="Sciences-tab">
               <div class="coursesSlider owl-carousel">
-                <div class="courseItemBox clearfix">
-                  <div class="courseImg">
-                    <span class="courseLang">En</span>
-                    <img src="assets/images/courseImg.png" alt="">
-                  </div>
-                  <div class="courseDesc">
-                    <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
-                    <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
-                    <div class="trainer clearfix">
-                      <div class="trainerImg">
-                        <img src="assets/images/Oval.png" alt="">
-                      </div>
-                      <h3 class="trainerName"><a href="#">Essam Abdelshafy</a></h3>
-                    </div>
-                    <a href="#" class="btn enrollBtn"><span>Enroll Now <svg xmlns="http://www.w3.org/2000/svg"
-                          width="7.667" height="13.785" viewBox="0 0 7.667 13.785">
-                          <g id="Arrow_-_Right" data-name="Arrow - Right"
-                            transform="translate(1.061 12.724) rotate(-90)">
-                            <path id="Stroke_3" data-name="Stroke 3" d="M11.664,0,5.832,5.857,0,0" fill="none"
-                              stroke="#761c33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                              stroke-width="1.5" />
-                          </g>
-                        </svg></span>
-                    </a>
-                  </div>
-
-                </div>
+            
                 <div class="courseItemBox clearfix">
                   <div class="courseImg">
                     <span class="courseLang">ع</span>
@@ -1076,6 +1051,33 @@
                   <div class="courseImg">
                     <span class="courseLang">En</span>
                     <img src="assets/images/Rectangle slider3.png" alt="">
+                  </div>
+                  <div class="courseDesc">
+                    <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                    <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+                    <div class="trainer clearfix">
+                      <div class="trainerImg">
+                        <img src="assets/images/Oval.png" alt="">
+                      </div>
+                      <h3 class="trainerName"><a href="#">Essam Abdelshafy</a></h3>
+                    </div>
+                    <a href="#" class="btn enrollBtn"><span>Enroll Now <svg xmlns="http://www.w3.org/2000/svg"
+                          width="7.667" height="13.785" viewBox="0 0 7.667 13.785">
+                          <g id="Arrow_-_Right" data-name="Arrow - Right"
+                            transform="translate(1.061 12.724) rotate(-90)">
+                            <path id="Stroke_3" data-name="Stroke 3" d="M11.664,0,5.832,5.857,0,0" fill="none"
+                              stroke="#761c33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                              stroke-width="1.5" />
+                          </g>
+                        </svg></span>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="courseItemBox clearfix">
+                  <div class="courseImg">
+                    <span class="courseLang">En</span>
+                    <img src="assets/images/courseImg.png" alt="">
                   </div>
                   <div class="courseDesc">
                     <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
@@ -1187,6 +1189,33 @@
                 <div class="courseItemBox clearfix">
                   <div class="courseImg">
                     <span class="courseLang">En</span>
+                    <img src="assets/images/Rectangle slider3.png" alt="">
+                  </div>
+                  <div class="courseDesc">
+                    <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                    <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+                    <div class="trainer clearfix">
+                      <div class="trainerImg">
+                        <img src="assets/images/Oval.png" alt="">
+                      </div>
+                      <h3 class="trainerName"><a href="#">Essam Abdelshafy</a></h3>
+                    </div>
+                    <a href="#" class="btn enrollBtn"><span>Enroll Now <svg xmlns="http://www.w3.org/2000/svg"
+                          width="7.667" height="13.785" viewBox="0 0 7.667 13.785">
+                          <g id="Arrow_-_Right" data-name="Arrow - Right"
+                            transform="translate(1.061 12.724) rotate(-90)">
+                            <path id="Stroke_3" data-name="Stroke 3" d="M11.664,0,5.832,5.857,0,0" fill="none"
+                              stroke="#761c33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                              stroke-width="1.5" />
+                          </g>
+                        </svg></span>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="courseItemBox clearfix">
+                  <div class="courseImg">
+                    <span class="courseLang">En</span>
                     <img src="assets/images/courseImg.png" alt="">
                   </div>
                   <div class="courseDesc">
@@ -1238,33 +1267,7 @@
                   </div>
 
                 </div>
-                <div class="courseItemBox clearfix">
-                  <div class="courseImg">
-                    <span class="courseLang">En</span>
-                    <img src="assets/images/Rectangle slider3.png" alt="">
-                  </div>
-                  <div class="courseDesc">
-                    <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
-                    <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
-                    <div class="trainer clearfix">
-                      <div class="trainerImg">
-                        <img src="assets/images/Oval.png" alt="">
-                      </div>
-                      <h3 class="trainerName"><a href="#">Essam Abdelshafy</a></h3>
-                    </div>
-                    <a href="#" class="btn enrollBtn"><span>Enroll Now <svg xmlns="http://www.w3.org/2000/svg"
-                          width="7.667" height="13.785" viewBox="0 0 7.667 13.785">
-                          <g id="Arrow_-_Right" data-name="Arrow - Right"
-                            transform="translate(1.061 12.724) rotate(-90)">
-                            <path id="Stroke_3" data-name="Stroke 3" d="M11.664,0,5.832,5.857,0,0" fill="none"
-                              stroke="#761c33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                              stroke-width="1.5" />
-                          </g>
-                        </svg></span>
-                    </a>
-                  </div>
-
-                </div>
+             
                 <div class="courseItemBox clearfix">
                   <div class="courseImg">
                     <span class="courseLang">ع</span>
@@ -1733,7 +1736,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-4">
           <div class="footerListTitle">
             Explore
           </div>
@@ -1774,7 +1777,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-4">
           <div class="footerListTitle">
             Quick Links
           </div>
@@ -1802,7 +1805,7 @@
 
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-4">
           <div class="footerListTitle">
             Contact Us
           </div>
