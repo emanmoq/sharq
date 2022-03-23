@@ -109,7 +109,7 @@ $(window).scroll(function () {
 });
 
 $(".langBtn").click(function(){
-$(".langDropDown").css("display","block")
+$(".langDropDown").toggle()
 });
 
 });

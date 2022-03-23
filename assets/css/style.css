@@ -1021,9 +1021,13 @@ align-self: center;
 }
 .langCont{
     position: relative;
+    float: left;
 }
 .owl-carousel.nav-slider{
     display: none !important;
+}
+.mobileBtns{
+    display: none;
 }
 @media(max-width:767px){
 body{
@@ -1033,7 +1037,20 @@ header{
     height: auto;
 }
 .exploreBox{
-    margin-left:0
+    margin-left:0;
+    margin-top:20px;
+}
+.navbar-toggler{
+    margin-top:20px;
+}
+.mobileBtns{
+    display: block;
+}
+.joinBtn{
+    float: left;
+}
+.navbar-expand-lg .navbar-nav .nav-item .nav-link{
+    margin:10px 0
 }
  .fixedItems {
     position: absolute;
