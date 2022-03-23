@@ -1,6 +1,6 @@
 jQuery(function ($) {
-    if($('.counter').length){
-        $('.counter').counterUp({
+    if($('.counterNum').length){
+        $('.counterNum').counterUp({
           delay: 10,
           time: 1000
         });

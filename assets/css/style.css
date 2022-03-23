@@ -336,6 +336,26 @@ padding-bottom: 20px;
 padding:20px;
 padding-bottom: 0;
 }
+
+.courseImg{
+    position: relative;
+}
+.courseLang{
+    position: absolute;
+    width:34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color:#761C33;
+    color:white;
+    display: block;
+    font-size:.875em;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 34px;
+    right:16px;
+    top:16px
+}
 .courseItemBox:hover h4 a{
     color:#591526;
     transition: all .5s;
@@ -413,7 +433,7 @@ display: inline-flex;
 }
 .counter{
 
-display: inline-flex;}
+display: inline-block;}
 .counter span{
     font-size:2em;
     font-weight: 600;
@@ -423,6 +443,248 @@ display: inline-flex;}
 font-size:0.875em;
 font-weight: 600;
 margin:0;
-margin-top:8px;
 color:white;
+}
+.owl-carousel .owl-nav{
+    position: absolute;
+    right:0;
+    top:-65px;
+}
+.owl-carousel .owl-nav button {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #F2F2F2 !important;
+    color:#761C33 !important;
+    position: absolute ;
+    right:0;
+    border:1px solid transparent
+}
+.owl-carousel .owl-nav button.owl-prev{
+right:40px;
+}
+.owl-carousel .owl-nav button.disabled{
+    background-color: #F2F2F2 !important;
+    color:black !important
+}
+.owl-carousel .owl-nav button:hover{
+    background-color:  transparent !important;
+    border:1px solid  #761C33 !important
+}
+.owl-carousel .owl-dots{
+    width: 100%;
+    position: absolute;
+    bottom:-50px;
+    text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot{
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    margin:2px;
+    background-color: #EFEFEF;
+    border:1px solid #C0C0C0;;
+}
+.owl-carousel .owl-dots .owl-dot.active{
+    background-color: #761C33;
+    border:1px solid #761C33
+}
+.certificate{
+    padding:74px 0 120px;
+ 
+}
+.certificateBox{
+    border:1px solid #E9E9E9;
+    border-radius: 16px;;
+    overflow: hidden;
+}
+.certificateImg{
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    overflow: hidden;
+    height: 166px;;
+}
+.certificateDesc{
+    padding:20px 20px 40px 20px;
+     position: relative;
+
+}
+.certificateDesc h4{
+font-size:.9em;
+font-weight: 600;
+margin-bottom: 12px;;
+}
+.certificateDesc p{
+    font-size:.875em;
+    opacity: .5;
+    margin-bottom: 14px;;
+}
+.certificateDesc h6{
+    font-size:.875em;
+    color:#761C33;
+    font-weight: 600;
+}
+.certificateBtn {
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    background-color: #ECE0E3;
+    color:#761C33;
+    position: absolute;
+    top:-45px;
+    right:20px;
+    text-align: center;
+    line-height: 37px;
+    border:1px solid #ECE0E3;
+}
+.certificateBtn i{
+    line-height: 35px;;
+}
+.certificateBtn:hover{
+    background-color: transparent;
+    border:1px solid #761C33;
+    color:#761C33;
+
+}
+.joinSec{
+    position: relative;
+    background-image: url("../images/joinBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:64px 0 68px;
+    height: 370px;;
+
+}
+
+
+
+.leftImg{
+    position: relative;
+    float:left;
+    width:45%;
+    margin-right:30px;
+    height: 100%
+}
+.imageright{
+    float:right;
+    width:209px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top:5px;
+}
+.topImg{
+    border-radius: 16px;
+    overflow: hidden;
+    width:219px;
+    margin-top:-90px;
+    margin-bottom: 30px;;
+}
+.bottomImg{
+    width:189px;
+    margin-bottom:-90px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+}
+.joinSec .sectionTitle{
+    line-height: 2;
+    margin-bottom: 0;
+}
+.joinSec  h5{
+    line-height: 2;
+    margin-bottom: 0;
+}
+.joinsecBtn{
+    background-color: #761C33;
+    color:white;
+    width: 191px;
+    height:43px;
+    margin-top:34px;
+    border-radius: 21px;;
+    font-size:.9em;
+    font-weight: 600;
+    line-height: 30px;;
+}
+.joinsecBtn:hover{
+    background-color: #591526;
+    color:white;
+}
+.discount{
+    padding-top:74px;
+    padding-bottom:74px;
+}
+.discountNum{
+    position: absolute;
+    WIDTH:62PX;
+    height:34px;
+    left:0;
+    top:30px;
+    text-align: center;
+    background-color: #761C33;
+    font-size:1.125em;
+    color:white;
+    font-weight: 600;
+
+}
+.nav-pills{
+    width:100%;
+    margin-bottom: 40px;
+
+}
+.nav-pills .nav-link{
+    padding:12px 18px;
+    font-size:.875em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 21.5px;
+    border:1px solid #E1E1E1;
+    margin-right:10px;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent;
+    color:#761C33;
+    border:1px solid #761C33
+}
+.mostViewed{
+    padding-top:104px
+}
+.nav-pills .nav-link:hover{
+    background-color: #761C33;
+    color:white;
+}
+.instructorImg{
+    width:166px;
+    height:166px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:auto;
+    margin-bottom: 20px;;
+}
+.InstructorItem h4
+{
+font-size:1em;
+margin-bottom: 15px;
+font-weight: 600;
+}
+.InstructorItem p{
+    font-size:.875em;
+    opacity: .5;
+    font-weight: 400;
+}
+.InstructorItem{
+    text-align: center;
+}
+.InstructorItem .instructorImg img{
+transition: all .5s;
+}
+.InstructorItem:hover .instructorImg img{
+    transform: scale(1.1);
+    transition: all .5s;;
+}
+.InstructorItem:hover  h4{
+    color:#761C33;
+    transition: all .5s;;
+}
+.Instructors{
+    padding-bottom: 74px;;
 }
