@@ -58,6 +58,21 @@ header .container-fluid{
 .navbar-expand-lg .navbar-nav .nav-link.loginLink{
 color:#761C33;
 }
+.navbar-toggler{
+    width:40px;
+    height:40px;
+    position: relative;
+    padding:0
+}
+.navbar-toggler i{
+content:"";
+background-color: #761C33;
+display: block;
+margin-bottom: 7px;
+width:100%;
+height: 3px;
+border-radius: 5px;
+}
 .joinBtn{
     border:1px solid #761C33;
     color:#761C33;
@@ -319,6 +334,7 @@ background-color: white;
     margin-bottom: 45px;;
 }
 @media (min-width: 1200px)
+
 {
 .container {
     max-width: 1058px;
@@ -448,6 +464,11 @@ font-size:0.875em;
 font-weight: 600;
 margin:0;
 color:white;
+}
+.owl-carousel{
+    overflow: visible;
+    overflow-y: hidden;
+    
 }
 .owl-carousel .owl-nav{
     position: absolute;
@@ -729,7 +750,7 @@ transition: all .5s;
 .partnerSlider .owl-stage{
     padding:20px 0;
 }
- .owl-stage-outer{
+.partnerSlider .owl-stage-outer{
     width:100%;
     overflow: visible;
 }
@@ -1001,17 +1022,24 @@ align-self: center;
 .langCont{
     position: relative;
 }
+.owl-carousel.nav-slider{
+    display: none !important;
+}
 @media(max-width:767px){
 body{
     font-size:14px
+}
+header{
+    height: auto;
+}
+.exploreBox{
+    margin-left:0
 }
  .fixedItems {
     position: absolute;
     right: 0;
     bottom: 23%;}
- .owl-stage{
-    padding:20px 0;
-}
+
  .owl-stage-outer{
     overflow: hidden;
 }
@@ -1050,6 +1078,19 @@ header .container-fluid{
     padding:0 10px;
 }
 .owl-carousel .owl-nav{
-    top:-20px;
+    top:-32px;
+}
+.desktopNavPills{
+    display: none;
+}
+.owl-carousel.nav-slider{
+    display: flex !important;
+}
+.subscribeForm{
+    margin-left:0
+}
+.subscribeFormControl{
+    margin-bottom: 10px;
+    margin-top:10px
 }
 }
