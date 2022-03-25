@@ -3,9 +3,25 @@ body{
 font-size:16px;
 font-family: 'Raleway', sans-serif;
 box-sizing: border-box;
-color:black
+color:black;
+overflow-x: hidden;
+position: relative;
 }
-
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 22222;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    display: none;
+}
+.overlay.show{
+    opacity: .5;
+    display: block;
+}
 header{
     height:69px;
     background-color: white;
@@ -281,10 +297,10 @@ border-radius: 21px;;
     margin:5px;
     display: inline-block;
 }
-.fixedItemsImg img{
+.fixedItemsImg svg{
     transition: all .5s;
 }
-.fixedItemsImg:hover img{
+.fixedItemsImg:hover svg{
     transition: all .5s;;
     transform: scale(1.1);
 }
@@ -475,11 +491,7 @@ font-weight: 600;
 margin:0;
 color:white;
 }
-.owl-carousel{
-    overflow: visible;
-    overflow-y: hidden;
-    
-}
+
 .owl-carousel .owl-nav{
     position: absolute;
     right:0;
@@ -757,12 +769,12 @@ transition: all .5s;
     transform: scale(1.1);
     transition: all .5s;;
 }
-.partnerSlider .owl-stage{
+.partnerSlider.owl-carousel .owl-stage{
     padding:20px 0;
 }
-.partnerSlider .owl-stage-outer{
+.partnerSlider.owl-carousel .owl-stage-outer{
     width:100%;
-    overflow: visible;
+    overflow-y: visible;
 }
 
  .partnerSlider .owl-item {
@@ -1039,6 +1051,352 @@ align-self: center;
 .mobileBtns{
     display: none;
 }
+
+ .modal-content{
+     border-radius: 20px;
+     text-align: center;
+     padding:25px;
+     position: relative;
+ }
+.loginImg{
+    width:137;
+    height: 137px;
+    border-radius: 50%;
+    padding:8.5px;
+    border:1px solid white;
+    margin:auto;
+    margin-top:-62px;
+    position: absolute;
+    top:0;
+    left:34%;
+}
+.modal{
+    top:50px
+}
+.modal-open .modal {
+    overflow-x: visible;
+    overflow-y: visible;
+}
+button.close{
+    padding:0;
+    margin: 0;
+    float:left;
+    width:30px;
+    height:30px;
+    background-color: #F2F2F2;
+    border-radius: 50%;;
+}
+button.close span{
+    color:#A9A9A9
+}
+.modal-header{
+    justify-content: center;
+    border-bottom: 0;
+}
+.modal-title{
+    font-size: 1.1875em;
+    font-weight: 600;
+    text-align: center;
+    margin-top:25px
+}
+.loginForm{
+    width:344px;
+    margin:auto
+}
+.loginForm .form-control{
+    height:56px;
+    width:100%;
+    background-color: #FBFBFB;
+    border-radius: 28px;
+    border-bottom: 1px solid #E2E2E2;
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E
+}
+.loginForm .form-control::placeholder{
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E
+}
+.loginForm .form-group{
+position: relative;
+margin-bottom:15px;
+overflow: hidden;
+}
+.loginForm .form-group:last-child{
+    margin-bottom: 25px;;
+}
+.showHidePass{
+    position: absolute;
+    right:17px;
+    top:20px;
+    font-size:17px;
+    color:#808080
+}
+.showPass{
+    display: none;
+}
+.forgetLink{
+    display: flex;
+    font-size:.875em;
+    color:#6E6E6E;
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+    transition:  all .5s;;
+    display: block;
+}
+.forgetLink:hover{
+    color:#591526;
+    transition: all .5s;;
+}
+.loginBtns span{
+    display: block;
+    align-self: center;
+    width: 100%;
+}
+.signBtn:hover{
+    background-color: #591526;
+    color:white;
+}
+.signBtn{
+    background-color: #761C33;
+    color:white;
+    font-size: 16px;
+    margin-top:30px;
+    justify-content: center;
+}
+.loginBtns{
+    display: flex;
+    width:100%;
+    border-radius: 28px;;
+    height: 56px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.orText{
+    font-size:.875em;
+    color:#6E6E6E;
+    margin-bottom:  19px;
+    border-bottom: 1px solid #E2E2E2; 
+    line-height: 0.1em;
+    width: 100%; 
+    text-align: center; 
+    display: block;
+}
+ .orText span { 
+     background:#fff; 
+     padding:0 7px; 
+ }
+ .googleBtn{
+     background-color:white;
+     border:1px solid #E0E0E0;
+     color:black;
+     font-size: 0.875em;
+     justify-content: center;
+
+ }
+.googleBtn:hover{
+    color:#db3236;;
+}
+ .googleBtn span.loginbtnIcon{
+     display: flex;
+     align-self: center;
+     width:26px;
+ }
+ .loginbtnIcon i{
+     border-radius: 50%;
+ }
+.facebookBtn{
+    background-color: #3A76EA;
+    color:white;
+}
+.facebookBtn .loginbtnIcon{
+    width:26px;
+    height: 26px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+}
+.facebookBtn .loginbtnIcon i{
+    color:#3A76EA;
+    align-self: end;
+    font-size: 20px;
+}
+.facebookBtn:hover{
+    background-color: #2b5099;
+    color:white;
+}
+.facebookBtn:hover .loginbtnIcon i{
+    color:#2b5099;
+ 
+}
+.signUpLink{
+    color:#761C33
+}
+.signUpLintexe{
+    margin-top:30px;
+    color:#6E6E6E;
+    font-size:.875em;
+    font-weight: 500;
+}
+.dategroup i{
+    position: absolute;
+    top:25px;
+    right:24px;
+    color:#6E6E6E;
+    font-size: 12px;
+}
+.select option{
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E
+}
+.select{
+    width:110%;
+    border:0;
+    height: 100%;
+    background-color: transparent;
+}
+.select:invalid,
+.select option[value="0"] {
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E
+}
+.select:focus-visible{
+    border:0;
+    outline: 0;
+    box-shadow: none;
+}
+.restPassText{
+    color:#6E6E6E;
+    font-size:.875em;
+    font-weight:500;
+    margin-bottom: 34px;
+}
+.notifySec{
+    float: left;
+    margin-left:20px
+}
+.notifySec,.notificationIcon{
+    position: relative;
+}
+.notifyNum{
+    position: absolute;
+    display: flex;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #F8403B;
+    right: -8px;
+    bottom: 4;
+}
+
+.notifyNum span{
+    align-self: center;
+    font-size: 0.75em;
+    color:white;
+    font-weight: 500;
+}
+.profileSec{
+    position: relative;
+    display: flex;
+    width:163px
+}
+.profileImg{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left:27px;
+    margin-right:20px;
+    float: left;
+}
+.profileSec span{
+    font-size:.65em;
+    font-weight: 500;
+    align-self: center;
+
+}
+.profileSec:before{
+    content: "\ea58";
+    font-family: lineicons;
+    font-size: .7em;
+    position: absolute;
+    right: -15px;
+    top: 11px;
+}
+.profileImg span{
+    position: absolute;
+    width:22px;
+    right:0;
+    top:0
+}
+.notifyDropDown {
+    padding:32px 0 20px;
+    position: absolute;
+    width:346px;
+    border:1px solid #E9E9E9;
+    z-index: 999999;
+    background-color: white;
+    border-radius: 6px;
+    top:40px;
+    right: -130px;
+    display: none;
+}
+.notifyDropDown h4{
+    text-align: center;
+    font-size: 0.8125em;
+    font-weight: 500;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F9F9FF;;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid white;
+    position: absolute;
+    top: -10px;
+    left: 55%;
+  }
+
+  .notifyDropDown ul li{
+      display: flex;
+    padding:15px;
+      border-bottom: 1px solid #F9F9FF;;
+  }
+  .notifyDropDown ul li:last-child{
+      border-bottom: 0;
+  }
+  .notifyDesc{
+      margin-left:10px
+  }
+
+  .notifyDesc p{
+      font-size: 0.8125em;
+      font-weight: 500;
+      margin:0
+  }
+  .singlenotifyLink{
+      display: flex;
+      width: 100%;
+  }
+  .singlenotifyLink:hover p{
+      color:#761C33
+  }
+  .notifyDesc span{
+font-size:.8125em;
+font-weight: 500;
+color:#6E6E6E;
+  }
+  .singlenotifyLink i{
+      float:right;
+  }
 @media(max-width:767px){
 body{
     font-size:14px
@@ -1120,4 +1478,13 @@ header .container-fluid{
     margin-bottom: 10px;
     margin-top:10px
 }
+.modal-dialog {
+    max-width: 100%;
+   }
 }
+
+ @media (min-width: 800px){
+ .modal-dialog {
+     max-width: 464px;
+    }
+ }

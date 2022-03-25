@@ -111,7 +111,29 @@ $(window).scroll(function () {
 $(".langBtn").click(function(){
 $(".langDropDown").toggle()
 });
-
+$(".showHidePass").click( function() {
+    
+  var x = $(this).closest(".form-group").find(".form-control");
+   if ( x.attr("type") == "text") {
+    x.attr("type","password");
+    $(this).closest(".form-group").find(".showPass").css("display", "block");
+    $(this).closest(".form-group").find(".hidePass").css("display", "none");
+}
+else {
+  x.attr("type","text");
+  $(this).closest(".form-group").find(".hidePass").css("display", "block");
+  $(this).closest(".form-group").find(".showPass").css("display", "none");
+}
+});
+$( ".datepicker" ).datepicker();
+$(".notifySec").click(function(){
+  $(".notifyDropDown").toggle()
+  $(".overlay").addClass('show')
+  });
+  $(".overlay.show").click(function(){
+    $(".overlay").removeClass('show');
+    $(".notifyDropDown").css("display","none")
+    });
 });
 
 
