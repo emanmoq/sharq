@@ -7,21 +7,7 @@ color:black;
 overflow-x: hidden;
 position: relative;
 }
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 22222;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    opacity: 0;
-    display: none;
-}
-.overlay.show{
-    opacity: .5;
-    display: block;
-}
+
 header{
     height:69px;
     background-color: white;
@@ -210,10 +196,14 @@ top:35px;
     position: relative;
 border-bottom: 1px solid #F9F9FF;;
 }
+.dropdown-menu .dropdown-item span{
+    float: left;
+    max-width: 80%;
+}
 .dropdown-menu li:last-child .dropdown-item{
     border-bottom: 0;
 }
-.dropdown-menu .dropdown-item:after{
+.dropdown-menu .dropdown-item:after {
     content:"";
     position: absolute ;
     width:4px;
@@ -224,12 +214,15 @@ border-bottom: 1px solid #F9F9FF;;
     opacity: 0;
     transition: all .5s;;
 }
-.dropdown-menu .dropdown-item:hover:after{
+.dropdown-menu .dropdown-item:hover:after, .dropdown-menu .dropdown-item.active:after{
 opacity: 1;
 transition: all .5s;;
 }
-.dropdown-menu .dropdown-item:hover{
+.dropdown-menu .dropdown-item:hover,.dropdown-menu .dropdown-item.active{
     background-color: white;
+}
+.dropdown-menu .dropdown-item:hover,.dropdown-menu .dropdown-item.active{
+color:black
 }
 .heroSliderItem{
     height: 580px;
@@ -1050,6 +1043,7 @@ align-self: center;
 }
 .mobileBtns{
     display: none;
+    width: 55%;
 }
 
  .modal-content{
@@ -1279,9 +1273,15 @@ overflow: hidden;
 }
 .notifySec{
     float: left;
-    margin-left:20px
+    margin-left:20px;
+    width:25px
 }
 .notifySec,.notificationIcon{
+    position: relative;
+    align-self: center;
+}
+.notificationIcon{
+    width:100%;
     position: relative;
 }
 .notifyNum{
@@ -1305,7 +1305,7 @@ overflow: hidden;
 .profileSec{
     position: relative;
     display: flex;
-    width:163px
+    width:100%
 }
 .profileImg{
     width:40px;
@@ -1314,6 +1314,7 @@ overflow: hidden;
     margin-left:27px;
     margin-right:20px;
     float: left;
+    position: relative;
 }
 .profileSec span{
     font-size:.65em;
@@ -1332,20 +1333,22 @@ overflow: hidden;
 .profileImg span{
     position: absolute;
     width:22px;
-    right:0;
-    top:0
+    right: -6px;
+    top: -6px;
 }
-.notifyDropDown {
+.publicProfileDropDown{
     padding:32px 0 20px;
     position: absolute;
-    width:346px;
     border:1px solid #E9E9E9;
     z-index: 999999;
     background-color: white;
     border-radius: 6px;
-    top:40px;
-    right: -130px;
-    display: none;
+}
+.notifyDropDown {
+    width:346px;
+    left: auto;
+    right: -150px;
+    top: 40px;
 }
 .notifyDropDown h4{
     text-align: center;
@@ -1357,22 +1360,29 @@ overflow: hidden;
 .arrow-up {
     width: 0; 
     height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 11px solid transparent;
-    border-bottom: 11px solid white;
+    border-left: 9px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid white;
     position: absolute;
     top: -10px;
-    left: 55%;
+    left: 52%;
   }
 
-  .notifyDropDown ul li{
+  .notifyDropDown ul li,.profileDropDown ul li{
       display: flex;
     padding:15px;
       border-bottom: 1px solid #F9F9FF;;
   }
-  .notifyDropDown ul li:last-child{
+  .notifyDropDown ul li:last-child,.profileDropDown ul li:last-child{
       border-bottom: 0;
   }
+  .profileDropDown{
+      max-width: 204px;
+      width: 204px;
+      top: 49px;
+      left: 19px;
+  }
+
   .notifyDesc{
       margin-left:10px
   }
@@ -1383,7 +1393,6 @@ overflow: hidden;
       margin:0
   }
   .singlenotifyLink{
-      display: flex;
       width: 100%;
   }
   .singlenotifyLink:hover p{
@@ -1397,6 +1406,79 @@ color:#6E6E6E;
   .singlenotifyLink i{
       float:right;
   }
+  .singlenotifyLink:hover i{
+    color:#761C33
+}
+  .notifyListIcon {
+      width:16px;
+      float:left;
+  }
+  .notifyDesc{
+      float:left;
+  }
+  .profContainer{
+      position: relative;
+      float: left;
+  }
+  .dropdown:after{
+    content: ''; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity .15s ease-in-out;
+    opacity: 0;
+    visibility:hidden;
+    background-color: #000;
+    pointer-events: none;
+}
+
+.dropdown.show:after{
+  z-index:10; opacity:.3; 
+  visibility:visible;
+  position: fixed;
+}
+.profileDropDown ul li:hover{
+    transition: all .5s;
+    background-color: #F2F2F2;
+    color:black
+}
+.profileDropDown ul li:hover a{
+    color:black
+}
+.profileDropDown .arrow-up{
+left:10%
+}
+.profileInnerDropDown{
+    left: -205px;
+    top: -4px;
+    width:204px;
+    padding-top:0;
+}
+.profileDropDown li:hover .profileInnerDropDown{
+display: block;
+}
+.dropdown-item.dropdown:hover .dropdown-menu{
+display: block;
+}
+.nav-item .dropdown-menu.submenu{
+    width:204px;
+    top:-1px;
+    left:100%;
+    margin:0;
+    border-radius: 0 6px 6px 6px;
+}
+
+.nav-item .dropdown-menu{
+    border-radius: 6px 0 0 6px;
+    width:250px;
+}
+.dropdown-item i{
+    float: right;
+}
+.profNotifyDescktop{
+    display: inline-flex;
+}
 @media(max-width:767px){
 body{
     font-size:14px
@@ -1412,7 +1494,7 @@ header{
     margin-top:20px;
 }
 .mobileBtns{
-    display: block;
+    display: flex;
 }
 .joinBtn{
     float: left;
@@ -1481,8 +1563,36 @@ header .container-fluid{
 .modal-dialog {
     max-width: 100%;
    }
+
+.profileDropDown{
+    top: 47px;
+    left: -9px;
+    width: 190px;
+    padding-top: 0opacit;
 }
 
+.profileDropDown .arrow-up {
+    left: 27%;
+}
+.nav-item .dropdown-menu.submenu{
+    width: 100%;
+}
+.nav-item.dropdown:after {
+    display: none;
+    opacity: 0;
+
+}
+.nav-item .dropdown-menu{
+    width: 100%;
+}
+
+.dropdown-menu li{
+    position: relative;
+}
+.profNotifyDescktop{
+    display: none;
+}
+}
  @media (min-width: 800px){
  .modal-dialog {
      max-width: 464px;
