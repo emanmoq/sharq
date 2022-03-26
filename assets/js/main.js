@@ -143,17 +143,14 @@ jQuery(function ($) {
        $(this).find('.submenu').hide();
     })
     });
-    if ($(window).width()<800){
-              
-           $('.submenu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-    
-            $('.submenu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-  
 
+    $(".filterSearch").on("keyup", function() {
 
+      var value = $(this).val().toLowerCase();
+     $(this).parent(".dropdown-menu").find("li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
 });
 
 

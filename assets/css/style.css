@@ -1479,6 +1479,118 @@ display: block;
 .profNotifyDescktop{
     display: inline-flex;
 }
+/***** Courses Page *********/
+.coursesHeader{
+    background-color: #761C33;
+    padding:57px 0 24px
+}
+.coursesHeader h4{
+    font-size: 1.375em;
+    font-weight: 600;
+    margin-bottom: 19px;;
+    color:white
+}
+.coursesHeader p{
+    font-size:.81em;
+    font-weight: 500;color:white;
+    margin-bottom:35px
+}
+.coursesPageSection{
+    padding:52px 0 70px
+}
+.coursesPagination{
+    margin-top:40px
+}
+.coursesPagination .page-item {
+    display: flex;
+    margin:5px
+}
+.coursesPagination .page-item .page-link{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F4F4F4;
+    color:black;
+    font-weight: 500;
+    font-size: .875em;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#6E6E6E;
+
+
+}
+.coursesPagination .page-item:first-child .page-link ,.coursesPagination .page-item:last-child .page-link{
+width: auto;
+height: 52px;
+padding:14px 25px;
+border-radius: 25px;
+}
+.coursesPagination .page-item:first-child {
+    margin-right:15px
+}
+.coursesPagination .page-item:last-child{
+    margin-left:15px;
+}
+.coursesPagination .page-item.active .page-link,.coursesPagination .page-item:hover .page-link{
+    background-color: #761C33;
+    color:white;
+}
+.courseFilterDropDown{
+
+    background-color: white;
+    border-radius:21.5px ;
+    height: 43px;
+    font-size:.815em;
+    font-weight: 500;
+    text-align: center;
+    display: inline-flex;
+    position: relative;
+    float: left;
+
+}
+.courseFilterDropDown li{
+    font-size:.815em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.dropdown.courseFilterDropDown:after{
+    opacity: 0;
+    display: none;
+}
+.courseFilterList{
+    width: 100%;;
+    border-radius: 21px;
+    padding:20px;
+}
+.coursefilterBtn.dropdown-toggle::after{
+position: relative;
+}
+.coursefilterBtn{
+    align-self: center;
+    padding:10px 25px;
+}
+.courseFilterDropDown{
+    margin-right:10px
+}
+.coursesPageSection  .courseItemBox{
+    margin-bottom: 30px;
+}
+/*************************************/
+.innerHeader{
+    background-color: none;
+    background-image: url("../images/innerHeader.png");
+    padding:85px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.coursesHeader h5{
+    font-size:;
+    font-weight: bold;
+}
 @media(max-width:767px){
 body{
     font-size:14px
