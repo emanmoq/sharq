@@ -1761,7 +1761,16 @@ color:white;
     font-weight: 500;
     align-self:center;
 }
-
+.SuggestCourse{
+    padding:40px 0 70px
+}
+.halfForm-group{
+    width:48.5%;
+    display: inline-block;
+}
+.SuggestCourse .marginFormGroup{
+    margin-right:16px;
+}
 @media(max-width:767px){
 body{
     font-size:14px
