@@ -352,6 +352,7 @@ background-color: white;
 .sectionTitle {
     margin-bottom: 45px;;
 }
+
 @media (min-width: 1200px)
 
 {
@@ -1586,6 +1587,17 @@ position: relative;
     padding:85px;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+.innerHeader:before{
+    position: absolute;
+    background-color: #761C33;
+    opacity: .5;
+    content:"";
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;;
 }
 .coursesHeader h5{
     font-size:1.25em;
@@ -1646,6 +1658,110 @@ position: relative;
 .certificateJoinSec .sectionTitle{
     margin-left: 41px;
 }
+.specializationHeader{
+    padding-top:44px;
+    padding-bottom: 75px;
+    background-image: url("../images/headerImg.png");
+}
+.specializationHeader:before{
+    opacity: .7;
+}
+.specializationHeader .breadcrumb {
+    margin-bottom: 34px;
+    background-color: transparent;
+    padding:0;
+}
+.specializationHeader .breadcrumb .breadcrumb-item{
+    font-size:0.8125em;
+    margin:0;
+}
+.specializationHeader .breadcrumb .breadcrumb-item a{
+color:white;
+}
+.specializationHeader .breadcrumb .breadcrumb-item.active{
+    color:white;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content:"\ea5c";
+    font-family: lineicons;
+    font-size: .7em;
+    color:white;
+    margin:0 12px
+}
+.specializationHeader h5{
+    font-size:1.375em;
+    font-weight: 600;
+    color:white;
+    line-height: 2;;
+    margin-bottom:12px;
+}
+.certificateDetailsHeader span,.certificateDetailsHeader p{
+    color:white;
+    opacity: .5;
+    font-size: .875em;
+    font-weight: 500;
+}
+.certificateDetailsHeader p{
+    opacity: 1;
+    display: inline-block;
+    margin:0;
+}
+.certificateDetailsHeader ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 14px;;
+}
+.certificateDetailsHeader ul li:nth-child(even){
+   position: relative;  
+}
+.certificateDetailsHeader ul li:nth-child(even):before{
+    content:".";
+    color:white;
+    font-size:.875em;
+    margin:0 10px
+}
+.specializationCertificateDetails {
+    position: relative;
+    padding:46px 0 74px;
+}
+.specializationCertificateDetails p{
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E;
+    margin-bottom: 20px;;
+}
+.specializationCertificateDetails span{
+    color:#761C33;
+    font-style: italic;
+    display: block;
+    margin-top:20px;
+    font-size:.875em;
+
+}
+.certificateDetImg{
+    position: absolute;
+    right:0;
+    top:-86%;
+    width:300px
+}
+.specializationCourses h4{
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.specializationCourses .coursesPagination{
+    justify-content: space-between;
+    display: flex;
+
+}
+.Showing {
+    float:right;
+    font-size:.875em;
+    color:#6E6E6E;
+    font-weight: 500;
+    align-self:center;
+}
+
 @media(max-width:767px){
 body{
     font-size:14px
