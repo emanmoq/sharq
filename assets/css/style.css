@@ -379,6 +379,8 @@ padding-bottom: 0;
 
 .courseImg{
     position: relative;
+    height: 166px;
+    overflow: hidden;
 }
 .courseLang{
     position: absolute;
@@ -1729,6 +1731,7 @@ color:white;
     font-weight: 500;
     color:#6E6E6E;
     margin-bottom: 20px;;
+    line-height: 2;
 }
 .specializationCertificateDetails span{
     color:#761C33;
@@ -1739,9 +1742,8 @@ color:white;
 
 }
 .certificateDetImg{
-    position: absolute;
     right:0;
-    top:-86%;
+    margin-top:-220px;
     width:300px
 }
 .specializationCourses h4{
@@ -1749,10 +1751,12 @@ color:white;
     font-weight: 600;
     margin-bottom: 30px;
 }
-.specializationCourses .coursesPagination{
+.specializationCourses .coursesPagination,.instructorPagination{
     justify-content: space-between;
     display: flex;
-
+}
+.instructorPagination{
+    margin-top:0;
 }
 .Showing {
     float:right;
@@ -1764,12 +1768,231 @@ color:white;
 .SuggestCourse{
     padding:40px 0 70px
 }
-.halfForm-group{
+.SuggestCourseForm .halfForm-group{
     width:48.5%;
     display: inline-block;
 }
-.SuggestCourse .marginFormGroup{
+.SuggestCourseForm .marginFormGroup{
     margin-right:16px;
+}
+.SuggestCourseForm  .form-group{
+    margin-bottom: 16px;;
+}
+.SuggestCourseForm .form-control{
+    width: 100%;height: 56px;
+    border:1px solid #E2E2E2;background-color: #FBFBFB;
+    border-radius: 28px;
+    padding-left:28px;
+    padding-top:10px
+}
+.SuggestCourseForm .form-control::placeholder{
+    font-size:.875em;
+    color:#6E6E6E;
+    font-weight: 500;
+
+}
+.sendSuggestBtn{
+    margin-top:5px;
+    width:154px;
+    height:43px;
+    border-radius: 21.5px;
+    background-color: #761C33;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+.sendSuggestBtn:hover{
+    background-color: #591526;
+    color:white;
+}
+.sendSuggestBtn span{
+    align-self: center;
+}
+.SuggestCourseForm textarea.form-control{
+    resize: none;
+    border-radius: 28px;
+    height: 112px;
+}
+
+.countriesFlagGroup{
+    position: relative
+}
+.countriesFlagGroup .form-control{
+    padding-left:70px
+}
+.iti--allow-dropdown{
+    width:100%
+}
+.iti--separate-dial-code .iti__selected-flag{
+    background-color: transparent;
+}
+.iti--separate-dial-code .iti__selected-flag:hover{
+    background-color: transparent;
+}
+.iti__selected-flag{
+    padding:0 10px 0 28px
+}
+
+element.style {
+}
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+background-color: transparent;
+}
+.coursesHeader .enrollBtn{
+    background-color: #FFFFFF;
+    width:127px;
+    height: 43px;
+    border-radius: 21.5;
+    color:#761C33;
+    border:1px solid #fff;
+    float: none;
+    justify-content: center;
+}
+.coursesHeader .enrollBtn:hover{
+    background-color: transparent;
+    color:white;
+}
+.coursesHeader .enrollBtn span{
+    color:#761C33
+}
+.coursesHeader .enrollBtn:hover span{
+    color:white
+}
+.specializationCertificateDetails h4{
+    font-size:1.1875em;
+    font-weight: bold;
+    margin-bottom: 22px;;
+}
+.outcomesList h6{
+    font-size:1.1775em;
+    font-weight: bold;
+    margin-bottom: 21px;;
+}
+.outcomesList {
+    margin-top:20px
+}
+.outcomesList li{
+    position: relative;
+    margin-bottom:20px;
+    color:#6E6E6E;
+    font-size:.875em;
+    font-weight: 500;
+    list-style: none;
+  display: flex;
+
+}
+.outcomesList li:before{
+    content: "\ea55";
+    color:#761C33;
+    font-family: lineicons;
+    font-size: .7em;
+    margin-right:13px;
+    margin-top:5px
+}
+.coursesSetBox{
+width:17.6%;
+margin-right: 25px;
+border-radius: 16px;
+display: inline-block;
+border:1px solid #E9E9E9;
+overflow: hidden;
+height: 297px;
+margin-bottom: 10px;
+}
+.coursesSetBox:last-child{
+    margin-right: 0;
+}
+.CoursesdetailsSec{
+    padding-bottom: 70px;
+}
+.coursesSetBox .coursesSetBoxImg{
+    width:100%;
+    height:188px;
+    overflow: hidden;
+    
+}
+.coursesSetBox .coursesSetBoxImg img{
+    object-fit: cover;
+    height: 100%;;
+}
+.coursesSetBox:hover h4{
+    color:#761C33
+}
+.coursesSetBox h4{
+padding:15px;
+font-size:.875em;
+font-weight: 600;
+}
+.progStructure{
+    padding-bottom: 60px;
+}
+.progStructBox{
+    padding:30px;
+    border:1px solid #E9E9E9;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    height: 280px;
+
+}
+.progStructBox h6{
+    font-size:1.125em;
+    font-weight: bold;;
+    margin-bottom: 22px;
+}
+.progStructBox .outcomesList li{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.programPlanSec {
+    padding:45px 0;
+    background-color: rgba(118, 28, 51, .14);
+}
+.planBox{
+    background-color: white;
+padding:30px;
+border-radius: 16px;
+}
+.planBox h6{
+    font-size:1.125em;
+    font-weight: bold;
+    margin-bottom: 22px;;
+}
+.planDate{
+    font-size:1.125em;
+    font-weight: bold;
+    color:#761C33;
+    margin-bottom: 18px;;
+    margin-top:19px
+}
+.planBox span{
+    display: block;
+    font-size:0.875em;
+    margin-bottom: 14px;
+    color:#6E6E6E;;
+    font-weight: 500;
+}
+.planBox span span{
+    display: inline-block;
+}
+.courseDetailsFooter{
+    padding:32px 0;
+    text-align: center;
+}
+.courseDetailsFooter p{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 15px;;opacity: 1;
+}
+.courseDetailsFooter span{
+    font-size:.8em;
+    color:white;
+    opacity:.54
+}
+.instructorsPageSec{
+    padding:50px 0 70px;
+}
+.instructorsPageSec .InstructorItem{
+margin-bottom: 54px;;
 }
 @media(max-width:767px){
 body{
