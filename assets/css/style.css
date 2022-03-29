@@ -302,7 +302,7 @@ border-radius: 21px;;
     z-index: 22;
     position: relative;
 }
-.BenfitBox{
+.BenfitBox,.OurMessionBox{
 background-color: white;
     border-radius: 16px;
     padding-top:35px;
@@ -1919,9 +1919,11 @@ margin-bottom: 10px;
     color:#761C33
 }
 .coursesSetBox h4{
-padding:15px;
 font-size:.875em;
 font-weight: 600;
+}
+.coursesSetBoxDesc{
+    padding:15px;
 }
 .progStructure{
     padding-bottom: 60px;
@@ -1993,6 +1995,202 @@ border-radius: 16px;
 }
 .instructorsPageSec .InstructorItem{
 margin-bottom: 54px;;
+}
+.playvideoIcon{
+width:14px;
+margin-right:10px;
+display: inline-block;
+}
+.viewVideoBtn{
+width:145px;
+background-color: transparent;
+color:#761C33;
+border:1px solid #761C33;
+margin-left:19px;
+height:43px;
+font-size:.875em;
+font-weight: 600;
+border-radius: 21.5px;
+display: inline-flex;
+justify-content: center;
+}
+.viewVideoBtn span{
+    color:#761C33;
+    align-self: center;
+    margin-bottom: 0;
+}
+.viewVideoBtn:hover{
+background-color: white;
+}
+.OurMessionBox{
+    padding-top:44px;
+    padding-left:76px;
+    padding-bottom: 40px;
+}
+.OurMissionIcon{
+    width:80px;
+    margin-right: 38px;;
+    float:left
+
+}
+.OurMissionText{
+    float:left;
+    width:80%
+}
+.OurMissionText h6{
+    font-size:1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.OurMissionText p{
+    font-size:.875em;
+    color:#6E6E6E;
+    line-height:2;
+    font-weight: 500;
+}
+.PriorityTopicsSec .sectionTitle h5{
+font-size: 1em;;
+font-weight: 600;
+}
+.PriorityTopicsSec{
+    padding-top:62px;
+    padding-bottom: 70px;
+}
+.PriorityTopicsSec .enrollBtn{
+    float: none;
+    margin-top:12px;
+    width:103px;
+    height: 43px;
+    font-size: .875em;
+}
+.PriorityTopicsSec .coursesSetBox{
+    height: 314px; 
+}
+.PriorityTopicsSec .coursesSetBox .coursesSetBox h4{
+    font-size:1em;
+    font-weight: 600;
+}
+.AccreditedSec{
+    background-color: rgba(118, 28, 51, .14);
+}
+.AccreditImg{
+    width:100%;
+}
+.AccreditText{
+    padding-top:60px;
+    padding-bottom: 60px;
+}
+.AccreditText h4{
+    font-size:1.25em;
+    font-weight: 600;margin-bottom: 18px;
+}
+.AccreditTextDesc{
+    display: inline-block;
+
+}
+.AccreditTextDesc h6{
+    font-size:0.9375em;
+margin-bottom: 10px;;
+}
+.AccreditText li{
+    list-style-type: none;
+    margin-bottom: 25px;;
+    display: flex;
+}
+.AccreditedIcon{
+    margin-right:18px;
+    display: inline-flex;
+    align-self: center;
+    width:39px;
+}
+.AccreditTextDesc p{
+font-size:.875em;
+font-weight: 500;
+color:#6E6E6E;;
+}
+.aboutPageInstustors{
+    padding-top:70px;
+    padding-bottom: 70px;
+}
+.FAQ h6{
+    font-size:1em;
+    font-weight: 600;
+    margin-bottom:30px;
+    text-align: center;
+}
+.FAQ{
+    padding:70px 0;
+}
+.faqContent{
+    padding:32px 20px;
+    border:1px solid #DBDBDB;
+    border-radius: 16px;;
+    margin-bottom: 20px;;
+}
+.faqContent h4 a{
+    font-size:.875em;
+    color:#761C33;
+    font-weight: 500;
+    margin: 0;;
+    width: 100%;;
+}
+.faqContent h4 span{
+float: right;
+}
+.faqbody{
+    display: none;
+}
+
+.faqbody p{
+    margin-top:37px;
+    font-size:.875em;
+    color:#6E6E6E;
+}
+.helpful{
+    margin-top:27px;
+    padding:20px;
+    border-radius: 16px;
+    border:1px solid #DBDBDB;
+    display: flex;
+    justify-content: space-between;
+}
+.helpfulBtn{
+    font-size:.875em;
+    color:#761C33;
+    width:73px;
+    height:39px;
+    border-radius: 16px;
+    background-color: white;
+    justify-content: center;
+    display:inline-flex ;
+    font-weight: 500;
+    border:1px solid #761C33
+
+}
+.helpful .helpfulBtn:hover{
+    background-color: #761C33;
+    color:white;
+}
+.helpfulBtn:first-child{
+    margin-right:15px;
+}
+.helpfulAnswer{
+    display: inline-flex;
+    align-self: center;
+}
+.helpFulQuestions{
+    display: flex;
+    align-self: center;
+    font-size:.875em;
+    color:black;
+    font-weight: 500;
+}
+.helpfulBtn span{
+    align-self: center;
+}
+.faqContent .faqbody.active{
+    width: 100%;
+    display: block;
 }
 @media(max-width:767px){
 body{

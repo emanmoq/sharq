@@ -151,6 +151,17 @@ jQuery(function ($) {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
       });
     });
+
+    /**************FAQ Collapse */
+    $('.accordion-panel').click(function () {
+      $(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
+      $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
+  })
+
+  $('.faqHeader').click(function () {
+      $(this).parent().find('.faqbody').slideToggle(400);
+  });
+  $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
 });
 
 
