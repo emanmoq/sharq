@@ -3157,6 +3157,8 @@ textarea{
     border:1px solid #DBDBDB;
     border-radius: 16px;
     margin-top:30px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 .replay{
     padding-top:16px;
@@ -3192,6 +3194,71 @@ align-self: center;
     font-size:.875em;
     font-weight: 500;
     margin-bottom: 12px;;
+    max-width:50%
+}
+.replyLikesAnswers a{
+    display: inline-block;
+    font-size:.875em;
+    color:#6E6E6E;
+margin-right:19px;
+font-weight: 500;
+padding:6px;
+border-radius: 3px;
+}
+.likes{
+    background-color: #F6F6F6;
+}
+.replyLikesAnswers span{
+    margin-left:6px;
+}
+.likeIcon {
+    margin-right:5px;
+}
+.postAnswerBox{
+ padding:22px 20px 27px 20px;
+    background-color: #F8F1F2;
+    margin-top:11px
+}
+.postAnswerBox  .replayerName .postComment{
+    float: none;
+    margin-top:10px;
+    width:68px;
+    color:white;
+    height: 30px;
+}
+.postAnswerBox .replayerName .postComment span{
+    color:white;
+}
+.postAnswerBox  .replayerName .postComment:hover{
+    background-color: #591526;
+}
+.replayTextArea{
+    width:100%;
+    background-color: white;
+    border:1px solid #761C33;
+    height: 45px;;
+}
+.replayTextArea::placeholder{
+font-size:.875em;
+font-weight: 500;
+color:#6E6E6E;}
+.postAnswerBox .postreplaySec{
+    width: 100%;
+}
+.postAnswerBox .replay{
+    padding:0;
+    margin-top:20px;
+}
+.replayerSec .tag{
+    background-color: white;
+    padding:6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left:10px;
+    font-weight: 500;
+    color:#6E6E6E;
+    font-size: .81em;
+    height: 26px;
 }
 @media(max-width:767px){
 body{
