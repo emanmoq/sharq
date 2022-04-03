@@ -2642,11 +2642,13 @@ margin-bottom: 27px;
       font-size:.875em;
       color:#6E6E6E;
       font-weight: 500;
-      padding:10px
+      padding:10px;
   }
   .leaveReviewComment::placeholder{
       padding:30px;
-      text-align:center
+      text-align:center;
+      font-size:.875em;
+      color:#6E6E6E;
   }
   .postComment{
       background-color: #761C33;
@@ -2654,6 +2656,13 @@ margin-bottom: 27px;
       border:1px solid #761C33;
       width:154px;
       float: right;
+      position: relative;
+  }
+  .postComment:after{
+      position: absolute;
+      display: block;
+      content:"";
+      clear:both
   }
   .postComment:hover{
       background-color: transparent;
@@ -3110,9 +3119,8 @@ text-decoration: none;
    background-color: #761C33;
     height :187px;
     display: block;
-    position: fixed;
     top:0;
-    left:21%;
+    left:0;
     width: 100%;
     z-index: 999;
 }
@@ -3137,6 +3145,53 @@ float: left;}
 }
 .scrollVideo.videoSec span{
     display: block;
+}
+.askTextarea{
+    height: 107px;
+    width:100%;
+}
+textarea{
+    resize: none
+}
+.QABox{
+    border:1px solid #DBDBDB;
+    border-radius: 16px;
+    margin-top:30px;
+}
+.replay{
+    padding-top:16px;
+    padding-left:20px;
+    padding-bottom: 11px;;
+}
+.replayerSec{
+    display: flex;
+    margin-bottom: 9px;;
+}
+
+.replyImg{
+    width:46px;
+    height:46px;
+    border-radius: 50%;
+    margin-right:10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.replayerName{
+display:inline-block ;
+align-self: center;
+}
+.replayerName h4{
+    font-size:.875em;
+    font-weight: 600;
+}
+.replayerName span{
+    font-size: 0.75em;
+    color:#6E6E6E
+}
+.replayText {
+    font-size:.875em;
+    font-weight: 500;
+    margin-bottom: 12px;;
 }
 @media(max-width:767px){
 body{
