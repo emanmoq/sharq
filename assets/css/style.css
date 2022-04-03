@@ -12,6 +12,8 @@ header{
     height:69px;
     background-color: white;
     padding:13px 0;
+    box-shadow: 0 1px 0 rgba(208, 208, 208, .5);
+
 }
 form{
     margin:0;
@@ -272,7 +274,6 @@ border-radius: 21px;;
 }
 
 .btn:focus{
-    border:0;
     outline: 0;
     box-shadow: none;
 }
@@ -669,12 +670,12 @@ margin-bottom: 12px;;
     font-weight: 600;
 
 }
-.nav-pills{
+ .courseDetails-tabs  .nav-pills{
     width:100%;
     margin-bottom: 40px;
 
 }
-.nav-pills .nav-link{
+ .courseDetails-tabs  .nav-pills .nav-link{
     padding:12px 18px;
     font-size:.875em;
     font-weight: 500;
@@ -682,8 +683,9 @@ margin-bottom: 12px;;
     border-radius: 21.5px;
     border:1px solid #E1E1E1;
     margin-right:10px;
+    align-self: center;
 }
-.nav-pills .nav-link.active{
+ .courseDetails-tabs  .nav-pills .nav-link.active{
     background-color: transparent;
     color:#761C33;
     border:1px solid #761C33
@@ -691,7 +693,7 @@ margin-bottom: 12px;;
 .mostViewed{
     padding-top:104px
 }
-.nav-pills .nav-link:hover{
+ .courseDetails-tabs  .nav-pills .nav-link:hover{
     background-color: #761C33;
     color:white;
 }
@@ -2127,12 +2129,18 @@ color:#6E6E6E;;
     border-radius: 16px;;
     margin-bottom: 20px;;
 }
-.faqContent h4 a{
+.faqContent:last-child{
+    margin-bottom: 0;
+}
+.faqContent h4 {
     font-size:.875em;
-    color:#761C33;
+
     font-weight: 500;
     margin: 0;;
     width: 100%;;
+}
+.faqContent h4 a{
+    color:#761C33;
 }
 .faqContent h4 span{
 float: right;
@@ -2190,6 +2198,944 @@ float: right;
 }
 .faqContent .faqbody.active{
     width: 100%;
+    display: block;
+}
+#InstructorModal .modal-content{
+    max-width: 100%;
+    padding:50px;
+    top:-50px
+}
+#InstructorModal .modal-dialog{
+    max-width: 80%;
+    width: 80%;
+  
+}
+.modalinstructorBox{
+    margin-bottom: 41px;;
+    
+}
+#InstructorModal .instructorImg{
+    float: left;
+
+    margin-right: 24px;
+    margin-bottom: 0;
+}
+.instructorSlider  .courseItemBox {
+    text-align: left;
+}
+.ModalinstructorDesc{
+    float: left;
+    max-width: 50%;
+    text-align: left;
+}
+.modalinstructorBox h4{
+    margin-bottom: 15px;
+    font-size:1em;
+    font-weight: 600;
+}
+.ModalinstructorDesc p{
+    font-size:.875em;
+    font-weight: 500;
+    opacity: .5;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+.instructorSlider .enrollBtn{
+    float: none;
+    width:103px;
+    justify-content: center;
+}
+.courseFilterHeader{
+    padding:13px;
+    box-shadow: 0 1px 0 rgba(208, 208, 208, .5);
+
+}
+.courseFilterHeader .courseFilterDropDown{
+    color:#6E6E6E;
+    font-size: .81em;
+    border:1px solid #6E6E6E;
+    height: 34px;
+    margin-right: 13px;
+}
+.courseFilterHeader .courseFilterDropDown:hover .coursefilterBtn{
+    color:white
+
+}
+.courseFilterHeader .courseFilterDropDown:hover{
+    background-color: #761C33;
+}
+.courseFilterHeader .courseFilterList li{
+border-bottom: 1px solid #F9F9FF;;
+padding:16px
+}
+.courseFilterHeader .courseFilterList li:last-child{
+    border-bottom: 0;
+}
+.radioBtnContainer{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left:23px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radioInput{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border:1px solid #DFDFDF;
+  }
+
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radioBtnContainer .radioInput:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radioBtnContainer .checkmark:after {
+       top: 2px;
+      left: 2px;
+      width: 8.5px;
+      height: 8.5px;
+      border-radius: 50%;
+      background-color: #761C33;
+  }
+  .cancelBtn{
+color:#761C33;
+font-size:13px;
+font-weight: 500;
+  }
+  .showResultBtn{
+      width:111px;
+      height:43px;
+      border-radius: 21.5px;
+      background-color: #761C33;
+      color:white;
+      display: inline-block;
+      color: white;
+      font-size:13px;
+      font-weight: 500;
+      margin-left: 11px;
+      line-height: 27px;
+  }
+.showResultBtn:hover{
+    background-color: #591526;
+    color:white;
+}
+  .courseFilterHeader .courseFilterList{
+      width:220px;
+      padding:0 
+  }
+  .coursesDetailsHeader{
+      background-color: #761C33;
+      background-image: none;
+  }
+  .certificateDetailsHeader .readOnlyRating{
+      display: inline-block;
+      margin-left:5px;
+  }
+  .takeCourseBtn{
+      width:204px;
+      background-color: white;
+      border:1px solid white;
+      color:#761C33;
+      margin-right:10px;
+  }
+  .commonBtn{
+    font-size: .875em;
+    font-weight: 600;;
+    height:43px;
+    border-radius: 21.5px;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .commonBtn span{
+    align-self: center;
+  }
+  .uploadCourseBtn{
+      width:43px;
+      height:43px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,.23);
+      border:1px solid rgba(255,255,255,.23);
+  }
+  .coursesDetailsHeader .certificateDetailsHeader{
+      margin-bottom:8px;
+  }
+  .takeCourseBtn:hover{
+      background-color: transparent;
+      color:white;
+  }
+  .uploadCourseBtn:hover{
+    border:1px solid rgba(255,255,255,.1);
+    background-color:rgba(255,255,255,.1); ;
+  }
+  .prevVideo{
+      border:1px solid white;
+      width:135px;
+      background-color: rgba(255, 255, 255, .02);
+      color:white;
+      margin:auto;display: flex;
+      margin-top:40%;
+  }
+  .prevVideo:hover{
+      background-color: transparent;
+      color:white;
+
+  }
+  .aboutCourse {
+      padding:30px;
+  }
+  .aboutCourseTitle{
+      font-size:1em;
+      font-weight: 600;
+      margin-bottom:16px; 
+  }
+  .aboutCoursePar{
+      font-size:.875em;
+      color:#6E6E6E;
+      font-weight: 500;
+      margin-bottom: 15px;
+      line-height: 2;
+  }
+  .aboutCourse .enrollBtn,.Learnerreviews .enrollBtn{
+      float: none;
+      display: flex;
+      margin:auto
+  }
+  .lectureDetails{
+      padding-top:40px;
+
+  }
+  .lectureDetails .aboutCourseTitle{
+      margin-bottom: 20px;;
+  }
+  .lectureDetailsBox{
+    padding:24px 20px;
+
+      border-radius: 16px;
+      background-color: #F8F8F8;
+  }
+  #coursesTabContent .aboutCourse{
+padding-left: 0;
+  }
+  #coursesTabContent{
+      padding-left:40px
+  }
+  #coursesTabContent .lectureDetailsBox{
+      padding-left:0
+  }
+  .lectureImg{
+      float:left;
+      width:89px;
+      height: 89px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right:18px;
+  }
+  .lectureDesc{
+      width:80%;
+      float:left
+  }
+  .aboutCertificateSec{
+      padding-top: 40px;
+  }
+  #coursesTabContent .aboutCertificateSec{
+      padding-left: 0;
+  }
+  #coursesTabContent .CertificateDetailsBox{
+      padding-left:0
+  }
+  .aboutCertificateSec .aboutCourseTitle{
+      margin-bottom: 10PX;
+  }
+  .CertificateDetailsBox .outcomesList h6{
+      font-size: .875em;
+      font-weight: 600;
+      margin-bottom: 14px;;
+  }
+  .CertificateDetailsBox .outcomesList{
+      float:left;
+      width:45%;
+  }
+  .CertificateDetailsBox .outcomesList li{
+      margin-bottom: 13px;
+  }
+  .CertificateDetailsImg{
+      width:40%;
+      float: left;
+      margin-right: 28px;
+  }
+  .CertificateDetailsBox{
+      margin-bottom: 25px;
+  }
+  .aboutCertificateSec h5{
+      font-size:.875em;
+      font-weight: 500;
+      margin-bottom: 14px;
+  }
+  .aboutCertificateSec span{
+      font-style: italic;
+      color:#761C33;
+      font-weight: 500;
+      font-size:  .81em;
+      display: block;
+  }
+  .CourseFAQ .aboutCourseTitle,.Learnerreviews .aboutCourseTitle{
+      margin-bottom: 30px;
+  }
+  .CourseFAQ{
+      padding-top:44px;
+  }
+  .Learnerreviews{
+      padding-top:44px;
+  }
+  .Totlereviews{
+margin-bottom: 27px;
+  }
+  .reviewNum{
+      float:left;
+      width:48%;
+
+  }
+  .reviewsDet{
+      width:48%;
+      float:right
+  }
+  .reviewProg{
+      margin-bottom: 14px;
+  }
+  .reviewProg span{
+      font-size:0.75em;
+      font-weight: 500;
+      color:#6E6E6E;
+        float: left;
+  }
+  .reviewProg .progress{
+      float: left;
+      margin:0 7px;
+      width:74%;
+  }
+  .reviewProg {
+      margin-bottom: 14px;;
+  }
+  .reviewProg .progress{
+      background-color: #E9E9E9;
+      border-radius: 2px;
+  }
+  .reviewProg .progress-bar{
+      background-color: #FFB13E;
+  }
+  .revNumm p{
+      font-size: 2.5625em;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 10px;
+  }
+  .revNumm  span{
+      font-size:.875em;
+      font-weight: 600;
+  }
+  .revNumm{
+      margin-bottom: 14px;
+  }
+  .ratingsNumber{
+      font-size:0.8125em;
+      margin-left:10px;
+      font-weight: 500;
+      color:#6E6E6E;
+  }
+  .learnerReviewBox{
+      padding:16px 21px;
+      border:1px solid #DBDBDB;
+      border-radius: 16px;
+      margin-bottom: 16px;
+  }
+  .reviewerImg{
+      width:83px;
+      height: 83px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+   float: left;
+  }
+  .reviewerDetails{
+      margin-bottom: 11px;
+      display: flex;
+  }
+  .reviewerDetails .aboutCourseTitle{
+      margin-bottom: 3px;
+  }
+  .reviewerDetails .aboutCoursePar{
+      margin-bottom: 0;
+      line-height: 1;
+  }
+  .reviewerName{
+      float:left;
+      width:80%;
+   align-self: center;
+  }
+  .reviewerDetails .ratingsNumber{
+      margin-right: 4px;
+  }
+  .learnerReviewRate{
+      margin-bottom: 16px;
+  }
+  .learnerReviewBox .aboutCoursePar{
+      color:#000000;
+      margin-bottom: 11px;
+  }
+  .reviewHelpful span{
+      margin-right: 8.5px;;
+  }
+  .reviewHelpful{
+      font-size: .875em;
+      font-weight: 500;
+      color:#6E6E6E
+  }
+  .CoursesinterestedCourses{
+      padding-top:41px;
+  }
+  .CoursesinterestedCourses .aboutCourseTitle{
+      margin-bottom: 30px;
+  }
+  .leaveReview .aboutCourseTitle{
+      margin-bottom: 10px;;
+  }
+  .leaveReviewComment{
+      height: 107px;
+      border-radius: 16px;
+      border:1px solid#DBDBDB;
+      margin-top:16px;
+      width:100%;
+      resize: none;
+      margin-bottom: 16px;
+
+  }
+  .leaveReviewComment:focus{
+      border:1px solid #DBDBDB;
+      box-shadow: none;
+      outline: 0;
+  }
+  .leaveReviewComment::placeholder,.leaveReviewComment{
+      font-size:.875em;
+      color:#6E6E6E;
+      font-weight: 500;
+      padding:10px
+  }
+  .leaveReviewComment::placeholder{
+      padding:30px;
+      text-align:center
+  }
+  .postComment{
+      background-color: #761C33;
+      color:white;
+      border:1px solid #761C33;
+      width:154px;
+      float: right;
+  }
+  .postComment:hover{
+      background-color: transparent;
+      color:#761C33
+  }
+  .coursecomments{
+padding-top:40px
+  }
+  .commentDate{
+      font-size:0.75em;
+      float:right;
+  }
+.course-Details{
+    padding-bottom: 60px;
+}
+.coursecomments .aboutCourseTitle{
+    margin-bottom: 10px;
+}
+.coursecomments .learnerReviewBox .aboutCoursePar{
+    color:#6E6E6E;
+    margin-bottom: 0;
+}
+.coursecomments .reviewerName{
+    width:70%
+}
+.coursecomments .learnerReviewBox  .aboutCourseTitle{
+    font-size:.875em;
+}
+.coursecomments .reviewerImg{
+    width:46px;
+    height:46px;
+}
+.coursecomments .learnerReviewBox{
+    margin-bottom: 10px;;
+}
+.removeHeader{
+    display: none;
+    transition: all .5s;
+    animation-name: sticky;
+}
+.coursesTabsSection {
+    width: 100%;
+    padding:26px 0 18px;
+    box-shadow: 0 1px rgba(208, 208, 208, .5);
+    height: 59px;
+}
+ .coursepage-tabs .nav-link.active, .courseDetails-tabs  .show>.nav-link{
+    padding:0;
+    background-color: transparent;
+    color:#761C33
+}
+.navbar-expand-lg .navbar-nav.coursepage-tabs .nav-item .nav-link,.coursepage-tabs .nav-link{
+    PADDING:0;
+    margin-right: 24px;
+    font-size:.81em;
+    font-weight: 500;
+    position: relative;
+}
+ .coursepage-tabs .nav-link:before{
+    position: absolute;
+    content:"";
+    height: 1px;
+    width:0;
+    transition: all .5s;
+    background-color: #761C33;
+    bottom: -14px;
+    left:0;
+}
+ .coursepage-tabs .nav-item.active .nav-link:before{
+    width:100%;
+}
+ .coursepage-tabs  .nav-item:last-child .nav-link{
+    margin-right: 0;
+}
+.scrolableHeader{
+    position:fixed;
+    z-index: 999;
+    transition: all .5s;;
+    background-color: #761C33;
+    display: none;
+    top:0;
+    left:0;
+    width:100%;
+    height: 59px;
+    padding: 5px 0;
+}
+.scrolableHeaderCon{
+    display: flex;
+}
+.scrolableHeader .logo{
+width:117px;
+margin-right:20px;
+align-self: center;
+
+display: inline-flex;
+}
+.scrolableHeader p{
+    color:white;
+    display: inline-flex;
+    align-self: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.CurriculumBox{
+    border-radius: 16px;
+    border:1px solid #E9E9E9;
+    margin-top:-180px;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom:20px;
+    max-height: 650px;
+    background-color: white;
+}
+
+.CurriculumImg{
+margin-bottom: 18px;;
+}
+.CurriculumBox h4{
+    margin-bottom: 16px;
+    font-size:.875em;
+    font-weight: 600;
+}
+.curriculumCon{
+padding:18px 16px
+}
+.CurriculumList li{
+    list-style-type: none;
+    padding:16.5px 0;
+    font-size:0.8125em;
+    font-weight: 500;
+    border-top:1px solid #F4F4F4;
+}
+
+.CurriculumList a{
+    color:black
+}
+.innerCurriculumList li{
+padding:0;
+padding-top:15px;
+padding-left: 16px;
+position: relative;
+border:0;
+font-size:13px;
+}
+.innerCurriculumList{
+    display: none;
+}
+.innerCurriculumList li:before{
+content:"\ea55";
+position: absolute;
+left:0;
+font-family: lineicons;
+color:#761C33;
+display: none;
+font-size: 11px;}
+.innerCurriculumList li.done:before{
+    display: block;
+}
+.innerCurriculumList li.active a{
+    color:#761C33;
+    text-decoration: underline;
+}
+.CurriculumList li a span{
+    float:right
+}
+.AttachmentsBox,.takeExameBox{
+    border-radius: 16px;
+    border:1px solid #E9E9E9;
+    overflow: hidden;
+    position: relative;
+    padding:20px 16px;
+    z-index: 2;
+    margin-bottom:20px; 
+    margin-bottom: 20px;
+}
+.takeExameBox{
+    margin-bottom: 30px;
+}
+.AttachmentsBox h4,.takeExameBox h4{
+    margin-bottom: 16px;
+    font-size:.875em;
+    font-weight: 600;  
+}
+.AttachmentsBox a{
+    display: block;
+    margin-bottom: 9px;
+    font-size:.875em;
+    font-weight: 500;
+    color:#3279B7;
+    text-decoration: underline; 
+}
+.takeExameBox p{
+    font-size: .85em;
+    color:#6E6E6E;
+    margin-bottom: 12px;;
+    font-weight: 500;
+}
+.takeExameBox .joinBtn{
+    margin:0;
+    width:154px;
+    background-color: #761C33;
+    color:white;
+}
+.takeExameBox .joinBtn:hover{
+    background-color: #591526;
+    color:white
+}
+.RelatedCoursesBox{
+    padding: 0;
+}
+.RelatedCoursesList li{
+    padding: 16px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.RelatedCoursesList li:last-child{
+    border-bottom: 0;;
+}
+.RelatedCoursesList li:hover a .aboutCourseTitle{
+    color:#761C33
+}
+.relatedCourseImg{
+    float:left;
+    margin-right: 15px;
+    border-radius: 16px;
+    overflow: hidden;
+    width:120px;
+    height: 85px;
+}
+.relatedCourseDesc{
+    float:left;
+    width: 50%;
+}
+.relatedCourseDesc .aboutCourseTitle {
+margin-bottom: 7px;
+}
+.relatedCourseDesc P{
+    font-size:0.75em}
+.scrollNav {
+        top: 59px !important;
+        z-index: 99999999999999999999999;
+        animation-duration: .5s;
+        position: fixed !important;
+        transition: 1s all;
+        left: 0;
+        width:100%;
+        right:0;
+        transition: all .5s;;
+        animation:sticky;
+        display: block;
+        background-color: white;
+        height:59px
+    }
+    .CurriculumBox::-webkit-scrollbar{
+        width:5px;
+    }
+    /* Track */
+    .CurriculumBox::-webkit-scrollbar-track {
+    background: #D8D8D8; 
+    border-radius: 25px;
+    height: 225px;
+  }
+  .CurriculumBox::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  .innerCurriculumList .courseTime{
+      font-size:11px;
+      color:#6E6E6E;
+      font-weight: 500;
+      display: block;
+      margin-left:24px
+  }
+  .sideCurriclum{
+      margin-top:0;
+      width:21%;
+      display: inline-block;
+      height: auto;
+      overflow: auto;
+      height: auto;
+      border-radius: 0;
+      overflow: auto;
+      float: left;
+      padding-top:28px;
+  }
+  .courseVideoAndDetails{
+width:78%;
+float: left;
+  }
+  .coursepage-tabs .nav-link.active:before{
+      width:100%;
+  }
+  .courseVideoAndDetails .col-md-12 {
+      padding:0;
+      margin:0;
+  }
+   .courseVideoAndDetails  .coursepage-tabs{
+justify-content: center;
+  }
+  .courseVideoAndDetails .aboutCourse{
+      padding-top:0;
+  }
+  .courseVideoAndDetails .coursesTabsSection{
+      margin-bottom: 42px;
+  }
+.videoSec video{
+    width:100%;
+    height: 500px;
+    object-fit: fill;
+}
+.videoSec{
+    position: relative;
+}
+.videoTitle{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    padding:11px 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #F4F4F4;
+}
+.videoTitle h6{
+    font-size: 13px;
+    font-weight: 600;
+    color:white;
+}
+.videoTitle p{
+    font-size: 13px;
+    font-weight: 500;
+    color:white;
+    opacity: .5;
+    margin-top: 5px;;
+}
+/* Customize the label (the container) */
+.checkmarkCont {
+    position: relative;
+    padding-right: 24px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float:left
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkmarkCont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmarkCont .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border-radius: 3px;
+    border:1px solid #E0E0E0;
+  }
+   .sideCurriclum .innerCurriculumList li.active   .checkmarkCont .checkmark {
+    border:1px solid  #FFFFFF
+
+   }
+  /* On mouse-over, add a grey background color */
+  .checkmarkCont:hover input ~  .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkmarkCont input:checked ~  .checkmark {
+    background-color: transparent;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmarkCont .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkmarkCont input:checked ~  .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkmarkCont .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #761C33;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .sideCurriclum  .innerCurriculumList{
+      padding-left:20px;
+  }
+  .sideCurriclum .CurriculumList li .innerCurriculumList li{
+      padding:8px;
+      position: relative;
+      margin-bottom: 8px;
+      padding:16px;
+      padding-left:10;
+      padding-right: 0;;
+
+  }  .sideCurriclum .innerCurriculumList li:before{
+      width:6px;
+      height: 100%;
+      background-color: #761C33;
+      position: absolute;
+      content: "";
+      top:0;
+      left:0;
+      display: none;
+  }
+
+  .sideCurriclum .innerCurriculumList li.active{
+background-color: #ECE0E3;
+text-decoration: none;
+  }
+  .sideCurriclum .innerCurriculumList li.active:before{
+      display: block;
+  }
+  .sideCurriclum .curriculumCon{
+      padding:0;
+  }
+.sideCurriclum .curriculumCon h4{
+    padding-left:16px
+}
+.sideCurriclum .CurriculumList li {
+    padding-left:16px;
+    padding-right: 16px;;
+}
+.sideCurriclum .innerCurriculumList li.active a{
+    text-decoration: none;
+}
+.sideCurriclum .innerCurriculumList{
+    padding-top:8px;
+    border-top:1px solid #F4F4F4;
+    margin-top:16px;
+    padding:0;
+}
+.scrollVideo{
+   background-color: #761C33;
+    height :187px;
+    display: block;
+    position: fixed;
+    top:0;
+    left:21%;
+    width: 100%;
+    z-index: 999;
+}
+.scrollVideo video{ width:300px;
+display: inline-block;
+height: 100%;
+float: left;}
+.scrollVideo .videoTitle{
+    position: relative;
+    padding: 20px;
+    border: 0;
+    width: 60%;
+    float: left;
+    top: auto;
+}
+
+.videoTitle span{
+    font-size:13px;
+    font-weight: 600;
+    display: none;
+    color: white;
+}
+.scrollVideo.videoSec span{
     display: block;
 }
 @media(max-width:767px){
@@ -2304,6 +3250,13 @@ header .container-fluid{
 }
 .profNotifyDescktop{
     display: none;
+}
+.specializationHeader{
+    padding:20px 0
+}
+.prevVideo {
+    float:none;
+margin-top:20px;
 }
 }
  @media (min-width: 800px){
