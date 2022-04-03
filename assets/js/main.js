@@ -240,6 +240,10 @@ jQuery(function ($) {
     $(this).not(this).find('span:first').removeClass('lni-chevron-down').addClass('lni-chevron-up');
     $(this).find('span:first').toggleClass('lni lni-chevron-down lni lni-chevron-up');
   })
+  $(".NoteCollapse .accordion-panel").click(function(){
+    $(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
+    $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
+  })
   $('.faqHeader').click(function () {
     $(this).parent().find('.faqbody').slideToggle(400);
 });
@@ -250,6 +254,8 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
   });
   $(".CurriculumLink").on("click", "a", function(e) { e.preventDefault() });
   $(".radioBtnContainer").on("click", "a", function(e) { e.preventDefault() });
+  $(".NoteCollapse").on("click", "a", function(e) { e.preventDefault() });
+
   
   $(".readOnlyRating").starRating({
     starSize: 16,

@@ -3260,6 +3260,75 @@ color:#6E6E6E;}
     font-size: .81em;
     height: 26px;
 }
+.NoteBookNote span{
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E;;
+    margin-right:5px
+}
+.EnterToSave{
+    float:right;
+    margin-right:0;
+}
+.NoteBookNote{
+    margin-bottom: 40px;;
+}
+.NoteCollapseContect{
+    border:0;
+    padding:0
+}
+.NoteCollapseContect .faqHeader{
+    width:100%;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding:15px;
+    margin-bottom: 15px;;
+
+}
+.NoteCollapseContect .faqHeader a{
+    font-size:.81em;
+    font-weight: 600;
+    color:#000
+}
+.NoteActionBtns{
+    float:right;
+    display: inline-block;
+}
+.NoteAction p{
+    float: left;
+    display: inline-block;
+}
+.NoteContent{
+    padding-left:16px;
+}
+.NoteContent h6{
+    color:#761C33;
+    font-weight: 600;
+    font-size:.81em;
+    margin-bottom: 15px;;
+
+}
+.NoteCollapse{
+    margin-bottom: 34px;;
+}
+.NoteContent p{
+    margin-top:0;
+    font-weight: 600;
+    font-size:.81em;
+    color:#6E6E6E;
+}
+.NoteActionBtn{
+    border-radius: 3px;
+    background-color: #F6F6F6;
+    padding:4px 6px;
+    font-weight: 600;
+    font-size:.81em;
+    color:#6E6E6E;
+
+}
+.NoteActionBtn:first-child{
+    margin-right: 10px;;
+}
 @media(max-width:767px){
 body{
     font-size:14px
