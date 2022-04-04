@@ -21,6 +21,8 @@
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
+    <link href="assets/lib/jquery-steps/dist/jquery-steps.css" rel="stylesheet">
+
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -563,7 +565,8 @@
                         </ul>
 
                     </div>
-                    <a href="#" class="takeCourseBtn commonBtn btn"><span>Start</span></a>
+                    <a href="#" class="takeCourseBtn commonBtn btn" data-toggle="modal"
+                        data-target="#stepsModal"><span>Complete</span></a>
 
                 </div>
 
@@ -607,7 +610,47 @@
                                     </label>
                                 </div>
                             </div>
-      
+                            <div class="QuestionBox">
+                                <h4>Schmitt’s thought is an extension of the Kantian tradition.</h4>
+                                <div class="AnswersBox">
+                                    <label class="radioBtnContainer">True
+                                        <input type="radio" name="q3" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                    <label class="radioBtnContainer">False
+                                        <input type="radio" name="q3" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="QuestionBox">
+                                <h4>Schmitt’s thought is an extension of the Kantian tradition.</h4>
+                                <div class="AnswersBox">
+                                    <label class="radioBtnContainer">linguistic definition
+                                        <input type="radio" name="q4" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                    <label class="radioBtnContainer">Idiomatic Definition
+                                        <input type="radio" name="q4" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                    <label class="radioBtnContainer">procedural definition
+                                        <input type="radio" name="q4" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                    <label class="radioBtnContainer">All of the above
+                                        <input type="radio" name="q4" class="radioInput">
+                                        <span class="checkmark"></span>
+
+                                    </label>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                     <nav aria-label="Page navigation" class="coursesPagination">
@@ -620,7 +663,7 @@
                             <li class="page-item "><a class="page-link" href="#">03</a></li>
                             <li class="page-item active"><a class="page-link" href="#">04</a></li>
                             <li class="page-item"><a class="page-link" href="#">05</a></li>
-                     
+
 
                             <li class="page-item">
                                 <a class="page-link" href="#">Prev</a>
@@ -834,7 +877,195 @@
             </div>
         </div>
     </div>
+    <div class="modal fade examResultModal" id="FaildModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
 
+
+                <div class="modal-body">
+                    <div class="examResultHeader">
+                        <div class="ExamResultIcon failedIcon">
+                            <i class="lni lni-close"></i>
+
+                        </div>
+                        <h4>Your Result</h4>
+                    </div>
+                    <h5>Your exam grade failed. Exam requirement 80%</h5>
+                    <div class="FaildDetailscont clearfix">
+                        <div class="faildDetails">
+                            <p>Correct</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Wrong</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Skipped</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Questions</p>
+                            <p>10</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Time</p>
+                            <p>02:49</p>
+                        </div>
+                    </div>
+                    <div class="ExamBtns">
+                        <a href="#" class="commonBtn retakeBtn"><span>Retake</span> </a>
+                        <a href="#" class="commonBtn sumbitExamBtn"><span>Submit</span> </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade examResultModal" id="successModal" tabindex="-1" role="dialog" aria-labelledby=""
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
+
+
+                <div class="modal-body">
+                    <div class="examResultHeader">
+                        <div class="ExamResultIcon successIcon">
+                            <i class="lni lni-checkmark"></i>
+                        </div>
+                        <h4>Your Result</h4>
+                    </div>
+                    <h5>Your exam grade failed. Exam requirement 80%</h5>
+                    <div class="FaildDetailscont clearfix">
+                        <div class="faildDetails">
+                            <p>Correct</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Wrong</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Skipped</p>
+                            <p>1</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Questions</p>
+                            <p>10</p>
+                        </div>
+                        <div class="faildDetails">
+                            <p>Time</p>
+                            <p>02:49</p>
+                        </div>
+                    </div>
+                    <div class="successCertificate">
+                        <img src="assets/images/smallcertifcate.png" alt="">
+                    </div>
+                    <div class="ExamBtns">
+                        <a href="#" class="commonBtn retakeBtn"><span>Retake</span> </a>
+                        <a href="#" class="commonBtn sumbitExamBtn"><span>Submit</span> </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade stepsModal" id="stepsModal" tabindex="-1" role="dialog" aria-labelledby=""
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
+
+
+                <form action="" class="loginForm stepsForm">
+                    <div class="modal-body">
+                        <div class="step-app" id="finishExam">
+                            <h3>Complete the following steps to pass the exam</h3>
+                            <ul class="step-steps">
+                                <li data-step-target="step1"></li>
+                                <li data-step-target="step2"></li>
+                                <li data-step-target="step3"></li>
+                            </ul>
+                            <div class="step-content">
+                                <div class="step-tab-panel" data-step="step1">
+                                    <h4>Personal Information</h4>
+                                    <i class="NoteForm">If you’re a non-arabic speaker,
+                                        please include your full name twice in the text boxes below.</i>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Arabic Full Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="English Full Name">
+                                    </div>
+                                    <div class="form-group dategroup">
+                                        <i class="lni lni-chevron-down"></i>
+                                        <div class="form-control"> <select name="" id="" class=" select">
+                                                <option value="0">
+                                                    Gender
+                                                </option>
+                                                <option value="1">
+                                                    Male
+                                                </option>
+                                                <option value="2">
+                                                    Female
+                                                </option>
+                                            </select></div>
+
+                                    </div>
+                                    <div class="form-group dategroup">
+                                        <i class="lni lni-chevron-down"></i>
+                                        <input type="text" class="datepicker form-control" placeholder="Date">
+                                    </div>
+                                    <div class="form-group dategroup">
+                                        <i class="lni lni-chevron-down"></i>
+                                        <div class="form-control"> <select name="" id="" class=" select">
+                                                <option value="0">
+                                                    Country
+                                                </option>
+                                                <option value="1">
+                                                    Egypt
+                                                </option>
+                                                <option value="2">
+                                                    Egypt
+                                                </option>
+                                            </select></div>
+
+                                    </div>
+
+                                </div>
+                                <div class="step-tab-panel" data-step="step2">
+                                    ...
+                                </div>
+                                <div class="step-tab-panel" data-step="step3">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="step-footer">
+                                <!--
+                                                                  <button data-step-action="prev" class="step-btn">Previous</button>
+
+                                -->
+                                <button data-step-action="next" class="step-btn">Next Step</button>
+                                <button data-step-action="finish" class="step-btn">Continue to the Exam</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -843,6 +1074,11 @@
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
     <script src="assets/lib/rating/jquery.star-rating-svg.js"></script>
+    <script src="assets/lib/jquery-steps/dist/jquery-steps.js"></script>
+    <script>$("#finishExam").steps({
+            onFinish: function () { alert('complete'); }
+        });</script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>

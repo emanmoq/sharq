@@ -15,6 +15,7 @@ header{
     box-shadow: 0 1px 0 rgba(208, 208, 208, .5);
 
 }
+
 form{
     margin:0;
 }
@@ -1070,13 +1071,13 @@ align-self: center;
     left:34%;
 }
 .modal{
-    top:50px
+    overflow: auto;
 }
 .modal-open .modal {
-    overflow-x: visible;
-    overflow-y: visible;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
-button.close{
+ button.close{
     padding:0;
     margin: 0;
     float:left;
@@ -1084,9 +1085,15 @@ button.close{
     height:30px;
     background-color: #F2F2F2;
     border-radius: 50%;;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin:0;
+    font-size: 13px;
 }
 button.close span{
-    color:#A9A9A9
+    color:#A9A9A9;
+    align-self: center;
 }
 .modal-header{
     justify-content: center;
@@ -1102,12 +1109,18 @@ button.close span{
     width:344px;
     margin:auto
 }
+.form-control:focus{
+    box-shadow: none;
+    outline: 0;
+    border:0;
+    border: 1px solid #E2E2E2;
+}
 .loginForm .form-control{
     height:56px;
     width:100%;
     background-color: #FBFBFB;
     border-radius: 28px;
-    border-bottom: 1px solid #E2E2E2;
+    border: 1px solid #E2E2E2;
     font-size:.875em;
     font-weight: 500;
     color:#6E6E6E
@@ -1115,7 +1128,8 @@ button.close span{
 .loginForm .form-control::placeholder{
     font-size:.875em;
     font-weight: 500;
-    color:#6E6E6E
+    color:#6E6E6E;
+    
 }
 .loginForm .form-group{
 position: relative;
@@ -1249,7 +1263,7 @@ overflow: hidden;
     font-size: 12px;
 }
 .select option{
-    font-size:.875em;
+    font-size:1em;
     font-weight: 500;
     color:#6E6E6E
 }
@@ -1258,6 +1272,9 @@ overflow: hidden;
     border:0;
     height: 100%;
     background-color: transparent;
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E;
 }
 .select:invalid,
 .select option[value="0"] {
@@ -2772,10 +2789,11 @@ display: inline-flex;
     margin-top:-180px;
     overflow: auto;
     position: relative;
-    z-index: 2;
+    z-index: 999;
     margin-bottom:20px;
     max-height: 650px;
     background-color: white;
+    
 }
 
 .CurriculumImg{
@@ -2948,7 +2966,7 @@ margin-bottom: 7px;
       padding-top:28px;
   }
   .courseVideoAndDetails{
-width:78%;
+width:79%;
 float: left;
   }
   .coursepage-tabs .nav-link.active:before{
@@ -3120,9 +3138,10 @@ text-decoration: none;
     height :187px;
     display: block;
     top:0;
-    left:0;
+    left:21%;
     width: 100%;
     z-index: 999;
+    position: fixed;
 }
 .scrollVideo video{ width:300px;
 display: inline-block;
@@ -3329,6 +3348,197 @@ color:#6E6E6E;}
 .NoteActionBtn:first-child{
     margin-right: 10px;;
 }
+.ExamContainer{
+    padding:40px 0 70px
+}
+.QuestionBox{
+    border:1px solid #DBDBDB;
+    overflow: hidden;
+    margin-bottom: 25px;;
+    border-radius: 16px;
+}
+.QuestionBox h4{
+    font-size: .875em;
+    font-weight: 600;
+    padding: 20px;
+    border-bottom:1px solid #DBDBDB ;
+}
+.AnswersBox label{
+    padding:18px 20px;
+    padding-left:40px;
+    border-bottom:1px solid #DBDBDB ;
+    font-size:.875em;
+    font-weight: 500;
+    left:auto;
+    color:#6E6E6E;
+}.AnswersBox label:last-child{
+    border-bottom: 0;
+}
+.AnswersBox .checkmark{
+    top: 22px;
+    left: 16px;
+        margin-right: 6px;
+}
+.examResultModal  h4{
+    font-size:1.1875em;
+    color:black;
+    text-align: center;
+    margin-bottom: 13px;
+
+}
+.ExamResultIcon{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-bottom: 16px;
+
+}
+.failedIcon{
+    border:1px solid #761C33;
+    color:#761C33;
+}
+.ExamResultIcon i{
+    align-self: center;
+}
+
+.examResultModal h5{
+    font-size:1.125em;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
+#FaildModal  h5{
+    color:#761C33
+    }
+    .examResultModal .modal-dialog{
+max-width: 583px;
+    }
+    .faildDetails p{
+        font-size: 1.125em;
+        font-weight: 500;
+    }
+    .faildDetails{
+        float:left;
+        margin-right:33px
+    }
+    .faildDetails:last-child{
+        margin-right: 0;
+    }
+    .FaildDetailscont{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;;
+    }
+    .ExamBtns a{
+        width:200px;
+        height: 56px;
+        border-radius: 28px;
+
+    }
+    .retakeBtn{
+        margin-right:14px ;
+        background-color: white;
+        border:1px solid #761C33;
+        color:#761C33
+    }
+    .retakeBtn:hover{
+        background-color: rgba(118, 28, 51, .14);
+        color:#761C33
+    }
+    .lessonBody .coursesTabsSection.scrollNav {
+        top: 186px !important;
+        z-index: 99;
+    }
+    .sumbitExamBtn{
+        background-color: #761C33;
+        color:white;
+    }
+    .sumbitExamBtn:hover{
+        background-color: #591526;
+        color:white;
+    }
+    .successIcon{
+        color:#119A4A;
+        border: 1px solid #119A4A;;
+    }
+#successModal h5{
+    color:#119A4A
+}
+#successModal .FaildDetailscont {
+    margin-bottom: 24px;;
+}
+.successCertificate{
+    margin-bottom: 24px;;
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);}
+#finishExam h3{
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 25px;;
+    margin-top:18px;
+}
+.step-app > .step-content{
+    border:0;
+    padding: 0;
+    text-align: left;
+}
+.step-app > .step-steps {
+    border-radius: 2px;
+    height: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.step-app > .step-steps > li{
+    width: 124px;
+    margin-right: 10px;;
+    background-color: #E2E2E2;
+    border-radius: 2px;
+    padding: 0;
+    overflow: hidden;
+
+}
+.step-app > .step-steps > li:last-child{
+    margin-right: 0;
+}
+.step-app > .step-steps > li.active,.step-app > .step-steps > li.done{
+    background-color: #761C33;
+}
+#stepsModal .modal-body{ padding:0
+}
+.step-app > .step-footer > .step-btn{
+    background-color: #761C33;
+    color:white;
+    width: 100%;;
+    height: 56px;;
+    border-radius: 28px;
+    margin-top:20px;
+}
+.step-tab-panel h4{
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.step-tab-panel .NoteForm{
+    font-style: italic;
+    font-size:.81em;
+    font-weight: 500;
+    color:#6E6E6E;;
+    margin-bottom: 20px;;
+    display: block;
+}
+.stepsForm .form-group:last-child{
+    margin-bottom: 0;
+}
+.select option{
+    background-color: #FBFBFB;
+    padding:10px 0;
+}
 @media(max-width:767px){
 body{
     font-size:14px
@@ -3412,6 +3622,7 @@ header .container-fluid{
 }
 .modal-dialog {
     max-width: 100%;
+    top:50px
    }
 
 .profileDropDown{

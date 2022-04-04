@@ -151,14 +151,18 @@ jQuery(function ($) {
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");
       $(".courseDetailsBody .coursesTabsSection").addClass("scrollNav");
+      $(".coursesTabsSection").addClass("scrollNav");
+
       $(".videoSec").addClass("scrollVideo");
+
       
     }
     else{
       $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
       $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
-      $(".courseDetailsBody .coursesTabsSection").removeClass("scrollNav");
+      $(".coursesTabsSection").removeClass("scrollNav");
       $(".courseDetailsBody .scrolableHeader").css("display","none");
+
       $(".videoSec").removeClass("scrollVideo");
 
     }
@@ -249,10 +253,10 @@ jQuery(function ($) {
 });
 $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
 
-  $('.CurriculumLink').click(function () {
+  $('.CurriculumList li').click(function () {
       $(this).parent().find('.innerCurriculumList').slideToggle(400);
   });
-  $(".CurriculumLink").on("click", "a", function(e) { e.preventDefault() });
+  $(".CurriculumList li").on("click", "a", function(e) { e.preventDefault() });
   $(".radioBtnContainer").on("click", "a", function(e) { e.preventDefault() });
   $(".NoteCollapse").on("click", "a", function(e) { e.preventDefault() });
 
