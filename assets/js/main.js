@@ -150,8 +150,8 @@ jQuery(function ($) {
       $(".courseDetailsBody .innerHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");
-      $(".courseDetailsBody .coursesTabsSection").addClass("scrollNav");
-      $(".coursesTabsSection").addClass("scrollNav");
+      $(".courseDetailsBody .scrolltabsection").addClass("scrollNav");
+      $(".scrolltabsection").addClass("scrollNav");
 
       $(".videoSec").addClass("scrollVideo");
 
@@ -160,7 +160,7 @@ jQuery(function ($) {
     else{
       $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
       $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
-      $(".coursesTabsSection").removeClass("scrollNav");
+      $(".scrolltabsection").removeClass("scrollNav");
       $(".courseDetailsBody .scrolableHeader").css("display","none");
 
       $(".videoSec").removeClass("scrollVideo");
@@ -240,7 +240,7 @@ jQuery(function ($) {
       $(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
       $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
   })
-  $(".CurriculumLink").click(function(){
+  $(".CurriculumList li").click(function(){
     $(this).not(this).find('span:first').removeClass('lni-chevron-down').addClass('lni-chevron-up');
     $(this).find('span:first').toggleClass('lni lni-chevron-down lni lni-chevron-up');
   })
@@ -254,7 +254,7 @@ jQuery(function ($) {
 $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
 
   $('.CurriculumList li').click(function () {
-      $(this).parent().find('.innerCurriculumList').slideToggle(400);
+      $(this).find('.innerCurriculumList').slideToggle(400);
   });
   $(".CurriculumList li").on("click", "a", function(e) { e.preventDefault() });
   $(".radioBtnContainer").on("click", "a", function(e) { e.preventDefault() });

@@ -2756,7 +2756,7 @@ padding-top:40px
 }
 .scrolableHeader{
     position:fixed;
-    z-index: 999;
+    z-index: 99999;
     transition: all .5s;;
     background-color: #761C33;
     display: none;
@@ -3538,6 +3538,148 @@ max-width: 583px;
 .select option{
     background-color: #FBFBFB;
     padding:10px 0;
+}
+.cameraCaptureImg{
+    width:100%;
+    height: 308px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.takeCapture {
+display: block;
+text-align: center;
+font-size:1em;
+font-weight: 500;
+color: #761C33;
+}
+.cameraCaptureImg img{
+    object-fit: fill;
+    background-size: cover;
+}
+.step-tab-panel ul{
+    margin-bottom: 37px;;
+}
+.step-tab-panel ul li{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 8px;
+    font-size:.875em;
+    color: #6E6E6E;
+    font-weight: 500;
+}
+.stepsForm{
+    width: 100%;;
+}
+.confirmLabel{
+    font-size: .875em;
+    font-weight: 500;
+    padding-left:22px
+}
+.confirmLabel .checkmark{
+    top:2px;
+}
+.step-tab-panel ul li:before{
+    content: "\ea55";
+    color:#6E6E6E ;
+    font-family: lineicons;
+    font-size:.7em;
+    margin-right: 13px;
+    ;
+    }
+    .mycoursesTabContainer{
+        padding-top:30px;
+        padding-bottom: 70px;;
+    }
+    .myCourses-Box{
+        border:1px solid #E9E9E9;
+        border-radius: 16px;
+        padding:20px;
+        display: flex;
+        margin-bottom: 20px;;
+    }
+    .myCoursesImage{
+        width:220px;
+        height: 119px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-right:20px
+    }
+    .myCourse-details{
+    align-self: center;
+}
+.myCourseTeacher{
+    display: flex;
+    margin-top:16px;
+}
+.myCourseTeacherImg{
+    display: inline-block;
+    width:29px;
+    height:29px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 7px;;
+}
+.myCourseTeacher h4{
+    font-size:.81em;
+    font-weight: 600;
+    align-self: center;
+}
+.mycoursesProgress{
+    width:117px;
+    height: 7px;
+    display: inline-flex;
+    background-color: transparent;
+    border:1px solid #E9E9E9;
+    border-radius: 35px;;
+    overflow: hidden;
+    margin:0 13px;
+}
+.mycoursesProgress .progress-bar{
+    background-color: #761C33;
+    border-radius: 35px 0  0 35px;
+}
+.myCourseProgressSec  span,.myCourseProgressSec p{
+    font-size:12px;
+    color:#6E6E6E;
+    font-weight: 500;
+
+}
+.mycourseOptions a i{
+    transform: rotate(90deg);
+    color:#6E6E6E;
+    font-size:14px;
+}
+.mycourseOptions{
+    margin-left:auto
+}
+.processPercentage{
+    position: relative;
+    display: inline-block;
+}
+.processPercentage::before, .processPercentage::after,.myCourseNum:before{
+content: ".";
+color:#6E6E6E;
+margin:0 10px;
+}
+.processPercentage.Passed{
+    color:#119A4A
+}
+.processPercentage.Failed{
+    color:#761C33
+}
+.QuizResultsPer:after{
+display: none;
+}
+#MycoursesTabs .nav-link{
+    font-size:.81em;
+    font-weight: 500;
+}
+#MycoursesTabs .nav-link:hover{
+    color:#761C33
+}
+.myCourseNum{
+    position: relative;
 }
 @media(max-width:767px){
 body{
