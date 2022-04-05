@@ -259,8 +259,12 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
   $(".CurriculumList li").on("click", "a", function(e) { e.preventDefault() });
   $(".radioBtnContainer").on("click", "a", function(e) { e.preventDefault() });
   $(".NoteCollapse").on("click", "a", function(e) { e.preventDefault() });
+  $(".issueCertificateBtn").click(function () {
+    $(this).css("display","none");
+    $(this).parent().find(".MyCoursesCertficateBtns").css("display","block");
+    $(this).parent().parent().find(".MycourseCertificateImg").css("filter","blur(0)")
+  });
 
-  
   $(".readOnlyRating").starRating({
     starSize: 16,
     activeColor: '#FFD93F',
@@ -328,6 +332,8 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
       // make a server call here
     }
   });
+
+
 });
 
 

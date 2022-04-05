@@ -3657,7 +3657,7 @@ color: #761C33;
     position: relative;
     display: inline-block;
 }
-.processPercentage::before, .processPercentage::after,.myCourseNum:before{
+.processPercentage::before, .processPercentage::after,.myCourseNum:before,.certificatePrice:before{
 content: ".";
 color:#6E6E6E;
 margin:0 10px;
@@ -3678,8 +3678,122 @@ display: none;
 #MycoursesTabs .nav-link:hover{
     color:#761C33
 }
-.myCourseNum{
+.myCourseNum,.certificatePrice{
     position: relative;
+}
+.MycourseCertificateImg{
+    border-radius: 0;
+    width:172px;
+    filter: blur(4px);
+}
+
+.myCourseProgressSec  span.certificatePrice{
+    color:#761C33
+}
+.issueCertificateBtn{
+    background-color: #761C33;
+    width:170px;
+    height: 43px;
+    color:white;;
+    margin-top:15px;
+}
+.issueCertificateBtn:hover{
+    background-color: #591526;
+    color:white;
+}
+.CertificateDownloadBtn,.CertificateDownloadBtn:hover{
+width:103px;
+background-color: #761C33;
+height: 43px;
+color:white;;
+}
+
+.CertificateViewBtn{
+background-color: rgba(118, 28, 51, .09);
+color:#761C33;
+width: 103px;;
+height: 43px;
+}
+.CertificateViewBtn:hover{
+    background-color: rgba(118, 28, 51, .17);
+    color:#761C33;
+}
+.MyCoursesCertficateBtns{
+    display: none;
+    margin-top: 10px;
+}
+.certificateTabs{
+    margin-bottom: 30px;;
+}
+.certificateTabs  .nav-link{
+    padding:13px 19px;
+    background-color: transparent;
+    border-radius: 21px;
+    height: 43px;
+    margin-right: 16px;;
+color:rgba(0,0,0,.5);
+ font-size: .875em;
+    font-weight: 500;
+    border:1px solid #E1E1E1
+}
+.certificateTabs  .nav-link:hover{
+    color:white;
+    background-color: #761C33;
+}
+.certificateTabs  .nav-link.active{
+background-color: transparent;
+color:#761C33;
+border:1px solid #761C33
+}
+.myCourseCertificate{
+    margin:22px auto;
+    width: 172px;
+}
+.downloadCertefModal h6{
+    color:#761C33;
+    text-align: center;
+    margin-bottom: 10px;;
+    font-size: 1.3125em;
+    font-weight: 600;
+    text-align: center;
+}
+.downloadCertefModal  h5{
+font-size: 1.125em;
+font-weight: 600;
+}
+.downloadCertefModal  .modal-body{
+    padding:0;
+}
+.cobonSec{
+display: flex;
+justify-content: center;
+padding: 0
+}
+.cobonSec .checkmarkCont{
+font-size:.875em;
+font-weight: 500;
+padding-left:25px
+}
+.cobonSec .checkmarkCont  input:checked ~  .checkmark{
+background-color: #761C33;
+top:3px
+}
+.cobonSec .checkmarkCont:hover .checkmark{
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;;
+}
+.cobonSec .checkmarkCont  input:checked ~  .checkmark:after{
+   border: solid white;
+   border-width: 0 1px 1px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+   top:0
+}
+.cobonInput{
+    display: none;
 }
 @media(max-width:767px){
 body{
