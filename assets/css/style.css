@@ -127,14 +127,14 @@ border-radius: 5px;
 .exploreForm{
     border-radius: 100px;
     overflow: hidden;
-    border:1px solid #E2E2E2;
+    outline:1px solid #E2E2E2;
     background-color: #FBFBFB;
     height: 34px;
     width:100%;;
 }
 .exploreBtn{
     background-color: #761C33;
-    width:37px;
+    width:calc(100% - 261px);
     height: 100%;
     float: left;
     border-radius: 0;;
@@ -1823,6 +1823,9 @@ color:white;
     color:white;
     display: flex;
     justify-content: center;
+}
+.sendSuggestBtn span{
+    color:white
 }
 .sendSuggestBtn:hover{
     background-color: #591526;
@@ -4019,6 +4022,134 @@ text-align: center;
 .membershipCont{
     padding-top:40px;
     padding-bottom: 20px;
+}
+.pricingSec{
+    background-color: rgba(118, 28, 51, .09);
+padding-top: 52px;;
+padding-bottom: 47px;
+}
+.pricingSec h6{
+    font-size: 1.375em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.pricingSec p{
+    font-size:.875em;
+    font-weight: 500;
+    text-align: center;
+    color:#6E6E6E;
+    line-height: 2;
+}
+.pricingBox{
+background-color: white;;
+overflow: hidden;
+position: relative;
+padding:50px;
+position: relative;
+z-index: 2;
+text-align: center;
+width: 100%;
+height: 100%;
+border-radius: 16px;
+transition: all .5s;;
+}
+.saveMony{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #591526;
+   text-align: center;
+   color:white;
+   font-size:.875em;
+   font-weight: 500;
+   padding-top:11px;
+   height: 240px;
+   z-index: 1;
+   border-radius: 16px;
+}
+.pricingCont{
+    position: relative;
+    height: 240px;
+width: 100%;;
+margin-bottom:43px;
+overflow: hidden;
+transition: all .5s;;
+border-radius: 16px;
+outline:1px solid #E9E9E9;
+
+}
+.pricingCont:hover{
+    transition: all .5s;;
+    outline:1px solid #761C33
+}
+.pricingCont:hover .pricingBox{
+    transition: all .5s;;
+    padding-top:24px;
+    margin-top:33px;
+
+}
+.pricingBox h5{
+    font-size: 1em;
+    font-weight: 500px;
+    margin-bottom:15px;
+    text-align: center;
+}
+.pricingBox span{
+    color:#6E6E6E;
+    font-size: .875em;
+    font-weight: 500;
+}
+.pricingBox span span{
+    color:#761C33
+}
+.subBtn{
+    width: 154px;
+    display: flex;
+    margin:auto;
+    margin-top:29px;
+    font-weight: 600;
+
+}
+.pricingBox .subBtn span{
+    color:white;
+    font-size: 1em;
+
+}
+
+.pricingFooter{
+    padding:50px 0 100px
+}
+.pricingFooter .aboutCourseTitle a{
+    color:#761C33
+}
+.pricingFooterMenu{
+  box-shadow:0 -1px 0 rgba(208, 208, 208, .5)
+}
+.contactImg{
+    width:100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.contactSec{
+    padding:50px 0 70px
+}
+.contactForm span{
+    font-size:.875em;
+    color:#6E6E6E;
+    font-weight: 500;
+    margin-bottom: 21px;
+    display: block;
+}
+.contactForm.MyProfInfoForm  textarea{
+    font-size:.875em;
+}
+.contactForm.MyProfInfoForm  textarea::placeholder{
+    font-size:1em
+}
+.contactForm .sendSuggestBtn span{
+    margin:0;
+    color:white;
 }
 @media(max-width:767px){
 body{
