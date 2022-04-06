@@ -517,7 +517,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <h4> Courses</h4>
+                    <h4> My Courses</h4>
                     <p>Learn Social Sciences and Middle East politics from experts and distinguished instructors. Learn
                         Social Sciences and Middle East politics from experts and distinguished instructors.</p>
                 </div>
@@ -1627,8 +1627,9 @@
                     <div class="successCertificate myCourseCertificate">
                         <img src="assets/images/smallcertifcate.png" alt="">
                     </div>
-                        <form class="cobonSec loginForm"> 
-                            <label class="checkmarkCont">
+                        <form class="cobonForm loginForm"> 
+                        
+                            <label class="checkmarkCont cobonCheckbox">
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                                 Do you have a discount coupon?
@@ -1636,13 +1637,48 @@
                             <div class="form-group cobonInput">
                                 <input type="text" class="form-control" placeholder="Enter the coupon number">
                             </div>
+                            <button class="btn commonBtn signBtn cobonFormBtn"> <span>Submit</span></button>
                         </form>
+                   
             
                 </div>
 
             </div>
         </div>
     </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade paymentModal" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby=""
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="lni lni-close"></i></span>
+            </button>
+            <h5>Payment</h5>
+            <div class="modal-body">
+                <div class="successCertificate myCourseCertificate">
+                    <img src="assets/images/smallcertifcate.png" alt="">
+                </div>
+                <form class="cobonForm loginForm">
+
+                    <label class="checkmarkCont cobonCheckbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Do you have a discount coupon?
+                    </label>
+                    <div class="form-group cobonInput">
+                        <input type="text" class="form-control" placeholder="Enter the coupon number">
+                    </div>
+                    <button class="btn commonBtn signBtn cobonFormBtn Complete "> <span>Complete Payment</span></button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

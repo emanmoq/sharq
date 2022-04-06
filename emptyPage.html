@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -518,7 +517,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <h4>Suggest a Course</h4>
+                    <h4> My Courses</h4>
                     <p>Learn Social Sciences and Middle East politics from experts and distinguished instructors. Learn
                         Social Sciences and Middle East politics from experts and distinguished instructors.</p>
                 </div>
@@ -526,46 +525,678 @@
         </div>
         </div>
     </section>
-    <section class="SuggestCourse">
+    <section class="myCoursesPageSec">
+        <div class="coursesTabsSection ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills coursepage-tabs" id="MycoursesTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link  active Process-tab" data-toggle="pill" href="#Process" role="tab"
+                                    aria-controls="pills-Process" aria-selected="true">In Process
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Finished-tab" data-toggle="pill" href="#Finished" role="tab"
+                                    aria-controls="pills-Finished" aria-selected="false">Finished
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Passed-tab" data-toggle="pill" href="#Passed" role="tab"
+                                    aria-controls="pills-Passed" aria-selected="false">Passed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Failed-tab" data-toggle="pill" href="#Failed" role="tab"
+                                    aria-controls="pills-Failed" aria-selected="false">Failed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  QuizResults-tab" data-toggle="pill" href="#QuizResults" role="tab"
+                                    aria-controls="pills-QuizResults" aria-selected="false">Quiz Results</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Certificates-tab" data-toggle="pill" href="#Certificates" role="tab"
+                                    aria-controls="pills-Certificates" aria-selected="false">Certificates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Specializations-tab" data-toggle="pill" href="#Specializations"
+                                    role="tab" aria-controls="pills-Specializations"
+                                    aria-selected="false">Specializations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mycoursesTabContainer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="" class="SuggestCourseForm">
-                        <div class="form-group halfForm-group marginFormGroup">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                    <div class="tab-content" id="MycoursesTabContent">
+                        <div class="tab-pane show active fade " id="Process" role="tabpanel"
+                            aria-labelledby="Process-tab">
+                            <div class="emptySec">
+                                <div class="emptyImg">
+                                    <img src="assets/images/empty.png" alt="">
+                                </div>
+                                <p>You will find your finished courses here.</p>
+                            </div>
                         </div>
-                        <div class="form-group halfForm-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                        <div class="tab-pane  fade " id="Finished" role="tabpanel" aria-labelledby="Finished-tab">
+
+                            <div class="emptySec">
+                                <div class="emptyImg">
+                                    <img src="assets/images/finshed.png" alt="">
+                                </div>
+                                <p>You will find your finished courses here.</p>
+                            </div>
                         </div>
-                        <div class="form-group halfForm-group marginFormGroup countriesFlagGroup">
-                            <input name="phone" class="form-control" type="text" id="phone"/> 
+                        <div class="tab-pane  fade " id="Passed" role="tabpanel" aria-labelledby="Passed-tab">
+
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage passed">80%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Passed">80%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Passed">80%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Passed">80%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="coursesPagination">
+                                <ul class="pagination">
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#" tabindex="-1">Next</a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Prev</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane  fade " id="Failed" role="tabpanel" aria-labelledby="Failed-tab">
+
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Failed">20%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Failed">20%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Failed">20%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Failed">20%</p>
+                                        <span class="myCoursetime">31 /31 Lecture</span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="coursesPagination">
+                                <ul class="pagination">
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#" tabindex="-1">Next</a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Prev</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane  fade " id="QuizResults" role="tabpanel" aria-labelledby="QuizResults-tab">
+
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage  QuizResultsPer Passed">80%</p>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Passed QuizResultsPer">80%</p>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+                                        <p class="processPercentage Failed QuizResultsPer">20%</p>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+
+                            <nav aria-label="Page navigation" class="coursesPagination">
+                                <ul class="pagination">
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#" tabindex="-1">Next</a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Prev</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="tab-pane  fade " id="Certificates" role="tabpanel"
+                            aria-labelledby="Certificates-tab">
+                            <ul class="nav nav-pills certificateTabs" id="CertificateTabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link  active Courses-tab" data-toggle="pill" href="#Courses"
+                                        role="tab" aria-controls="pills-Courses" aria-selected="true">Courses
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  Specialization-tab" data-toggle="pill" href="#Specialization"
+                                        role="tab" aria-controls="pills-Specialization"
+                                        aria-selected="false">Specialization
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="MycoursesTabContent">
+                                <div class="tab-pane show active fade " id="Courses" role="tabpanel"
+                                    aria-labelledby="Courses-tab">
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#"
+                                                    class="commonBtn   CertificateDownloadBtn"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#"
+                                                    class="commonBtn   CertificateDownloadBtn"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#"
+                                                    class="commonBtn   CertificateDownloadBtn"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation" class="coursesPagination">
+                                        <ul class="pagination">
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#" tabindex="-1">Next</a>
+                                            </li>
+                                            <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Prev</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="tab-pane  fade " id="Specialization" role="tabpanel"
+                                    aria-labelledby="Specialization-tab">
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#" class="commonBtn CertificateDownloadBtn" data-toggle="modal"
+                                                    data-target="#downloadCertefModal"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#"
+                                                    class="commonBtn   CertificateDownloadBtn"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="myCourses-Box myCoursesCert-Box">
+                                        <div class="myCoursesImage MycourseCertificateImg">
+                                            <img src="assets/images/myCoursesCertificate.png" alt="">
+                                        </div>
+                                        <div class="myCourse-details">
+                                            <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                            <div class="myCourseProgressSec">
+                                                <span class="myCourseDate">August 10, 2021</span>
+
+                                                <span>
+                                                    <span class="certificatePrice">69 USD</span>
+                                                </span>
+                                            </div>
+
+                                            <a href="javaScript:;" class="commonBtn issueCertificateBtn "><span>Issue
+                                                    your
+                                                    certificate</span></a>
+                                            <div class="MyCoursesCertficateBtns">
+                                                <a href="#"
+                                                    class="commonBtn   CertificateDownloadBtn"><span>Download</span></a>
+                                                <a href="#" class="commonBtn CertificateViewBtn "><span>View</span></a>
+
+                                            </div>
+                                        </div>
+                                        <div class="mycourseOptions">
+                                            <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation" class="coursesPagination">
+                                        <ul class="pagination">
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#" tabindex="-1">Next</a>
+                                            </li>
+                                            <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Prev</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="form-group halfForm-group">
-                    <div class="form-control">        <select name="" id="" class="select" >
-                        <option value="">Course Language</option>
-                        <option value="">Arabic</option>
-                        <option value="">English</option>
-                    </select></div>
+                        <div class="tab-pane  fade " id="Specializations" role="tabpanel"
+                            aria-labelledby="Specializations-tab">
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+
+                                        <span>
+                                            <span class="myCourseNum">0/4 Courses</span>
+                                        </span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+
+                                        <span>
+                                            <span class="myCourseNum">0/4 Courses</span>
+                                        </span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="myCourses-Box">
+                                <div class="myCoursesImage">
+                                    <img src="assets/images/mycourses.png" alt="">
+                                </div>
+                                <div class="myCourse-details">
+                                    <h4 class="aboutCourseTitle">Introduction to Cyber ​​Politics</h4>
+                                    <div class="myCourseProgressSec">
+                                        <span class="myCourseDate">August 10, 2021</span>
+
+                                        <span>
+                                            <span class="myCourseNum">0/4 Courses</span>
+                                        </span>
+                                    </div>
+                                    <div class="myCourseTeacher">
+                                        <div class="MyCourseTeacherImg"><img src="assets/images/instructor1.png" alt="">
+                                        </div>
+                                        <h4>Essam Abdelshafy</h4>
+                                    </div>
+                                </div>
+                                <div class="mycourseOptions">
+                                    <a href="#" class=""><i class="lni lni-more-alt"></i></a>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="coursesPagination">
+                                <ul class="pagination">
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#" tabindex="-1">Next</a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="#">01</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">03</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">05</a></li>
+
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Prev</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Course Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Course Name">
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" class="form-control"
-                                placeholder="Enter course description"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" class="form-control" placeholder="About the instructor"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" class="form-control" placeholder="Enter course content"></textarea>
-                        </div>
-                        <button class="btn sendSuggestBtn"><span>Send</span></button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -772,28 +1403,52 @@
             </div>
         </div>
     </div>
+    <div class="modal fade downloadCertefModal" id="downloadCertefModal" tabindex="-1" role="dialog" aria-labelledby=""
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
+                <h6>69 USD</h6>
+                <h5>Introduction to Cyber ​​Politics</h5>
+                <div class="modal-body">
+                    <div class="successCertificate myCourseCertificate">
+                        <img src="assets/images/smallcertifcate.png" alt="">
+                    </div>
+                    <form class="cobonForm loginForm">
+
+                        <label class="checkmarkCont cobonCheckbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Do you have a discount coupon?
+                        </label>
+                        <div class="form-group cobonInput">
+                            <input type="text" class="form-control" placeholder="Enter the coupon number">
+                        </div>
+                        <button class="btn commonBtn signBtn cobonFormBtn"> <span>Submit</span></button>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
     <script type="text/javascript" src="assets/js/counter.js"></script>
-    <script>
-        var input = document.querySelector("#phone");
-        window.intlTelInput(input, {
-            separateDialCode: true,
-            excludeCountries: ["in", "il"],
-            preferredCountries: ["SA", "jp", "pk", "no"]
-        });
-    </script>
+
 </body>
 
 </html>

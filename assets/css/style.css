@@ -1070,6 +1070,9 @@ align-self: center;
     top:0;
     left:34%;
 }
+.modal-body{
+    padding: 0
+}
 .modal{
     overflow: auto;
 }
@@ -1135,6 +1138,7 @@ button.close span{
 position: relative;
 margin-bottom:15px;
 overflow: hidden;
+width: 100%;
 }
 .loginForm .form-group:last-child{
     margin-bottom: 25px;;
@@ -3757,34 +3761,34 @@ border:1px solid #761C33
     font-weight: 600;
     text-align: center;
 }
-.downloadCertefModal  h5{
+.downloadCertefModal  h5,.paymentModal h5{
 font-size: 1.125em;
 font-weight: 600;
 }
 .downloadCertefModal  .modal-body{
     padding:0;
 }
-.cobonSec{
-display: flex;
-justify-content: center;
-padding: 0
-}
-.cobonSec .checkmarkCont{
+
+.cobonCheckbox {
 font-size:.875em;
 font-weight: 500;
-padding-left:25px
+padding-left:25px;
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+text-align: center;
 }
-.cobonSec .checkmarkCont  input:checked ~  .checkmark{
+ .cobonCheckbox  input:checked ~  .checkmark{
 background-color: #761C33;
 top:3px
 }
-.cobonSec .checkmarkCont:hover .checkmark{
+ .checkmarkCont.cobonCheckbox:hover .checkmark{
     background-color: transparent;
     width: 15px;
     height: 15px;
     border-radius: 4px;;
 }
-.cobonSec .checkmarkCont  input:checked ~  .checkmark:after{
+.cobonCheckbox  input:checked ~  .checkmark:after{
    border: solid white;
    border-width: 0 1px 1px 0;
    -webkit-transform: rotate(45deg);
@@ -3792,8 +3796,229 @@ top:3px
    transform: rotate(45deg);
    top:0
 }
-.cobonInput{
-    display: none;
+.cobonForm{
+    width: auto;
+    padding:0
+}
+.cobonForm .form-group{
+    display: block;
+    overflow: auto;
+    width: 100%;;
+}
+.cobonFormBtn{
+    width: 100%;
+    margin-top:0;
+    height: 56px;
+    border-radius: 28px;
+}
+.emptySec{
+    padding-top:30px;
+    text-align: center;
+}
+.emptySec p{
+    font-size:.875em;
+    font-weight: 500;
+}
+.emptyImg{
+    width:153px;
+    margin:auto;
+    margin-bottom: 36px;
+}
+.Complete{
+    background-color: #28A45C;
+    color:white;
+    height: 45px;
+    border-radius: 22px;
+}
+.Complete:hover{
+    background-color: #119A4A;
+}
+.myProfileHeader{
+    background-color: rgba(118, 28, 51, .22);
+    padding:25px 0;
+}
+.myProfileHeaderCont{
+    display: flex;
+}
+.myProfileImg{
+    display: inline-block;
+    width:137px;
+    height: 137px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.profileImgCont{
+    position: relative;
+}
+.MyProfIcon{
+    display: flex;
+    position:absolute;
+    right:23px;
+    top:0;
+    width:38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    justify-content: center;
+}
+.MyProfIcon span{
+    align-self: center;
+}
+.ProfNameDetails h4{
+margin-bottom: 15px;
+font-weight: 600;
+font-size: 1.25em;
+}
+.ProfNameDetails {
+    align-self: center;
+}
+.ProfNameDetails p{
+    font-size:.81em;
+    font-weight: 500;
+    margin-bottom: 11px;;
+}
+.myRewards span{
+float:left;
+margin-right: 10px;
+display: block;
+width: 30px;
+}
+.myRewards span:last-child{
+    margin-right: 0;
+}
+.MyProfInfoForm label{
+    font-size:0.9375em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.MyProfInfoForm .form-group{
+    margin-bottom: 20px;
+}
+.MyProfInfoForm textarea{
+    font-size: .81em;
+    font-weight: 500;;
+    line-height:1.5;
+    padding:28px
+}
+.rewardsList{
+    border:1px solid #E9E9E9;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.rewardsList li{
+list-style-type: none;
+padding-top: 28px;
+padding-bottom: 22px;
+padding-left:38px;
+padding-right:14px;
+border-bottom: 1px solid #E9E9E9;
+}
+.rewardsList li span{
+    width:66px;
+    margin-right: 19px;
+float: left;
+}
+.rewardsList li p{
+    font-size:.875em;
+    font-weight: 500;
+    float:left;
+    width:68%;
+}
+.rewardsList li:hover a{
+    color:#591526
+}
+.dategroup{
+    position: relative;
+    overflow: hidden;
+}
+.dategroup:after{
+content:"\ea58";
+font-family: lineicons;
+font-size: .7em;
+position: absolute;
+right: 20px;
+top: 51px;
+}
+.PublicityBox{
+    padding:20px;
+    border-radius: 16px;;
+    border: 1px solid #E9E9E9;
+    margin-bottom: 20px;
+
+}
+.PublicityBox h6{
+font-size:.91em;
+font-weight: 500;
+margin-bottom: 15px;;
+}
+.PublicityBox .checkmarkCont{
+    font-size: .875em;
+    font-weight: 500;
+    color:#6E6E6E;
+    display: block;
+    padding-left:30px;
+    float: none;
+    margin-bottom: 20px;
+}
+.PublicityBox p{
+    font-size: .875em;
+    font-weight: 500;
+    color:#6E6E6E;
+    margin-bottom: 20px;
+
+}
+.delBtn{
+    width:180px
+}
+.membershipHeaderCon{
+    background-image: url("../images/memberShipHeader.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:47px;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    text-align: center;
+    height: 179px;
+}
+.membershipHeaderCon h6{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:white;
+}
+.membershipBox{
+    border:1px solid #E9E9E9;
+    border-radius: 16px;
+    height: 263px;
+    overflow: hidden;
+text-align: center;
+    padding:38px 30px;
+    margin-bottom: 25px;;
+    width: 100%;
+
+}
+.membershipImg{
+    width:71px;
+    margin:auto;
+    margin-bottom: 14px;
+}
+.membershipBox p{
+    font-size:.875em;
+    font-weight: 500;
+    color:#6E6E6E;;
+    margin-bottom: 18px;
+}
+.membershipBox a{
+    font-size:.91em;
+    font-weight: 500;
+}
+.membershipBox:hover a{
+    color:#591526
+}
+.membershipCont{
+    padding-top:40px;
+    padding-bottom: 20px;
 }
 @media(max-width:767px){
 body{
