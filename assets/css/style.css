@@ -292,10 +292,10 @@ border-radius: 21px;;
     margin:5px;
     display: inline-block;
 }
-.fixedItemsImg svg{
+.fixedItemsImg img{
     transition: all .5s;
 }
-.fixedItemsImg:hover svg{
+.fixedItemsImg:hover img{
     transition: all .5s;;
     transform: scale(1.1);
 }
@@ -3784,6 +3784,7 @@ border:1px solid #761C33
 font-size: 1.125em;
 font-weight: 600;
 }
+
 .downloadCertefModal  .modal-body{
     padding:0;
 }
@@ -3851,6 +3852,50 @@ top:3px
 }
 .Complete:hover{
     background-color: #119A4A;
+}
+.paymentForm .form-group.cardNumFormgroup{
+    width: 260px;
+    display: inline-block;
+    margin-right: 12px;
+}
+.paymentForm .form-group{
+    text-align:left;
+}
+.paymentForm .form-group.CVCGroup{
+    display: inline-block;
+    width: 120px;
+}
+#paymentModal{
+    text-align: left;
+}
+#paymentModal h5{
+    margin-bottom: 38px;
+}
+.paymentForm .form-control{
+    height: 45px;
+}
+.paymentForm {
+    width: 100%;
+}
+.paymentForm label{
+font-size: .875em;
+font-weight: 500;
+display: block;
+}
+#Day{
+    width:104px;
+    margin-right: 12px;
+    display: inline-block;
+}
+#month{
+    width:157px;
+    margin-right: 12px;
+    display: inline-block;
+
+}
+#year{
+    width:104px;
+    display: inline-block;
 }
 .myProfileHeader{
     background-color: rgba(118, 28, 51, .22);
@@ -4286,12 +4331,125 @@ color:#6E6E6E;
 }
 .browseSection{
     padding-top:15px;
+    padding-bottom: 20px;
 }
 .browseCategoryBox{
     border: 1px solid #E9E9E9;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 25px;;
+    text-align: center;
+    padding:17px;
+    height: 282px;
+}
+.browseSection .aboutCourseTitle{
+    margin-bottom: 40px;;
+}
+.browseCategImg {
+    width:160px;
+    margin:auto;
+    margin-bottom: 17px;;
+    overflow: hidden;
+}
+.browseCategImg img{
+    transition: all .5s;
+}
+.browseCategoryBox:hover .browseCategImg img{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.categBtn{
+ width:auto;
+ height: 38px;;
+ border-radius: 16px;
+ margin: auto;
+ margin-bottom: 12px;
+ color:white;
+ padding:11px 13px
+}
+.purbleBtn .categBtn{
+    background-color: #9F6AC8;
+    border:1px solid #9F6AC8;
+}
+.browseCategoryBox .categBtn:hover{
+    background-color: white;
+}
+.browseCategoryBox.purbleBtn .categBtn:hover{
+    color:#9F6AC8
+}
+.pink .categBtn{
+    background-color: #DB6183;
+    border:1px solid #DB6183;
+}
+.browseCategoryBox.pink .categBtn:hover{
+    color:#DB6183
+}
+.red .categBtn{
+    background-color: #DA2052;
+    border:1px solid #DA2052;
+}
+.browseCategoryBox.red .categBtn:hover{
+    color:#DA2052
+}
+.yellow .categBtn{
+    background-color: #F48F1F;
+    border:1px solid #F48F1F;
+}
+.browseCategoryBox.yellow .categBtn:hover{
+    color:#F48F1F
+}
+.blue .categBtn{
+    background-color: #536EFD;
+    border:1px solid #536EFD;
+}
+.browseCategoryBox.blue .categBtn:hover{
+    color:#536EFD
+}
+.browseCategoryBox p{
+    font-size: .875em;
+    font-weight: 500;
+    opacity: .5;
+    max-height: 41px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+.helpFooter{
+    background-color: rgba(118, 28, 51, .14);
+    padding:54px 0;
+    width: 100%;;
+    text-align: center;
+}
+.helpFooter .aboutCourseTitle{
+    margin-bottom: 16px;
+}
+.helpFooter p{
+    font-size: .875em;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.chatBtn{
+    width: 146px;
+    height: 56px;
+    border-radius: 16px;;
+    color:#761C33;
+    border:1px solid #761C33;
+    font-weight: .81em;
+}
+.chatIcon{
+    margin-right: 7px;
+}
+.chatBtn:hover{
+    color:white;
+    background-color: #761C33;
+    transition: all .2s;
+}
+.chatBtn svg path {
+    transition: all .2s;
+}
+.chatBtn:hover svg path {
+fill:white;
+transition: all .2s;
+
 }
 @media(max-width:767px){
 body{

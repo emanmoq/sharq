@@ -139,14 +139,19 @@ jQuery(function ($) {
   
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
-    if (scrollTop > 500) {
-      $(".up").css("opacity", "1")
-    }
-    else  {
-      $(".up").css("opacity", "0")
+    if (( scrollTop +  $(window).height()) > $(document).height()) {
 
+      $(".up").stop(true).animate({
+        opacity: 1
+      }, 100);
+
+    } else {
+
+      $(".up").stop(true).animate({
+        opacity: 0
+      }, 250);
     }
-    if (scrollTop > $(".lessonHeader").height()-10){
+     if (scrollTop > $(".lessonHeader").height()-10){
       $(".courseDetailsBody .innerHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");
@@ -162,7 +167,6 @@ jQuery(function ($) {
       $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
       $(".scrolltabsection").removeClass("scrollNav");
       $(".courseDetailsBody .scrolableHeader").css("display","none");
-
       $(".videoSec").removeClass("scrollVideo");
 
     }
@@ -188,7 +192,8 @@ jQuery(function ($) {
   }
   $(document).on("scroll", onScroll);
         // alert(scrollTop);
-    $(".up").on("click", function () { $("html, body").animate({ scrollTop: 0 }, "slow"); return false; }); 
+    $(".up").on("click", function (e) { $("html, body").animate({ scrollTop: 0 }, "slow"); return false;
+  e.preventDefault() }); 
   });
 
   $(".langBtn").click(function () {

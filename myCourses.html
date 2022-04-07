@@ -1627,20 +1627,20 @@
                     <div class="successCertificate myCourseCertificate">
                         <img src="assets/images/smallcertifcate.png" alt="">
                     </div>
-                        <form class="cobonForm loginForm"> 
-                        
-                            <label class="checkmarkCont cobonCheckbox">
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                Do you have a discount coupon?
-                            </label>
-                            <div class="form-group cobonInput">
-                                <input type="text" class="form-control" placeholder="Enter the coupon number">
-                            </div>
-                            <button class="btn commonBtn signBtn cobonFormBtn"> <span>Submit</span></button>
-                        </form>
-                   
-            
+                    <form class="cobonForm loginForm">
+
+                        <label class="checkmarkCont cobonCheckbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Do you have a discount coupon?
+                        </label>
+                        <div class="form-group cobonInput">
+                            <input type="text" class="form-control" placeholder="Enter the coupon number">
+                        </div>
+                        <button class="btn commonBtn signBtn cobonFormBtn"> <span>Submit</span></button>
+                    </form>
+
+
                 </div>
 
             </div>
@@ -1649,36 +1649,47 @@
 
     <!-- Payment Modal -->
     <div class="modal fade paymentModal" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby=""
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="lni lni-close"></i></span>
-            </button>
-            <h5>Payment</h5>
-            <div class="modal-body">
-                <div class="successCertificate myCourseCertificate">
-                    <img src="assets/images/smallcertifcate.png" alt="">
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
+                <h5>Payment</h5>
+                <div class="modal-body">
+
+                    <form class="loginForm paymentForm">
+                        <div class="form-group cardNumFormgroup">
+                            <label for="">Card Number</label>
+                            <input type="text" class="form-control" placeholder="1111  2222  3333  9999" id="cardNum">
+                        </div>
+                        <div class="form-group CVCGroup">
+                            <label for="">CVC</label>
+                            <input type="text" class="form-control" placeholder="888" id="CVCGroup">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Holder Name</label>
+                            <input type="text" class="form-control" placeholder="Anne Smith" id="holderName">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Expiration Date</label>
+                            <input type="text" class="datepicker form-control" placeholder="15" id="Day" name="day">
+                            <input type="text" class="datepicker form-control" placeholder="November" id="Month"
+                                name="month">
+                            <input type="text" class="datepicker form-control" placeholder="2018" id="Year" name="Year">
+
+
+                        </div>
+                        <button class="btn commonBtn signBtn cobonFormBtn Complete "> <span>Complete
+                                Payment</span></button>
+                    </form>
+
+
                 </div>
-                <form class="cobonForm loginForm">
-
-                    <label class="checkmarkCont cobonCheckbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Do you have a discount coupon?
-                    </label>
-                    <div class="form-group cobonInput">
-                        <input type="text" class="form-control" placeholder="Enter the coupon number">
-                    </div>
-                    <button class="btn commonBtn signBtn cobonFormBtn Complete "> <span>Complete Payment</span></button>
-                </form>
-
 
             </div>
-
         </div>
     </div>
-</div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -1686,7 +1697,29 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="assets/lib/rating/jquery.star-rating-svg.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $("#paymentModal").modal("show")
+    </script>
+    <script type="text/javascript" src="assets/lib/Mask/dist/jquery.mask.js"></script>
+    <script>
+        $('#Day').datepicker({
+            showOn: 'focus',
+            altFormat: "mm/dd/yy",
+            dateFormat: "mm/dd/yy",
+            minDate: '12/12/2000',
+            maxDate: '12/12/2020'
+        }).focus();
+        $('#cardNum').mask('0000 0000 0000 0000');
+        $('#CVCGroup').mask('000');
+        $('#Day').mask('00');
+        $('#Month').mask('00');
+        $('#Year').mask('0000');
+
+    </script>
+
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
     <script type="text/javascript" src="assets/js/counter.js"></script>
