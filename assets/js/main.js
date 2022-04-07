@@ -26,27 +26,27 @@ jQuery(function ($) {
     },
 
   });
-  $(".intersetcoursesSlider").owlCarousel({
-    nav: false,
-    loop: false,
-    dots: false,
-    autoplay:true,
-    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-    items: 4,
-    margin: 30,
-    responsive: {
-      0: {
-        items: 1
-      },
-      700: {
-        items: 2
-      },
-      1000: {
-        items: 3,
-      }
-    },
+  // $(".intersetcoursesSlider").owlCarousel({
+  //   nav: false,
+  //   loop: false,
+  //   dots: false,
+  //   autoplay:true,
+  //   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+  //   items: 4,
+  //   margin: 30,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     700: {
+  //       items: 2
+  //     },
+  //     1000: {
+  //       items: 3,
+  //     }
+  //   },
 
-  });
+  // });
 
   $(".certificateSlider").owlCarousel({
     nav: true,
@@ -151,16 +151,15 @@ jQuery(function ($) {
         opacity: 0
       }, 250);
     }
-     if (scrollTop > $("header").height()-10){
+    
+    if (scrollTop > $("header").height()-10){
       $(".courseDetailsBody .innerHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolltabsection").addClass("scrollNav");
+      $(".lessonHeader").addClass("scrollHeader");
       $(".scrolltabsection").addClass("scrollNav");
-
       $(".videoSec").addClass("scrollVideo");
-
-      
     }
     else if (scrollTop < 300){
       $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
@@ -168,33 +167,51 @@ jQuery(function ($) {
       $(".scrolltabsection").removeClass("scrollNav");
       $(".courseDetailsBody .scrolableHeader").css("display","none");
       $(".videoSec").removeClass("scrollVideo");
+      $(".lessonHeader").removeClass("scrollHeader");
 
     }
+  });
 
     function onScroll(event){
       var scrollPosition = $(document).scrollTop();
     $('.courseDetailsBody .coursepage-tabs .nav-link').each(function () {
       console.log($(this).attr('href')); 
-      var refElement = $(this).attr("href");
-    //   console.log($(this).attr("href")); //log
-      if (refElement.length() && refElement.position().top-100 <= scrollTop) {
-      $('.courseDetailsBody .coursepage-tabs .nav-link').removeClass("active");
-      $(this).addClass("active");
-      }
-      else if( $(document).scrollTop() <= 100){
-        $('.courseDetailsBody .coursepage-tabs .nav-link').removeClass("active");
-      }
-      else{
-      $(this).removeClass("active"); 
+    //   var refElement = $(this).attr("href");
+    // //   console.log($(this).attr("href")); //log
+    //   if ( $('body').find(refElement).length && $('body').find(refElement).position().top-100 <= scrollTop) {
+    //   $('.courseDetailsBody .coursepage-tabs .nav-link').removeClass("active");
+    //   $(this).addClass("active");
+    //   }
+    //   else if( $(document).scrollTop() <= 100){
+    //     $('.courseDetailsBody .coursepage-tabs .nav-link').removeClass("active");
+    //   }
+    //   else{
+    //   $(this).removeClass("active"); 
     
-      }
+    //   }
     });
   }
+
+  $('.courseDetailsBody .coursepage-tabs .nav-link').click(function(){
+    var refElement = $(this).attr("href");
+    if(refElement.startsWith('#')){
+      $("html, body").animate({ scrollTop: $('body').find(refElement).position().top -100 }, "slow");
+            $('.courseDetailsBody .coursepage-tabs .nav-item').removeClass("active");
+
+      $(this).closest('.nav-item').addClass("active");
+ 
+      return false;
+    }
+  });
+
   $(document).on("scroll", onScroll);
         // alert(scrollTop);
-    $(".up").on("click", function (e) { $("html, body").animate({ scrollTop: 0 }, "slow"); return false;
-  e.preventDefault() }); 
-  });
+    $(".up").on("click", function (e) { 
+      e.preventDefault()
+      console.log('asdasd');
+      $("html, body").animate({ scrollTop: 0 }, "slow"); 
+      
+    }); 
 
   $(".langBtn").click(function () {
     $(".langDropDown").toggle()
