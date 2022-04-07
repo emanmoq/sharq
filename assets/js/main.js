@@ -139,14 +139,14 @@ jQuery(function ($) {
   
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
-    if (scrollTop > 1000) {
+    if (scrollTop > 500) {
       $(".up").css("opacity", "1")
     }
-    else if (scrollTop < 1000)  {
+    else  {
       $(".up").css("opacity", "0")
 
     }
-    if (scrollTop > $("header").height()-10){
+    if (scrollTop > $(".lessonHeader").height()-10){
       $(".courseDetailsBody .innerHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");

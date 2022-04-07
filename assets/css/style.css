@@ -354,6 +354,22 @@ background-color: white;
 .sectionTitle {
     margin-bottom: 45px;;
 }
+#home-pills-tab {
+    margin-bottom: 40px;
+}
+#home-pills-tab .nav-link,#mobile-pills-tab .nav-link{
+    padding:12px 18px;
+    border:1px solid #E1E1E1;
+    color:rgba(0,0,0,.5);
+    font-size: .875em;
+    font-weight: 500;
+    margin-right:10px;
+    border-radius: 21.5px;
+}#home-pills-tab .nav-link.active,#mobile-pills-tab .nav-link.active{
+    border:1px solid #761C33;
+    color:#761C33;
+    background-color: transparent;
+}
 
 @media (min-width: 1200px)
 
@@ -4150,6 +4166,132 @@ outline:1px solid #E9E9E9;
 .contactForm .sendSuggestBtn span{
     margin:0;
     color:white;
+}
+.publicHeader{
+    background-color: #761C33;
+    border-bottom:1px solid rgba(208, 208, 208, .5);
+}
+.publicLinks{
+    float: right;
+}
+.publicLinks .btn{
+    width: 93px;
+    height:29px;
+    background-color: rgba(255,255,255,.15);
+    border-radius: 0;
+    margin-left:15px;
+    color:white;
+    font-size:.75em;
+    font-weight: 600;
+    padding:0;
+    display: inline-flex;
+    justify-content: center;
+}
+.publicLinks .btn span{
+    align-self: center;
+}
+.publicLinks .btn:hover{
+    background-color: rgba(255,255,255,.1);
+}
+.publicLinks .langBtn::after{
+    top:10px
+}
+.ArticlesTitle{
+    padding:26px 0 33px;
+        box-shadow:0 1px 0 rgba(208, 208, 208, .5)
+
+}
+.ArticlesTitle h2{
+    font-size: 1.375em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.ArticlesTitle span{
+    font-size: .81em;
+    font-weight: 500px;
+    color:#6E6E6E
+}
+.ArticlesSec{
+    padding:27px 0 100px
+}
+.articleList a{
+    max-width:70%;
+    display: block;
+    font-size:.875em;
+    font-weight: 500;
+}
+.articleList li:hover a{
+    color:#761C33
+}
+article p,article span{
+    font-size:.875em;
+    font-weight: 500;
+    line-height:2;
+    color:#6E6E6E;
+    margin-bottom: 30px;
+}
+article a{
+    color:#3279B7;
+    display: block;
+}
+.articleHelpful{
+    margin-top:20px
+}
+.helpForm-control{
+    background-color: white;
+    border-radius: 17px;
+    height: 34px;
+    padding-left:40px;
+
+}
+.helpForm{
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    left: 16px;
+    top: 38%;
+}
+.helpForm-control::placeholder{
+font-size: 11px;
+font-weight: 500;
+color:#6E6E6E;
+}
+.helpHeader{
+    padding-top:40px
+}
+.articalLink{
+    width:328px;;
+    height: 66px;
+    border:1px solid #E9E9E9;
+    display: inline-flex;
+    justify-content: center;
+    color:rgba(0, 0, 0, .5);
+    font-size:.875em;
+    font-weight: 500;
+    padding:0 47px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+}
+.articalLink:hover{
+    background-color: #761C33;
+    color:white;
+}
+.articalLink span{
+    align-self: center;
+    border-radius: 16px;
+}
+.articalLink:nth-child(even){
+    margin-right: 25px;
+}
+.browseSection{
+    padding-top:15px;
+}
+.browseCategoryBox{
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 25px;;
 }
 @media(max-width:767px){
 body{
