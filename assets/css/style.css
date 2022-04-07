@@ -1625,7 +1625,7 @@ position: relative;
 .innerHeader{
     background-color: none;
     background-image: url("../images/innerHeader.png");
-    padding:85px;
+    padding:85px 0;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -1816,6 +1816,7 @@ color:white;
 }
 .SuggestCourseForm  .form-group{
     margin-bottom: 16px;;
+    overflow: hidden;
 }
 .SuggestCourseForm .form-control{
     width: 100%;height: 56px;
@@ -2749,6 +2750,7 @@ padding-top:40px
     box-shadow: 0 1px rgba(208, 208, 208, .5);
     height: 59px;
 }
+
  .coursepage-tabs .nav-link.active, .courseDetails-tabs  .show>.nav-link{
     padding:0;
     background-color: transparent;
@@ -4570,7 +4572,129 @@ header .container-fluid{
 }
 .prevVideo {
     float:none;
+    margin:0;
 margin-top:20px;
+
+}
+.OurMessionBox{
+padding:20px;
+}
+.OurMissionText{
+    width:70%
+}
+.OurMissionIcon {
+    width: 66px;}
+.coursesSetBox {
+    width: 100%;}
+    .coursefilterBtn {
+    padding: 10px 17px;
+}
+.courseFilterDropDown{
+    margin-bottom: 10px;
+}
+.coursesPagination .page-item{
+margin:0;
+display: inline-block;
+margin-bottom: 5px;
+}
+.pagination{
+    display: block;
+}
+.innerHeader{
+    padding:30px 0
+}
+.innerBenfitBox{
+    margin-top:10px
+}
+.joinSec{
+    height: auto;
+}
+.certificateImage {
+    position: relative;
+    top: auto;
+margin-bottom: 20px;}
+
+.certificateJoinSec{
+    margin-bottom: 50px;
+}
+.rewardsBox{
+    margin-top:20px
+}.contactForm{
+    margin-top:20px;
+}
+.certificateDetImg {
+    width:100%;
+    margin-top:0;
+    margin-bottom: 30px;
+}
+.coursesTabsSection  .navbar.navbar-expand-lg{
+    display: block;
+}
+.navbar-nav.coursepage-tabs{
+    display: block;
+}
+.coursepage-tabs .nav-item{
+    display: inline-block;
+    float: left;
+}
+.coursesTabsSection{
+    height:auto
+}
+.leaveReview{
+    margin:15px 0
+}
+.course-DetailsCont #Curriculum{
+margin-top:20px
+}
+.CertificateDetailsBox .outcomesList {
+    float: left;
+    width: 52%;
+    margin-top:0
+}
+.sideCurriclum{
+    width:100%;
+}
+.courseVideoAndDetails{
+    width:100%;
+}
+.scrollVideo{
+    left:0;
+    height: auto;
+}
+.scrollVideo video{
+    width:100%;
+}
+.paymentForm .form-group.cardNumFormgroup {
+    width: 199px;}
+.paymentForm .form-group.CVCGroup {
+    width: 110px;
+}
+#Day {
+    width: 73px;}
+#month {
+    width: 116px;}
+
+#MycoursesTabs .nav-link{
+    margin-right: 10px;
+    font-size: .75em;
+}
+.myProfileImg{
+    width:109px;
+    height: 109px;
+}
+.specializationCourses .coursesPagination, .instructorPagination{
+    display: block;
+}
+.Showing{
+    display: block;
+    float: none;
+    margin-top:30px
+}
+.SuggestCourseForm .marginFormGroup{
+    margin-right: 0;
+}
+.SuggestCourseForm .halfForm-group{
+    width: 100%;;
 }
 }
  @media (min-width: 800px){

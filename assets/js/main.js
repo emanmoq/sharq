@@ -151,7 +151,7 @@ jQuery(function ($) {
         opacity: 0
       }, 250);
     }
-     if (scrollTop > $(".lessonHeader").height()-10){
+     if (scrollTop > $("header").height()-10){
       $(".courseDetailsBody .innerHeader").addClass("removeHeader");
       $(".courseDetailsBody .scrolableHeader").css("display","flex")
       $(".courseDetailsBody .mainHeader").addClass("removeHeader");
@@ -162,7 +162,7 @@ jQuery(function ($) {
 
       
     }
-    else{
+    else if (scrollTop < 300){
       $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
       $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
       $(".scrolltabsection").removeClass("scrollNav");
@@ -177,7 +177,7 @@ jQuery(function ($) {
       console.log($(this).attr('href')); 
       var refElement = $(this).attr("href");
     //   console.log($(this).attr("href")); //log
-      if (refElement.length() && refElement.position().top-100 <= scrollPosition) {
+      if (refElement.length() && refElement.position().top-100 <= scrollTop) {
       $('.courseDetailsBody .coursepage-tabs .nav-link').removeClass("active");
       $(this).addClass("active");
       }
