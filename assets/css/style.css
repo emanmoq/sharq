@@ -237,7 +237,7 @@ color:black
 .heroSliderItem:before{
     position: absolute;
     content: "";
-    background-image: linear-gradient(to right ,rgb(249, 245, 246,.1) 0%, rgba(255,255,255,0)100%);
+    background-image: linear-gradient(to right ,rgb(249, 245, 246,.1) 0%, rgba(255,255,255,0) 100%);
     opacity: .89;
     width: 100%;
     height: 100%;
@@ -2667,7 +2667,7 @@ margin-bottom: 27px;
   .leaveReviewComment{
       height: 107px;
       border-radius: 16px;
-      border:1px solid#DBDBDB;
+      border:1px solid #DBDBDB;
       margin-top:16px;
       width:100%;
       resize: none;
@@ -3895,6 +3895,7 @@ top:3px
 }
 .paymentForm {
     width: 100%;
+    text-align: left;
 }
 .paymentForm label{
 font-size: .875em;
@@ -3908,10 +3909,16 @@ text-align: left;
     display: inline-block;
 }
 #MonthFormgroup{
-    width:157px;
+    width:65px;
     margin-right: 12px;
     display: inline-block;
 
+}
+#MonthFormgroup .form-control,#yearFormgroup  .form-control{
+    text-align: center;
+}
+#MonthFormgroup .form-control::placeholder, #yearFormgroup .form-control::placeholder{
+    text-align: center;
 }
 #yearFormgroup{
     width:104px;
@@ -4677,9 +4684,16 @@ margin-top:20px
 }
 .sideCurriclum{
     width:100%;
+    position: relative;
+    left:0;
+    top:0;
+}
+.videoSec video{
+    height: 300px;
 }
 .courseVideoAndDetails{
     width:100%;
+    left:0;
 }
 .scrollVideo{
     left:0;
@@ -4694,7 +4708,8 @@ margin-top:20px
     width: 110px;
 }
 #Day {
-    width: 73px;}
+    width: 73px;
+}
 #month {
     width: 116px;}
 

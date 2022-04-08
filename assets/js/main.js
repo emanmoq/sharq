@@ -150,25 +150,26 @@ jQuery(function ($) {
       $(".up").stop(true).animate({
         opacity: 0
       }, 250);
-    }
-    
-    if (scrollTop > $("header").height()-10){
-      $(".courseDetailsBody .innerHeader").addClass("removeHeader");
-      $(".courseDetailsBody .scrolableHeader").css("display","flex")
-      $(".courseDetailsBody .mainHeader").addClass("removeHeader");
-      $(".courseDetailsBody .scrolltabsection").addClass("scrollNav");
-      $(".lessonHeader").addClass("scrollHeader");
-      $(".scrolltabsection").addClass("scrollNav");
-      $(".videoSec").addClass("scrollVideo");
-    }
-    else if (scrollTop < 300){
-      $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
-      $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
-      $(".scrolltabsection").removeClass("scrollNav");
-      $(".courseDetailsBody .scrolableHeader").css("display","none");
-      $(".videoSec").removeClass("scrollVideo");
-      $(".lessonHeader").removeClass("scrollHeader");
-
+    } 
+    if ($(window).width() > 767){
+      if (scrollTop > $("header").height()-10){
+        $(".courseDetailsBody .innerHeader").addClass("removeHeader");
+        $(".courseDetailsBody .scrolableHeader").css("display","flex")
+        $(".courseDetailsBody .mainHeader").addClass("removeHeader");
+        $(".courseDetailsBody .scrolltabsection").addClass("scrollNav");
+        $(".lessonHeader").addClass("scrollHeader");
+        $(".scrolltabsection").addClass("scrollNav");
+        $(".videoSec").addClass("scrollVideo");
+      }
+      else if (scrollTop < 300){
+        $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
+        $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
+        $(".scrolltabsection").removeClass("scrollNav");
+        $(".courseDetailsBody .scrolableHeader").css("display","none");
+        $(".videoSec").removeClass("scrollVideo");
+        $(".lessonHeader").removeClass("scrollHeader");
+  
+      }
     }
   });
 
