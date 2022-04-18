@@ -3287,9 +3287,7 @@ element.style {}
     padding-left: 40px
 }
 
-#coursesTabContent .lectureDetailsBox {
-    padding-left: 0
-}
+
 
 .lectureImg {
     float: left;
@@ -4376,6 +4374,7 @@ textarea {
     font-weight: 600;
     font-size: .81em;
     color: #6E6E6E;
+    max-width: 65%;
 }
 
 .NoteActionBtn {
@@ -6114,6 +6113,7 @@ article a {
 
     .joinBtn {
         float: left;
+    margin-left:7px
     }
 
     .navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -6349,8 +6349,8 @@ article a {
     }
 
     .CertificateDetailsBox .outcomesList {
-        float: left;
-        width: 52%;
+        float: none;
+        width: 100%;
         margin-top: 0
     }
 
@@ -6441,13 +6441,6 @@ article a {
         height: auto;
     }
 
-    #coursesTabContent .lectureDetailsBox {
-        padding: 10px
-    }
-
-    #coursesTabContent .aboutCourse {
-        padding: 0
-    }
 
     .profileSec:before {
         right: -5px;
@@ -6456,6 +6449,37 @@ article a {
     .coursesTabsSection .row {
         width: 100%;
         ;
+    }
+
+    #coursesTabContent .row{
+        width: 100%;
+    }
+    .lectureImg{
+        margin: auto;
+        float: none;
+    }
+    #coursesTabContent .lectureDetailsBox {
+        padding:10px
+    }
+    .lectureDesc{
+        float: none;
+        width: 100%;;text-align: center;
+        margin-top: 15px;
+    }
+    .CertificateDetailsImg {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .helpful{
+        display: block;
+    }
+    .helpfulAnswer{
+        margin-top:20px
+    }
+    .replayText{
+        max-width: 100%;;
     }
 }
 

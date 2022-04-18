@@ -219,15 +219,14 @@ jQuery(function ($) {
 
   $('.courseDetailsBody .coursepage-tabs .nav-link').click(function(){
     var refElement = $(this).attr("href");
-    let top=100;
-    if(refElement.startsWith('#')){
-      $("html, body").animate({ scrollTop: $('body').find(refElement).position().top - top }, "slow");
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top - 5 }, 1000);
+
             $('.courseDetailsBody .coursepage-tabs .nav-item').removeClass("active");
 
       $(this).closest('.nav-item').addClass("active");
  
       return false;
-    }
+    
   });
 
   $(document).on("scroll", onScroll);
