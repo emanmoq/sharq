@@ -22,15 +22,13 @@
     <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link href="assets/css/selectric.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="overlay">
-
-    </div>
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -232,28 +230,27 @@
                         </div>
                         <div class="exploreBox">
                             <form action="" class="exploreForm clearfix">
-                                <select name="" id="" class="select">
-                                    <option value="">Explore</option>
-                                    <option value="">
-                                        explore2
-                                    </option>
-                                </select>
-                                <input type="text" placeholder="What do you want to learn?" class="exploreInput">
-                                <button class="exploreBtn btn"><svg xmlns="http://www.w3.org/2000/svg" width="13.207"
-                                        height="13.5" viewBox="0 0 13.207 13.5">
-                                        <g id="Search" transform="translate(0.5 0.5)">
-                                            <circle id="Ellipse_739" cx="5.748" cy="5.748" r="5.748"
-                                                transform="translate(0 0)" fill="none" stroke="#fff"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                                stroke-width="1" />
-                                            <path id="Line_181" d="M0,0,2.254,2.248" transform="translate(9.746 10.045)"
-                                                fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-miterlimit="10" stroke-width="1" />
-                                        </g>
-                                    </svg>
-                                </button>
+                              <select name="" id="" class="exploreSelect">
+                                <option value="">Explore</option>
+                                <option value="">
+                                  explore2
+                                </option>
+                              </select>
+                              <input type="text" placeholder="What do you want to learn?" class="exploreInput">
+                              <button class="exploreBtn btn"><svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="13.5"
+                                  viewBox="0 0 13.207 13.5">
+                                  <g id="Search" transform="translate(0.5 0.5)">
+                                    <circle id="Ellipse_739" cx="5.748" cy="5.748" r="5.748" transform="translate(0 0)" fill="none"
+                                      stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                      stroke-width="1" />
+                                    <path id="Line_181" d="M0,0,2.254,2.248" transform="translate(9.746 10.045)" fill="none"
+                                      stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                      stroke-width="1" />
+                                  </g>
+                                </svg>
+                              </button>
                             </form>
-                        </div>
+                          </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon">
@@ -799,19 +796,12 @@
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
     <script type="text/javascript" src="assets/lib/rating/jquery.star-rating-svg.js"></script>
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
     <script type="text/javascript" src="assets/js/counter.js"></script>
-    <script>
-        var input = document.querySelector("#phone");
-        window.intlTelInput(input, {
-            separateDialCode: true,
-            excludeCountries: ["in", "il"],
-            preferredCountries: ["SA", "jp", "pk", "no"]
-        });
-    </script>
+
 
 </body>
 

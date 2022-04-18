@@ -1331,7 +1331,9 @@ footer .container {
     margin-top: 19px;
     color: #761C33
 }
-
+.contactFooterList li a{
+    color:#761C33
+}
 .socialIcons li {
     list-style-type: no9Fne;
     display: inline-block;
@@ -2423,7 +2425,7 @@ button.close span {
 
 .SuggestCourseForm .halfForm-group {
     width: 48.5%;
-    display: inline-block;
+  float: left;
 }
 
 .SuggestCourseForm .marginFormGroup {
@@ -2432,8 +2434,6 @@ button.close span {
 
 .SuggestCourseForm .form-group {
     margin-bottom: 16px;
-    ;
-    overflow: hidden;
 }
 
 .SuggestCourseForm .form-control {
