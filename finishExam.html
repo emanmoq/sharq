@@ -22,7 +22,7 @@
     <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
     <link href="assets/lib/jquery-steps/dist/jquery-steps.css" rel="stylesheet">
-
+    <link href="assets/css/selectric.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -1008,9 +1008,8 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="English Full Name">
                                     </div>
-                                    <div class="form-group dategroup">
-                                        <i class="lni lni-chevron-down"></i>
-                                        <div class="form-control"> <select name="" id="" class=" select">
+                                    <div class="form-group">
+                                         <select name="" id="" class="select">
                                                 <option value="0">
                                                     Gender
                                                 </option>
@@ -1020,16 +1019,14 @@
                                                 <option value="2">
                                                     Female
                                                 </option>
-                                            </select></div>
+                                            </select>
 
                                     </div>
                                     <div class="form-group dategroup">
-                                        <i class="lni lni-chevron-down"></i>
                                         <input type="text" class="datepicker form-control" placeholder="Date">
                                     </div>
-                                    <div class="form-group dategroup">
-                                        <i class="lni lni-chevron-down"></i>
-                                        <div class="form-control"> <select name="" id="" class=" select">
+                                    <div class="form-group ">
+                                         <select name="" id="" class=" select">
                                                 <option value="0">
                                                     Country
                                                 </option>
@@ -1039,7 +1036,7 @@
                                                 <option value="2">
                                                     Egypt
                                                 </option>
-                                            </select></div>
+                                            </select>
 
                                     </div>
 
@@ -1097,7 +1094,7 @@
     <script>$("#finishExam").steps({
             onFinish: function () { alert('complete'); }
         });</script>
-
+  <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>

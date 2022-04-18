@@ -26,27 +26,47 @@ jQuery(function ($) {
     },
 
   });
-  // $(".intersetcoursesSlider").owlCarousel({
-  //   nav: false,
-  //   loop: false,
-  //   dots: false,
-  //   autoplay:true,
-  //   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-  //   items: 4,
-  //   margin: 30,
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     700: {
-  //       items: 2
-  //     },
-  //     1000: {
-  //       items: 3,
-  //     }
-  //   },
+  $(".updateSlider").owlCarousel({
+    nav: true,
+    loop: false,
+    dots: true,
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+    items: 4,
+    margin: 25,
+    responsive: {
+      0: {
+        items: 1
+      },
+      700: {
+        items: 2
+      },
+      1000: {
+        items: 3,
+      }
+    },
 
-  // });
+  });
+   $(".intersetcoursesSlider").owlCarousel({
+     nav: false,
+   loop: false,
+     dots: false,
+     autoplay:true,
+     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+     items: 4,
+     margin: 30,
+     responsive: {
+     0: {
+        items: 1
+     },
+       700: {
+       items: 2
+       },
+     1000: {
+        items: 3,
+      }
+     },
+
+   });
 
   $(".certificateSlider").owlCarousel({
     nav: true,
@@ -152,7 +172,7 @@ jQuery(function ($) {
       }, 250);
     } 
     if ($(window).width() > 767){
-      if (scrollTop > $("header").height()-10){
+      if (scrollTop > $("header").height()-10 && scrollTop < $('.sideCurriclum').height() ) {
         $(".courseDetailsBody .innerHeader").addClass("removeHeader");
         $(".courseDetailsBody .scrolableHeader").css("display","flex")
         $(".courseDetailsBody .mainHeader").addClass("removeHeader");
@@ -160,16 +180,20 @@ jQuery(function ($) {
         $(".lessonHeader").addClass("scrollHeader");
         $(".scrolltabsection").addClass("scrollNav");
         $(".videoSec").addClass("scrollVideo");
+        $(".lessonBody .tab-content").css("padding-top","500px")
       }
-      else if (scrollTop < 300){
+      else if (scrollTop < 300 ){
         $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
         $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
         $(".scrolltabsection").removeClass("scrollNav");
         $(".courseDetailsBody .scrolableHeader").css("display","none");
         $(".videoSec").removeClass("scrollVideo");
         $(".lessonHeader").removeClass("scrollHeader");
+        $(".lessonBody .tab-content").css("padding-top","0")
+
   
       }
+    
     }
   });
 
@@ -195,8 +219,9 @@ jQuery(function ($) {
 
   $('.courseDetailsBody .coursepage-tabs .nav-link').click(function(){
     var refElement = $(this).attr("href");
+    let top=100;
     if(refElement.startsWith('#')){
-      $("html, body").animate({ scrollTop: $('body').find(refElement).position().top -100 }, "slow");
+      $("html, body").animate({ scrollTop: $('body').find(refElement).position().top - top }, "slow");
             $('.courseDetailsBody .coursepage-tabs .nav-item').removeClass("active");
 
       $(this).closest('.nav-item').addClass("active");
@@ -232,9 +257,10 @@ jQuery(function ($) {
     }
   });
   $(".datepicker").datepicker();
-  $(document).on('click', '.dropdown-menu a', function (e) {
-    e.stopPropagation();
-  });
+$(document).on('click', '.dropdown-menu a', function (e) {
+  e.stopPropagation();
+});
+
   // make it as accordion for smaller screens
 
     $('.dropdown-menu a').click(function(e){
@@ -356,7 +382,42 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
     }
   });
 
+	if($(".exploreSelect").length){
+		$('.exploreSelect').selectric({
+      disableOnMobile: false,
+      nativeOnMobile: false
+    });
+    }
+    if($(".select").length){
+      $('.select').selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false
+      }
+      );
+      }
+    $('.selectric .button').text('');
 
-});
+    $('.selectric .button').append('<i class="lni lni-chevron-down"></i>');
+        $('.loginLink').click(function(){
+          $('.modal').modal('hide');
+          $('#LoginModal').modal('show')
+        });
+        $('.regBtnLink').click(function(){
+          $('.modal').modal('hide');
+          $('#regModal').modal('show')
+        });
+        $('.forgetLink').click(function(){
+          $('.modal').modal('hide');
+          $('#forgerPassModal').modal('show')
+        });
+        $('.instructortBtn').click(function(){
+          $('.modal').modal('hide');
+          $('#InstructorModal').modal('show')
+        });
+        $(".form-control").click(function () {
+          $(this).attr("placeholder", " ");
+      
+        });
+    });
 
 

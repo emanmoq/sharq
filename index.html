@@ -21,6 +21,8 @@
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
   <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
   <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
+  <link href="assets/css/selectric.css" rel="stylesheet">
+
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -31,9 +33,8 @@
       <div class="row">
         <div class="col-md-12">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
-            <div class="mobileBtns"> <a class=" btn joinBtn" data-toggle="modal" data-target="#regModal"
-                href="#"><span>Join for Free</span></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/blackLogo.svg" alt=""></a>
+            <div class="mobileBtns"> <a class="btn joinBtn regBtnLink" href="#"><span>Join for Free</span></a>
               <div class="langCont">
                 <a class=" btn joinBtn langBtn dropdown-toggle" href="#" id="langDropDown" role="button"
                   data-toggle="langDropDown" aria-haspopup="true" aria-expanded="true"> <span>EN</span>
@@ -46,7 +47,7 @@
             </div>
             <div class="exploreBox">
               <form action="" class="exploreForm clearfix">
-                <select name="" id="">
+                <select name="" id="" class="exploreSelect">
                   <option value="">Explore</option>
                   <option value="">
                     explore2
@@ -86,13 +87,15 @@
                     Courses
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li> <a class="dropdown-item" href="#">Introduction to Social Sciences
-                        & Humanities</a></li>
+                    <li> <a class="dropdown-item" href="#"><span>Introduction to Social Sciences
+                          <br> & Humanities</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a></li>
 
-
-                    <li> <a class="dropdown-item" href="#">Political Science</a>
+                    <li> <a class="dropdown-item" href="#"><span>Political Science</span> <i
+                          class="fa fa-chevron-right"></i></a>
                       <ul class="submenu dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Introduction</a></li>
+                        <li><a class="dropdown-item" href="#">Introduction</a> </li>
                         <li><a class="dropdown-item" href="#">International Relations</a></li>
                         <li> <a class="dropdown-item" href="#">Democracy</a></li>
                         <li> <a class="dropdown-item" href="#">Comparative Politics</a></li>
@@ -101,8 +104,10 @@
 
                       </ul>
                     </li>
-                    <li> <a class="dropdown-item" href="#">Al Sharq Studies</a></li>
-                    <li> <a class="dropdown-item" href="#">Islam&Politics</a>
+                    <li> <a class="dropdown-item" href="#"><span>Al Sharq Studies</span> <i
+                          class="fa fa-chevron-right"></i></a></li>
+                    <li> <a class="dropdown-item" href="#"><span>Islam&Politics </span>
+                        <i class="fa fa-chevron-right"></i></a>
                     </li>
                   </ul>
                 </li>
@@ -126,11 +131,11 @@
                   <a class="nav-link" href="#">About US</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link loginLink" href="#" data-toggle="modal" data-target="#loginModal">login</a>
+                  <a class="nav-link loginLink" href="#">login</a>
                 </li>
 
               </ul>
-              <a class=" btn joinBtn" href="#" data-toggle="modal" data-target="#regModal"><span>Join for
+              <a class=" btn joinBtn regBtnLink" href="#"><span>Join for
                   Free</span></a>
               <div class="langCont">
                 <a class=" btn joinBtn langBtn dropdown-toggle" href="#" id="langDropDown" role="button"
@@ -172,11 +177,11 @@
     </div>
     <div class="fixedItems">
       <div class="fixedItemsImg">
-       <a href="#"> <img src="assets/images/Bitmap.png" alt=""></a>
+        <a href="#"> <img src="assets/images/hero1.svg" alt=""></a>
       </div>
       <div class="fixedItemsImg">
-        <a href="#"><img src="assets/images/Bitmap2.png" alt=""></a>
-      </div> 
+        <a href="#"><img src="assets/images/hero2.svg" alt=""></a>
+      </div>
     </div>
   </section>
   <section class="benefit">
@@ -1397,6 +1402,80 @@
       </div>
     </div>
   </section>
+  <section class="updates">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sectionTitle">
+            <h5>Updates</h5>
+            <p>Pick a course from these popular courses to help you develop your skills.</p>
+          </div>
+          <div class="updateSlider owl-carousel">
+            <div class="courseItemBox  updateBox clearfix">
+              <div class="courseImg">
+                <span class="courseLang">ع</span>
+                <img src="assets/images/updates1.png" alt="">
+              </div>
+             
+              <div class="courseDesc">
+                <span class="updateDate">30-6-2020</span>
+                <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+
+
+              </div>
+
+            </div>
+            <div class="courseItemBox  updateBox clearfix">
+              <div class="courseImg">
+                <span class="courseLang">En</span>
+                <img src="assets/images/updates2.png" alt="">
+              </div>
+             
+              <div class="courseDesc">
+                <span class="updateDate">30-6-2020</span>
+                <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+
+
+              </div>
+
+            </div>
+            <div class="courseItemBox  updateBox clearfix">
+              <div class="courseImg">
+                <span class="courseLang">ع</span>
+                <img src="assets/images/updates1.png" alt="">
+              </div>
+             
+              <div class="courseDesc">
+                <span class="updateDate">30-6-2020</span>
+                <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+
+
+              </div>
+
+            </div>
+            <div class="courseItemBox  updateBox clearfix">
+              <div class="courseImg">
+                <span class="courseLang">ع</span>
+                <img src="assets/images/updates2.png" alt="">
+              </div>
+             
+              <div class="courseDesc">
+                <span class="updateDate">30-6-2020</span>
+                <h4><a href="#">Introduction to Cyber ​​Politics</a></h4>
+                <p>This course examines the foundations of cyber politics. It sheds light on the ma</p>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="discount">
     <div class="container">
       <div class="row">
@@ -1577,7 +1656,7 @@
           </div>
           <div class="InstructorsSlider owl-carousel">
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor1.png" alt="">
                 </div>
@@ -1586,7 +1665,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor2.png" alt="">
                 </div>
@@ -1595,7 +1674,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor3.png" alt="">
                 </div>
@@ -1604,7 +1683,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal"></a>
+              <a href="javaScript:;" class="instructortBtn"></a>
               <div class="instructorImg">
                 <img src="assets/images/instructor4.png" alt="">
               </div>
@@ -1613,7 +1692,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor1.png" alt="">
                 </div>
@@ -1622,7 +1701,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal"></a>
+              <a href="javaScript:;" class="instructortBtn"></a>
               <div class="instructorImg">
                 <img src="assets/images/instructor2.png" alt="">
               </div>
@@ -1631,7 +1710,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor3.png" alt="">
                 </div>
@@ -1640,7 +1719,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor4.png" alt="">
                 </div>
@@ -1649,7 +1728,7 @@
               </a>
             </div>
             <div class="InstructorItem">
-              <a href="javaScript:;" data-toggle="modal" data-target="#InstructorModal">
+              <a href="javaScript:;" class="instructortBtn">
                 <div class="instructorImg">
                   <img src="assets/images/instructor1.png" alt="">
                 </div>
@@ -1782,14 +1861,14 @@
                   Item Of
                 </span>
                 <div class="footerPartnerImg">
-                  <img src="assets/images/Bitmap.png" alt="">
+                  <img src="assets/images/asic.svg" alt="">
                 </div>
               </a>
               <a href="#"><span>
                   Accredit from
                 </span>
                 <div class="footerPartnerImg">
-                  <img src="assets/images/partner1.png" alt="">
+                  <img src="assets/images/aaa.svg" alt="">
                 </div>
               </a>
             </div>
@@ -1870,17 +1949,21 @@
           </div>
           <ul class="contactFooterList">
             <li>
-              Al Sharq Forum – London hub
+              <span>Al Sharq Forum – London hub</span>
 
             </li>
             <li>
-              2-6 Boundary Row
+              <span> 2-6 Boundary Row</span>
             </li>
             <li>
-              Road SE1 8HPLondon, UK.
+              <span> Road SE1 8HPLondon, UK.</span>
             </li>
             <li>
-              academia@sharqforum.org
+              <a href="#">
+                </p>
+                academia@sharqforum.org
+                <p>
+              </a>
             </li>
           </ul>
           <ul class="socialIcons">
@@ -1906,7 +1989,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="footerLogo"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+          <div class="footerLogo"><a href="#"><img src="assets/images/blackLogo.svg" alt=""></a></div>
           <ul class="footerMenuList">
             <li>
               © 2022
@@ -1953,14 +2036,14 @@
           </div>
           <div class="right-side ">
             <p>Al Sharq Academia is part of </p>
-            <div class="copyLogo"><img src="assets/images/copyLogo.png" alt=""></div>
+            <div class="copyLogo"><img src="assets/images/footerLogo.svg" alt=""></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Login Modal -->
-  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
+  <div class="modal fade " id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginLabel" aria-hidden="true">
 
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1984,10 +2067,10 @@
                 <i class="showPass fa fa-eye"></i>
               </a>
             </div>
-            <a href="#" class="forgetLink" data-toggle="modal" data-target="#forgerPassModal">
+            <a href="#" class="forgetLink">
               Forgot password?
             </a>
-            <a href="#" type="submit" class="signBtn btn loginBtns"> <span>Sign in</span></a>
+            <a href="#" type="submit" class="signBtn btn loginBtns loginLink"> <span>Sign in</span></a>
             <div class="orText"><span>OR</span></div>
             <a href="#" class="googleBtn btn loginBtns"> <span class="loginbtnIcon"><svg id="Logo"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26"
@@ -2041,8 +2124,8 @@
             <a href="#" class="btn loginBtns facebookBtn"><span class="loginbtnIcon"><i
                   class="fab fa-facebook-f"></i></span> <span>Continue with Facebook</span></a>
           </form>
-          <p class="signUpLintexe">Do not have an account yet ? <a href="#" data-toggle="modal" data-target="#regModal"
-              class="signUpLink">Sign up</a></p>
+          <p class="signUpLintexe">Do not have an account yet ? <a href="#" class="signUpLink regBtnLink">Sign up</a>
+          </p>
         </div>
 
       </div>
@@ -2069,12 +2152,10 @@
               <input type="text" class="form-control" placeholder="Full Name">
             </div>
             <div class="form-group dategroup">
-              <i class="lni lni-chevron-down"></i>
               <input type="text" class="datepicker form-control" placeholder="Date">
             </div>
-            <div class="form-group dategroup">
-              <i class="lni lni-chevron-down"></i>
-              <div class="form-control"> <select name="" id="" class=" select">
+            <div class="form-group">
+              <select name="" id="" class=" select">
                   <option value="0">
                     Country
                   </option>
@@ -2084,7 +2165,7 @@
                   <option value="2">
                     Egypt
                   </option>
-                </select></div>
+                </select>
 
             </div>
             <div class="form-group">
@@ -2099,12 +2180,10 @@
                 <i class="showPass fa fa-eye"></i>
               </a>
             </div>
-            <a href="#" class="forgetLink">
-              Forgot password?
-            </a>
+
 
           </form>
-          <p class="signUpLintexe">Already have an account <a href="#" class="signUpLink">Sign In</a></p>
+          <p class="signUpLintexe">Already have an account <a href="#" class="signUpLink loginLink">Sign In</a></p>
         </div>
 
       </div>
@@ -2134,8 +2213,7 @@
             <a href="#" type="submit" class="signBtn btn loginBtns"> <span>Reset Password</span></a>
 
           </form>
-          <p class="signUpLintexe">back to<a href="#" data-toggle="modal" data-target="#loginModal"
-              class="signUpLink">Login</a></p>
+          <p class="signUpLintexe">back to<a href="#" class="signUpLink loginLink">Login</a></p>
         </div>
 
       </div>
@@ -2249,6 +2327,9 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
   <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
+
+  <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
+
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script src="assets/lib/rating/jquery.star-rating-svg.js"></script>
 

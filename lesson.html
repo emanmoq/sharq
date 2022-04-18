@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+
+    <link href="assets/css/selectric.css" rel="stylesheet">
+
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -230,7 +233,7 @@
                             </div>
                             <div class="exploreBox">
                                 <form action="" class="exploreForm clearfix">
-                                    <select name="" id="">
+                                    <select name="" id="" class="exploreSelect">
                                         <option value="">Explore</option>
                                         <option value="">
                                             explore2
@@ -516,12 +519,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </nav>
                     </div>
+
+                    </nav>
                 </div>
             </div>
         </div>
-
     </header>
 
     <section class="course-Details clearfix">
@@ -933,8 +936,8 @@
                         <div class="col-md-9">
                             <ul class="nav nav-pills coursepage-tabs" id="" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link  active Overview-tab" data-toggle="pill" href="#Overview" role="tab"
-                                        aria-controls="pills-Overview" aria-selected="true">Overview
+                                    <a class="nav-link  active Overview-tab" data-toggle="pill" href="#Overview"
+                                        role="tab" aria-controls="pills-Overview" aria-selected="true">Overview
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -943,8 +946,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  NoteBook-tab" data-toggle="pill" href="#NoteBook"
-                                        role="tab" aria-controls="pills-NoteBook" aria-selected="false">NoteBook</a>
+                                    <a class="nav-link  NoteBook-tab" data-toggle="pill" href="#NoteBook" role="tab"
+                                        aria-controls="pills-NoteBook" aria-selected="false">NoteBook</a>
                                 </li>
                             </ul>
                         </div>
@@ -953,7 +956,8 @@
             </div>
             <div class="col-md-12">
                 <div class="tab-content" id="coursesTabContent">
-                    <div class="tab-pane show active fade  " id="Overview" role="tabpanel" aria-labelledby="Overview-tab">
+                    <div class="tab-pane show active fade  " id="Overview" role="tabpanel"
+                        aria-labelledby="Overview-tab">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="aboutCourse" id="aboutCourse">
@@ -1643,7 +1647,7 @@
 
                                             </div>
                                         </div>
-                                 
+
                                     </div>
                                     <div class="NoteCollapse">
 
@@ -1669,7 +1673,7 @@
 
                                             </div>
                                         </div>
-                                 
+
                                     </div>
                                 </form>
                             </div>
@@ -1681,207 +1685,209 @@
         </div>
     </section>
     <footer>
-        <a href="#" class="up">
-            <i class="fa fa-chevron-up"></i>
+        <a href="#hero" class="up">
+          <i class="fa fa-chevron-up"></i>
         </a>
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="sharqInfo">
-                        <h4>AL SHARQ ACADEMIA</h4>
-                        <p>
-                            Al Sharq Academia is an online platform offering an eclectic range of academic courses that
-                            aim at
-                            disseminating knowledge from the social sciences.
-                        </p>
-                        <div class="downloadApp clearfix">
-                            <div class="appBtn"> <a href="#"><img src="assets/images/app.png" alt=""></a></div>
-                            <div class="appBtn"> <a href="#"><img src="assets/images/google.png" alt=""></a></div>
-
-                        </div>
-                        <div class="footerPartners clearfix">
-                            <a href="#"><span>
-                                    Item Of
-                                </span>
-                                <div class="footerPartnerImg">
-                                    <img src="assets/images/Bitmap.png" alt="">
-                                </div>
-                            </a>
-                            <a href="#"><span>
-                                    Accredit from
-                                </span>
-                                <div class="footerPartnerImg">
-                                    <img src="assets/images/partner1.png" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="sharqInfo">
+                <h4>AL SHARQ ACADEMIA</h4>
+                <p>
+                  Al Sharq Academia is an online platform offering an eclectic range of academic courses that aim at
+                  disseminating knowledge from the social sciences.
+                </p>
+                <div class="downloadApp clearfix">
+                  <div class="appBtn"> <a href="#"><img src="assets/images/app.png" alt=""></a></div>
+                  <div class="appBtn"> <a href="#"><img src="assets/images/google.png" alt=""></a></div>
+    
                 </div>
-                <div class="col-md-2 col-4">
-                    <div class="footerListTitle">
-                        Explore
+                <div class="footerPartners clearfix">
+                  <a href="#"><span>
+                      Item Of
+                    </span>
+                    <div class="footerPartnerImg">
+                      <img src="assets/images/asic.svg" alt="">
                     </div>
-                    <ul class="footerList">
-                        <li>
-                            <a href="#">Sign Up
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Specializations
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Diploma
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Instructors
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Help Center
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Instructors
-
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-4">
-                    <div class="footerListTitle">
-                        Quick Links
+                  </a>
+                  <a href="#"><span>
+                      Accredit from
+                    </span>
+                    <div class="footerPartnerImg">
+                      <img src="assets/images/aaa.svg" alt="">
                     </div>
-                    <ul class="footerList">
-                        <li>
-                            <a href="#">Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> Pricing
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> Terms & Conditions
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Feedbacks
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Rewards
-                            </a>
-                        </li>
-
-                    </ul>
+                  </a>
                 </div>
-                <div class="col-md-3 col-4">
-                    <div class="footerListTitle">
-                        Contact Us
-                    </div>
-                    <ul class="contactFooterList">
-                        <li>
-                            Al Sharq Forum – London hub
-
-                        </li>
-                        <li>
-                            2-6 Boundary Row
-                        </li>
-                        <li>
-                            Road SE1 8HPLondon, UK.
-                        </li>
-                        <li>
-                            academia@sharqforum.org
-                        </li>
-                    </ul>
-                    <ul class="socialIcons">
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-                </div>
+              </div>
             </div>
+            <div class="col-md-2 col-4">
+              <div class="footerListTitle">
+                Explore
+              </div>
+              <ul class="footerList">
+                <li>
+                  <a href="#">Sign Up
+                  </a>
+                </li>
+                <li>
+                  <a href="#">About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Courses
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Specializations
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Diploma
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Instructors
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Help Center
+    
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Instructors
+    
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-4">
+              <div class="footerListTitle">
+                Quick Links
+              </div>
+              <ul class="footerList">
+                <li>
+                  <a href="#">Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Feedbacks
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Rewards
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+            <div class="col-md-3 col-4">
+              <div class="footerListTitle">
+                Contact Us
+              </div>
+              <ul class="contactFooterList">
+                <li>
+                  <span>Al Sharq Forum – London hub</span>
+    
+                </li>
+                <li>
+                  <span> 2-6 Boundary Row</span>
+                </li>
+                <li>
+                  <span> Road SE1 8HPLondon, UK.</span>
+                </li>
+                <li>
+                  <a href="#">
+                    </p>
+                    academia@sharqforum.org
+                    <p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="socialIcons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </footer>
-    <div class="footerMenu">
-
+      </footer>
+      <div class="footerMenu">
+    
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footerLogo"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
-                    <ul class="footerMenuList">
-                        <li>
-                            © 2022
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="#">user Argent</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Cookie Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Copyright Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Brand Policy </a>
-                        </li>
-                        <li>
-                            <a href="#">Guest Controls</a>
-                        </li>
-                        <li>
-                            <a href="#">Languge</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footerLogo"><a href="#"><img src="assets/images/blackLogo.svg" alt=""></a></div>
+              <ul class="footerMenuList">
+                <li>
+                  © 2022
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Accessibility</a>
+                </li>
+                <li>
+                  <a href="#">user Argent</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Cookie Policy</a>
+                </li>
+                <li>
+                  <a href="#">Copyright Policy</a>
+                </li>
+                <li>
+                  <a href="#">Brand Policy </a>
+                </li>
+                <li>
+                  <a href="#">Guest Controls</a>
+                </li>
+                <li>
+                  <a href="#">Languge</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="copy">
+      </div>
+      <div class="copy">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="left-side ">
-                        <p> The views and opinions mentioned in the academic curriculum do not necessarily represent the
-                            views of Al
-                            Sharq Academia.</p>
-                    </div>
-                    <div class="right-side ">
-                        <p>Al Sharq Academia is part of </p>
-                        <div class="copyLogo"><img src="assets/images/copyLogo.png" alt=""></div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="left-side ">
+                <p> The views and opinions mentioned in the academic curriculum do not necessarily represent the views of Al
+                  Sharq Academia.</p>
+              </div>
+              <div class="right-side ">
+                <p>Al Sharq Academia is part of </p>
+                <div class="copyLogo"><img src="assets/images/footerLogo.svg" alt=""></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -1891,8 +1897,11 @@
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
     <script src="assets/lib/rating/jquery.star-rating-svg.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    
     <script src="assets/js/waypoints-min.js"></script>
 
     <script type="text/javascript" src="assets/js/counter.js"></script>
