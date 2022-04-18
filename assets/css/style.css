@@ -4648,6 +4648,7 @@ textarea {
     height: auto;
     right: 36px;
     top: 21px;
+    padding: 0;
 }
 
 .selectric {
@@ -4691,7 +4692,9 @@ textarea {
 .step-tab-panel .selectric-scroll ul {
     margin-bottom: 0;
 }
-
+.loginForm .dategroup{
+    position: relative;
+}
 .stepsForm .dategroup:after {
     right: 25px;
     top: 21px;
@@ -5273,8 +5276,8 @@ textarea {
     font-family: lineicons;
     font-size: .7em;
     position: absolute;
-    right: 20px;
-    top: 51px;
+    right: 24px;
+    top: 24px;
 }
 
 .PublicityBox {

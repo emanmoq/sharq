@@ -255,8 +255,12 @@ jQuery(function ($) {
       $(this).closest(".form-group").find(".showPass").css("display", "none");
     }
   });
-  $(".datepicker").datepicker();
+  $( ".datepicker" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
 $(document).on('click', '.dropdown-menu a', function (e) {
+  
   e.stopPropagation();
 });
 
