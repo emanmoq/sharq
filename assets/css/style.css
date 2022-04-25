@@ -4517,7 +4517,6 @@ textarea {
 
 .lessonBody .coursesTabsSection.scrollNav {
 /*top: 255px !important;*/
-top:auto;
     z-index: 90;
 }
 

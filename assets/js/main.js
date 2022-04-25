@@ -176,7 +176,7 @@ jQuery(function ($) {
       if (scrollTop > $("header").height()-10 ) {
         
           $(".videoSec").css('position','fixed').css('top','70');
-          $(".coursesTabsSection").css('position','fixed').css('top','255');
+          $(".coursesTabsSection.lessonTabSec").css('position','fixed').css('top','255');
 
         $(".courseDetailsBody .innerHeader").addClass("removeHeader");
         $(".courseDetailsBody .scrolableHeader").css("display","flex")
@@ -188,15 +188,14 @@ jQuery(function ($) {
         $(".lessonBody .tab-content").css("padding-top","500px")
         let topVideo=$('footer').position().top+$('.scrollVideo').height()+250-window.screen.height;
         if(scrollTop>=topVideo){
-          $(".coursesTabsSection").css('position','fixed').css('top',(topVideo-scrollTop+$('.scrollVideo').height()+150));
+          $(".coursesTabsSection.lessonTabSec").css('position','fixed').css('top',(topVideo-scrollTop+$('.scrollVideo').height()+150));
           $(".videoSec").css('position','fixed').css('top',topVideo-scrollTop+150);
 
         }
       }
       else if (scrollTop < 300 ){
-        $(".coursesTabsSection").css('position','relative').css('top','auto');
+        $(".coursesTabsSection.lessonTabSec").css('position','relative').css('top','auto');
         $(".videoSec").css('position','relative').css('top','auto');
-
         $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
         $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
         $(".scrolltabsection").removeClass("scrollNav");
