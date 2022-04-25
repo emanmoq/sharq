@@ -172,7 +172,12 @@ jQuery(function ($) {
       }, 250);
     } 
     if ($(window).width() > 767){
-      if (scrollTop > $("header").height()-10 && scrollTop < $('.sideCurriclum').height() ) {
+      // && scrollTop < $('.sideCurriclum').height() 
+      if (scrollTop > $("header").height()-10 ) {
+        
+          $(".videoSec").css('position','fixed').css('top','70');
+          $(".coursesTabsSection").css('position','fixed').css('top','255');
+
         $(".courseDetailsBody .innerHeader").addClass("removeHeader");
         $(".courseDetailsBody .scrolableHeader").css("display","flex")
         $(".courseDetailsBody .mainHeader").addClass("removeHeader");
@@ -181,8 +186,17 @@ jQuery(function ($) {
         $(".scrolltabsection").addClass("scrollNav");
         $(".videoSec").addClass("scrollVideo");
         $(".lessonBody .tab-content").css("padding-top","500px")
+        let topVideo=$('footer').position().top+$('.scrollVideo').height()+250-window.screen.height;
+        if(scrollTop>=topVideo){
+          $(".coursesTabsSection").css('position','fixed').css('top',(topVideo-scrollTop+$('.scrollVideo').height()+150));
+          $(".videoSec").css('position','fixed').css('top',topVideo-scrollTop+150);
+
+        }
       }
       else if (scrollTop < 300 ){
+        $(".coursesTabsSection").css('position','relative').css('top','auto');
+        $(".videoSec").css('position','relative').css('top','auto');
+
         $(".courseDetailsBody  .innerHeader").removeClass("removeHeader");
         $(".courseDetailsBody .mainHeader").removeClass("removeHeader");
         $(".scrolltabsection").removeClass("scrollNav");
@@ -419,8 +433,12 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
         });
         $(".form-control").click(function () {
           $(this).attr("placeholder", " ");
+          if($(this).attr("value") !=""){
+            $(this).attr("value","")
+          }
       
         });
+        $(".modal").modal("show")
     });
 
 

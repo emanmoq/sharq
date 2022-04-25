@@ -3858,7 +3858,7 @@ element.style {}
 }
 
 .scrollNav {
-    top: 59px !important;
+   top: 59px ;
     z-index: 99999999999999999999999;
     animation-duration: .5s;
     position: fixed !important;
@@ -3922,6 +3922,7 @@ element.style {}
     border-radius: 0;
     overflow: auto;
     float: left;
+    z-index: 99;
     padding-top: 28px;
     top: 69px;
 }
@@ -4515,8 +4516,9 @@ textarea {
 }
 
 .lessonBody .coursesTabsSection.scrollNav {
-    top: 255px !important;
-    z-index: 99;
+/*top: 255px !important;*/
+top:auto;
+    z-index: 90;
 }
 
 .sumbitExamBtn {

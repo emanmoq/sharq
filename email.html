@@ -3,7 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+
     <style>
         /* -------------------------------------
           GLOBAL RESETS
@@ -38,8 +44,7 @@
         }
 
         table td {
-            font-family: sans-serif;
-            font-size: 14px;
+
             vertical-align: top;
         }
 
@@ -84,27 +89,28 @@
             padding: 20px;
         }
 
-  
+        .socialcons li {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #761C33;
+            display: inline-block;
+            margin-right:15px;
+            
+        }
+        .socialcons li a{
+            color:white;
+            line-height: 30px;
+            font-size:13px;
+        }
+
         /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
         @media only screen and (max-width: 620px) {
-            table.body h1 {
-                font-size: 28px !important;
-                margin-bottom: 10px !important;
-            }
 
-            table.body p,
-            table.body ul,
-            table.body ol,
-            table.body td,
-            table.body span,
-            table.body a {
-                font-size: 16px !important;
-            }
-
-            table.body .wrapper,
-            table.body .article {
+            table.body .wrapper {
                 padding: 10px !important;
             }
 
@@ -137,51 +143,6 @@
                 width: auto !important;
             }
         }
-
-        /* -------------------------------------
-          PRESERVE THESE STYLES IN THE HEAD
-      ------------------------------------- */
-        @media all {
-            .ExternalClass {
-                width: 100%;
-            }
-
-            .ExternalClass,
-            .ExternalClass p,
-            .ExternalClass span,
-            .ExternalClass font,
-            .ExternalClass td,
-            .ExternalClass div {
-                line-height: 100%;
-            }
-
-            .apple-link a {
-                color: inherit !important;
-                font-family: inherit !important;
-                font-size: inherit !important;
-                font-weight: inherit !important;
-                line-height: inherit !important;
-                text-decoration: none !important;
-            }
-
-            #MessageViewBody a {
-                color: inherit;
-                text-decoration: none;
-                font-size: inherit;
-                font-family: inherit;
-                font-weight: inherit;
-                line-height: inherit;
-            }
-
-            .btn-primary table td:hover {
-                background-color: #34495e !important;
-            }
-
-            .btn-primary a:hover {
-                background-color: #34495e !important;
-                border-color: #34495e !important;
-            }
-        }
     </style>
 </head>
 
@@ -201,11 +162,12 @@
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td>
-                                            <img src="assets/images/blackLogo.svg" alt="">
+                                            <img src="https://svgshare.com/i/gQS.svg" alt="">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center;"> <img src="assets/images/email.svg" alt=""
+                                        <td style="text-align: center;"> <img src="https://svgshare.com/i/gQw.svg"
+                                                alt=""
                                                 style="width:312px; margin: auto; margin-top: 54px; margin-bottom: 50px;">
                                         </td>
                                     </tr>
@@ -213,14 +175,18 @@
                                         <td>
                                             <h4 style="font-size:2.3em; font-weight:bold;margin-bottom:16px">Hi, Mohamed
                                                 Jamal</h4>
-                                            <p style="font-size: 0.9375em; font-weight: 600;margin-bottom: 43px; line-height: 2;">Al Sharq Academia is an online platform offering an eclectic range of
+                                            <p
+                                                style="font-size: 0.9375em; font-weight: 600;margin-bottom: 43px; line-height: 2;">
+                                                Al Sharq Academia is an online platform offering an eclectic range of
                                                 academic courses that aim at disseminating knowledge from the social
                                                 sciences and humanities,</p>
-                                                <a href="#" style="background-color: #761C33;color:white; border-radius: 22px;
-                                                width:191px;font-size: 0.9375em; font-weight: 600;text-align: center;text-decoration: none;display: block;padding:13px 0;margin-bottom: 77px;">Join us New </a>
+                                            <a href="#"
+                                                style="background-color: #761C33;color:white; border-radius: 22px;
+                                                width:191px;font-size: 0.9375em; font-weight: 600;text-align: center;text-decoration: none;display: block;padding:13px 0;margin-bottom: 77px;">Join
+                                                us New </a>
                                         </td>
                                     </tr>
-   
+
                                 </table>
                             </td>
                         </tr>
@@ -234,19 +200,22 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td style="text-align: center;background-color: #F4F7F8; padding:26px 0">
-                                    <span style="font-size: .91em; font-weight: 600;display: block;margin-bottom: 17px; color:#2A2A29">Follow Us On Social Media</span>
-                                    <ul style="list-style: none;padding:0;">
-                                        <li style="margin-right:20px;display:inline-block;">
-                                            <a href="#"><img src="assets/images/facebook.svg" alt=""></a>
+                                    <span
+                                        style="font-size: .91em; font-weight: 600;display: block;margin-bottom: 17px; color:#2A2A29">Follow
+                                        Us On Social Media</span>
+                                    <ul style="list-style: none;padding:0;" class="socialcons">
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         </li>
-                                        <li  style="margin-right:20px;display:inline-block;">
-                                            <a href="#"><img src="assets/images/twitteremail.svg" alt=""></a>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            
                                         </li>
-                                        <li  style="margin-right:20px;display:inline-block;">
-                                            <a href="#"><img src="assets/images/instagram.svg" alt=""></a>
+                                        <li>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
                                         </li>
-                                        <li  style="display:inline-block;">
-                                            <a href="#"><img src="assets/images/linked.svg" alt=""></a>
+                                        <li style="margin-right:0">
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
 
                                         </li>
                                     </ul>
@@ -254,7 +223,8 @@
                             </tr>
                             <tr style="background-color: #2A2A29;text-align: center;">
                                 <td style="padding: 19px 0">
-                                    <span style="font-size: 0.8125em;font-weight: 600;color:white">© 2022 All rights reserved to Alsharq Acadimy</span>
+                                    <span style="font-size: 0.8125em;font-weight: 600;color:white">© 2022 All rights
+                                        reserved to Alsharq Acadimy</span>
                                 </td>
                             </tr>
                         </table>
