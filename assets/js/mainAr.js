@@ -461,7 +461,6 @@ $(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
           }
       
         });
-        $(".modal").modal("show")
     });
 
 

@@ -5,6 +5,8 @@ body {
     color: black;
     overflow-x: hidden;
     position: relative;
+    direction: rtl;
+    text-align: right;
 }
 
 header {
@@ -176,7 +178,7 @@ header .container-fluid {
     float: right;
     border-radius: 0;
     ;
-    border-radius: 0 100px 100px 0;
+    border-radius: 100px 0px 0px 100px;
 }
 
 .exploreForm .selectric-wrapper {
@@ -194,7 +196,7 @@ header .container-fluid {
     text-align: center;
     height: 100%;
     ;
-    border-radius: 100px 0 0 100px;
+    border-radius: 0 100px 100px 0;
     display: inline-flex;
     justify-content: center;
 }
@@ -314,7 +316,7 @@ header .container-fluid {
 }
 
 .langBtn::after {
-    left: 15px;
+    left: 12px;
     top: 15px
 }
 
@@ -393,7 +395,7 @@ header .container-fluid {
 .heroSliderItem:before {
     position: absolute;
     content: "";
-    background-image: linear-gradient(to left, rgb(249, 245, 246, .1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to right, rgb(249, 245, 246, .1) 0%, rgba(255, 255, 255, 0) 100%);
     opacity: .89;
     width: 100%;
     height: 100%;
@@ -686,6 +688,7 @@ header .container-fluid {
 }
 
 .enrollBtn svg {
+    transform: rotate(180deg);
     margin-right: 5px;
     display: flex;
     align-self: center;
@@ -1293,8 +1296,8 @@ footer .container {
 
 }
 
-.footerList li:before {
-    content: "\f061";
+.footerList li:after {
+    content: "\f060";
     font-family: "Font Awesome 5 Free";
     color: #761C33;
     font-weight: 600;
